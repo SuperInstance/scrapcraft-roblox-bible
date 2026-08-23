@@ -398,6 +398,40 @@ action, wait, repeat, forever, if, if_else, macro, cond (sensor/cmp/value), not,
 
 ---
 
+## 9.5 Achievements (`Achievements.js`)
+
+**74 achievements** in `ACHIEVEMENT_LIST` (`Achievements.js:6-276+`), each
+`{id, icon, name, desc, check(s)}` evaluated against `achievements.stats`
+(the stat keys in §03 save schema). Full id list:
+
+first_blood, rust_whisperer, wrench_wrangler, sparky, circuit_breaker,
+scrap_hoarder, night_owl, five_recipes, robot_army, need_for_speed,
+fire_starter, radio_star, spring_chicken, ten_recipes, cannons_out, arm_day,
+king_of_the_yard, night_miner, speed_crafter, to_infinity, first_brain,
+wireless, eagle_eye, all_three_brains, night_sight, hook_shot, tile_runner,
+master_builder, placer, wokwi_exporter, first_flash, ten_flashes,
+first_trade, trader, bot_modder, bot_maxed, bot_named, bot_bond_25,
+bot_bond_75, bot_bond_100, track_builder, bot_racer, illuminator,
+shared_brain, spark_made, sensor_explorer, magnetic_personality, oval_racer,
+crystal_hunter, headlamp_on, scrap_gunner, waypoint_ace, bot_scanner,
+grenadier, supply_runner, lucky_strike, narrow_escape, salvage_pro,
+signal_hunter, magnetic_hands, sun_tamer, steam_engineer, drill_sergeant,
+full_coverage, earl_again, new_age, the_transmission, beacon_placed,
+field_scholar, full_codex, variable_star, bookkeeper, var_conditioner,
+tally_champion
+
+Notable thresholds: bot_bond_25/75/100 (bond max), track_builder (16 tracks),
+bot_racer (1 lap), five_recipes/ten_recipes (crafted set size), ten_flashes
+(hardware flashes), first_trade/trader (exchange trades).
+
+## 9.6 BotLedger (`BotLedger.js`)
+
+Per-bot memory (key `scrapcraft_bot_ledger_<slot>`, shelf `scrapcraft_bot_shelf`):
+- runtimeS (brain runtime), laps, dents[] (collisions: `{at, x, z, speed}`, dent
+  cooldown 2.5 s `DENT_COOLDOWN_S`), crash-free streak, stall detection
+  (0.8 s `STALL_TIME_S`), milestone dents at 30/120/300 s (`BotLedger.js:76`).
+- Repair: `repair_done` bond event (+4) when dents are fixed.
+
 ## 10. TUNING CONSTANTS INDEX (quick diff table)
 
 | Constant | Value | File |
