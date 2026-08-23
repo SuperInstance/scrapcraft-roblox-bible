@@ -191,7 +191,7 @@ Bonks become **dents** in a persistent BotLedger (`ScrapBot.js:425-440`); first 
 
 - Full cycle = **360 s** (6 real minutes) (`:4`); starts at t=0.35 morning (`:47`).
 - 9 keyframes (t, sky, fog, ambient, intensities) at `:6-17` — midnight 0.0 → pre-dawn 0.20 → sunrise 0.28 (sky 0xff6633) → morning 0.35 → noon 0.50 (sun 1.4) → afternoon 0.65 → sunset 0.75 (0xff4422) → dusk 0.82 → midnight 1.0. Linear color lerp between keyframes (`:19-27,72-84`).
-- `isNight = t<0.25 || t>0.78` (`:62`); label bands h<5 Night … h≥20 Night (`:63-70`).
+- `isNight = t<0.25 || t>0.78` (`:59`); label bands h<5 Night … h≥20 Night (`:60-70`).
 - Sun arc: `angle = t·2π − π/2`, position `(cos·50, sin·50+10, 20)` (`:86-87`).
 - Stars: 300 points, radius 90, size 0.4, alpha fades through night edges (`:40-57,88-91`).
 - Dump: `extracted/daynight-weather.json` (keyframe table machine-readable).
