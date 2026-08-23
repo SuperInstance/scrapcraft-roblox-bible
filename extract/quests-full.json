@@ -1,0 +1,2983 @@
+{
+ "earl-1": {
+  "id": "earl-1",
+  "arc": "earl",
+  "title": "Scrap Hunt",
+  "brief": "Right, rookie. Before you touch anything complicated, I need 5 iron scrap. Scrap piles are everywhere \u2014 don't overthink it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "MINE",
+    "item": "iron_scrap",
+    "count": 5,
+    "label": "Mine 5 iron scrap"
+   }
+  ],
+  "prerequisites": {
+   "quests": [],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "copper_wire",
+     "qty": 3
+    },
+    {
+     "item": "iron_scrap",
+     "qty": 2
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Materials \u2014 salvage and abundance",
+   "kidPhrase": "In the real world, you can't always buy new. Engineers dig through the old, find what works, and build with it. That's called salvage engineering.",
+   "memory": "Five piles of iron and a realization: there was a whole language in this junk that nobody taught us. Earl smiled. Barely. \u2014 with Earl"
+  }
+ },
+ "earl-2": {
+  "id": "earl-2",
+  "arc": "earl",
+  "title": "First Tools",
+  "brief": "Iron scrap means nothing without a wrench. Head to the workbench and build one. You'll need wood plank too \u2014 check the wooden debris.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "wrench",
+    "label": "Craft a wrench"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "battery_pack",
+     "qty": 1
+    },
+    {
+     "item": "rubber_chunk",
+     "qty": 3
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Tool-making \u2014 from scrap to purpose",
+   "kidPhrase": "Every tool is two pieces of junk convinced to work together. A wrench is just leverage with an attitude.",
+   "memory": "The wrench fit my hand like it was made for it. Maybe it was. Maybe that's how tools work \u2014 they wait in the scrap until someone who needs them shows up. \u2014 with Earl"
+  }
+ },
+ "earl-3": {
+  "id": "earl-3",
+  "arc": "earl",
+  "title": "Power Up",
+  "brief": "The yard needs power and you need to stop freeloading off the main line. Build a Generator at the Forge. You'll need gears, scrap, and fuel.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "generator",
+    "label": "Craft a generator"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "circuit_board",
+     "qty": 2
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Power systems \u2014 energy, efficiency, autonomy",
+   "kidPhrase": "Everything that moves needs power. A generator turns motion into electricity. The real trick is making electricity without burning through fuel like a teenager with a credit card.",
+   "memory": "Built the generator. It hummed. Earl tested it, then nodded at the voltmeter like it had just earned his respect. Without saying it out loud, which is how Earl does respect. \u2014 with Earl"
+  }
+ },
+ "earl-4": {
+  "id": "earl-4",
+  "arc": "earl",
+  "title": "Build a Friend",
+  "brief": "I'm getting old. My back won't let me lug scrap around all day. Build me a ScrapBot at the Smelter. Robot arms first, then put it together.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "robot_arm",
+    "label": "Craft a robot arm"
+   },
+   {
+    "type": "CRAFT",
+    "item": "robot_helper",
+    "label": "Craft a ScrapBot"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-3"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "robot_arm",
+     "qty": 1
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Automation \u2014 machines doing work",
+   "kidPhrase": "A robot is just scrap with a job. Build it right and it works forever. Build it wrong and it works until someone looks at it sideways.",
+   "memory": "The bot's first motion was clumsy, kind of beautiful. Earl watched it sort scrap for five minutes, then walked away without a word. That was the highest praise I've ever gotten from him. \u2014 with Earl"
+  }
+ },
+ "earl-5": {
+  "id": "earl-5",
+  "arc": "earl",
+  "title": "Touch the Sky",
+  "brief": "You've done the impossible twice this week. Let's make it three. Build a Flying Machine. I told the other foremen it couldn't be done. Prove me right. Or wrong. I'm fine either way.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "flying_machine",
+    "label": "Craft a flying machine"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-4"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "fuel_can",
+     "qty": 1
+    },
+    {
+     "item": "gear_small",
+     "qty": 2
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Complex engineering \u2014 integrating multiple systems",
+   "kidPhrase": "A flying machine is every system you've learned so far, stacked and balanced and trusting three axes at once. Miss one and you're cleaning up a different kind of crash.",
+   "memory": "The first flight lasted six seconds. It felt like forever. Earl grunted something that might have been pride. It definitely wasn't criticism. \u2014 with Earl"
+  }
+ },
+ "earl-6": {
+  "id": "earl-6",
+  "arc": "earl",
+  "title": "Build a Brain",
+  "brief": "Alright, one more thing. There's a Maker Lab tucked behind the smelter. You need a Tin Brain \u2014 that's an ATmega microcontroller \u2014 to get started. Circuit boards and scrap. Go build it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "tin_brain",
+    "label": "Craft the tin brain"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-5"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "copper_wire",
+     "qty": 5
+    },
+    {
+     "item": "circuit_board",
+     "qty": 2
+    },
+    {
+     "item": "generator",
+     "qty": 1
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Microcontrollers \u2014 programmable logic",
+   "kidPhrase": "A microcontroller is a computer that fits on a postage stamp. It doesn't think like your laptop \u2014 it's way dumber and way more stubborn. That's the whole appeal.",
+   "memory": "The Tin Brain was small and heavy, cold from the factory floor. Earl held it like it might break. He said, 'This is where it gets real.' I believed him. \u2014 with Earl"
+  }
+ },
+ "earl-7": {
+  "id": "earl-7",
+  "arc": "earl",
+  "title": "First Program",
+  "brief": "Press [T] to open the Tile Editor. Drag some tiles into a program. Hit Run. Your bot should do something. I don't care what. Just prove it's not broken.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "RUN_PROGRAM",
+    "count": 1,
+    "label": "Run 1 tile program"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-6"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "circuit_board",
+     "qty": 2
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Sense-think-act loop \u2014 the foundation of robotics",
+   "kidPhrase": "Every robot works the same way: look around, decide what to do, do it. Fast. Repeat. That's the whole job. Make that loop work and you're an engineer.",
+   "memory": "It moved. The bot actually moved. Just a step, just following a simple tile, but it moved because of something I told it to do. That was the moment everything clicked. \u2014 with Earl"
+  }
+ },
+ "earl-8": {
+  "id": "earl-8",
+  "arc": "earl",
+  "title": "Go Real",
+  "brief": "The Tile Editor has a Wokwi button. Click it. That exports a diagram.json you can drop straight into Wokwi \u2014 the browser circuit simulator. Your game robot becomes a real one. Do it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "STAT",
+    "stat": "wokwiExported",
+    "count": 1,
+    "label": "Export a Wokwi diagram"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-7"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "battery_pack",
+     "qty": 2
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Hardware abstraction \u2014 game to silicon",
+   "kidPhrase": "Wokwi is a simulator that speaks the same language as real chips. You draw in a game, Wokwi understands it, a real chip can run it. No translation, no magic. That's good engineering.",
+   "memory": "Saw my program in Wokwi for the first time. All the wiring, all the connections that the game never shows you. The bot was more complicated than I thought, and way more real. \u2014 with Earl"
+  }
+ },
+ "earl-9": {
+  "id": "earl-9",
+  "arc": "earl",
+  "title": "Race Circuit",
+  "brief": "There's a track loop out by the wall at x=30-46, z=14-22. Load the Line Follower preset from the Maker Bench, run it on your bot, and watch it drive a lap. That's a real IR sensor algorithm. Go do it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "LAP",
+    "count": 1,
+    "label": "Complete 1 bot lap on the track"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-8"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "ir_module",
+     "qty": 4
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Closed-loop feedback \u2014 sensors guide action",
+   "kidPhrase": "A line-following bot reads its sensors constantly. It says, 'I see the line, I'm on it, keep going.' Then: 'I see the line, I'm drifting, correct.' Every millisecond, feedback adjusting action. That's what keeps anything balanced.",
+   "memory": "Watched the bot follow the line. It was clumsy at first, then it found the rhythm. By lap three it looked like it understood something. Maybe I understood something. Maybe that's the same thing. \u2014 with Earl"
+  }
+ },
+ "earl-10": {
+  "id": "earl-10",
+  "arc": "earl",
+  "title": "Light It Up",
+  "brief": "The back of the yard is pitch dark at night. Craft a Floodlight \u2014 glass, copper wire, iron scrap at the workbench \u2014 and stick it somewhere useful. I'm done squinting.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "floodlight",
+    "label": "Craft a floodlight"
+   },
+   {
+    "type": "STAT",
+    "stat": "floodlightsPlaced",
+    "count": 1,
+    "label": "Place a floodlight in the world"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-9"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "scrap_magnet",
+     "qty": 1
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Field deployment \u2014 building for real use",
+   "kidPhrase": "A floodlight is just light with ambition. You build it, place it, and suddenly the dark part of the yard works. That's the moment engineering stops being a game.",
+   "memory": "Placed the floodlight and it lit up everything. The Deep Yard looked different in the light \u2014 less mysterious, more real. Earl said it was efficient. High praise from him. \u2014 with Earl"
+  }
+ },
+ "earl-11": {
+  "id": "earl-11",
+  "arc": "earl",
+  "title": "Into the Deep",
+  "brief": "You've been sticking to the front yard. The Deep Yard \u2014 that's Band 3, all the way north \u2014 is where the crystal ore blooms: thirty years of coolant and glass negotiating. Mine three. Don't ask what the formations assay as. (Glass. They assay as glass.) Go find it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "VISIT",
+    "biome": "band3",
+    "label": "Reach the Deep Yard"
+   },
+   {
+    "type": "MINE",
+    "item": "crystal_ore",
+    "count": 3,
+    "label": "Mine 3 crystal ore"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-10"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "night_goggles",
+     "qty": 1
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Exploration \u2014 discovering constraints and resources",
+   "kidPhrase": "Every yard has a deep end. The one here has crystal and answers. Go find both. Only one of them is safe to touch.",
+   "memory": "The Deep Yard felt wrong and right at the same time. Crystal formations everywhere, catching the light like they were alive \u2014 turns out they're glass, thirty years of chemistry. Earl wasn't surprised. He's never surprised. \u2014 with Earl"
+  }
+ },
+ "earl-12": {
+  "id": "earl-12",
+  "arc": "earl",
+  "title": "Headlamp Required",
+  "brief": "Craft a Headlamp \u2014 battery pack, glass shard, copper wire, and two iron scrap at the workbench. Then hold it in hand and press G to toggle it. I don't care what you use it for. Stop bumping into things in the dark. That's my final answer.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "headlamp",
+    "label": "Craft a headlamp"
+   },
+   {
+    "type": "STAT",
+    "stat": "headlampUsed",
+    "count": 1,
+    "label": "Toggle the headlamp on"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-11"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 5
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Portable lighting \u2014 power and visibility in field work",
+   "kidPhrase": "A headlamp is just a battery with ambition and a lens. It lets you work anywhere. Real roboticists use them constantly. Now you know why.",
+   "memory": "Turned on the headlamp and saw my own shadow for the first time in the Deep Yard. Felt like I'd claimed the place. Earl noticed. He always notices. \u2014 with Earl"
+  }
+ },
+ "earl-13": {
+  "id": "earl-13",
+  "arc": "earl",
+  "title": "Waypoint Navigator",
+  "brief": "Here's your final test. Drop a Waypoint Flag with [Y]. Load the Waypoint Navigator preset in the Tile Editor. Run the bot. Watch it drive to the flag. That right there \u2014 that's GPS. That's real robotics. Do it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "EVENT",
+    "event": "waypoint_drop",
+    "count": 1,
+    "label": "Drop a waypoint flag"
+   },
+   {
+    "type": "STAT",
+    "stat": "waypointReached",
+    "count": 1,
+    "label": "Bot reaches the waypoint"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-12"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "vision_brain",
+     "qty": 1
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "GPS and dead reckoning \u2014 autonomous navigation",
+   "kidPhrase": "Drop a flag, tell the bot where it is, watch it steer there by bearing and distance. That's how delivery drones navigate city streets. You just built that brain.",
+   "memory": "The bot found the flag without being told the path. It just knew: bearing 45, distance 20, go. Like it was reading a map I couldn't see. That's when I understood \u2014 it's smarter than I am. \u2014 with Earl"
+  }
+ },
+ "earl-14": {
+  "id": "earl-14",
+  "arc": "earl",
+  "title": "Crystal Sweep",
+  "brief": "One last trick. Load the Ore Hunter preset in the Maker Bench \u2014 you need a Spark Brain for this one. Run your bot in the Deep Yard. The magnetic sensor sniffs out crystal ore from 10 blocks away. Same chip a real mining robot uses. Hall-effect IC on I2C. Go find something.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "STAT",
+    "stat": "oreDetections",
+    "count": 1,
+    "label": "Bot detects crystal ore"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-13"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 8
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Hall-effect sensing \u2014 magnetic field detection",
+   "kidPhrase": "A Hall-effect sensor doesn't see \u2014 it feels magnetic fields. It's the same chip a phone uses to detect a compass bearing. Point it at ore and it finds magnetism in rock.",
+   "memory": "The ore detector blinked green and my bot stopped like it found treasure. It had. A real sensor reading real magnetism. Earl said that's how mining robots work. He knows. \u2014 with Earl"
+  }
+ },
+ "earl-15": {
+  "id": "earl-15",
+  "arc": "earl",
+  "title": "Power the Sun",
+  "brief": "We're burning too much fuel, kid. Build a Solar Panel \u2014 glass shards, copper wire, circuit boards, and two iron scrap at the forge. Place it somewhere the sun hits. Clean energy, no fumes. I hate it. But I love it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "solar_panel",
+    "label": "Craft a solar panel"
+   },
+   {
+    "type": "STAT",
+    "stat": "solarPlaced",
+    "count": 1,
+    "label": "Place a solar panel in the world"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-14"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 3
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Renewable energy and power budgets",
+   "kidPhrase": "A solar panel turns light into electricity. You can't beat the supply cost \u2014 the sun does this for free every day. Real robots run on sun more than we admit.",
+   "memory": "Placed the solar panel and it caught light like it was made for it. Earl actually smiled about that one. He's an old fuel guy, but he gets clean energy. \u2014 with Earl"
+  }
+ },
+ "earl-16": {
+  "id": "earl-16",
+  "arc": "earl",
+  "title": "Deep Bore",
+  "brief": "The Deep Yard's metal walls are thick, and your arm's getting tired. I can see it from here. Build a Pneumatic Drill at the forge \u2014 iron scrap, gears, rubber, springs. Compressed air at 90 PSI. It'll go through metal like wet cardboard.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "pneumatic_drill",
+    "label": "Craft a pneumatic drill"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-15"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "iron_scrap",
+     "qty": 10
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Pneumatics \u2014 compressed air as a power source",
+   "kidPhrase": "A pneumatic drill is air moving really fast and angry. At 90 PSI, angry air cuts metal faster than muscle ever could. That's engineering: letting machines do the hard work.",
+   "memory": "Used the pneumatic drill on Deep Yard metal and it howled like it was alive. The drill wasn't pushing \u2014 it was barely containing the force. Respect. \u2014 with Earl"
+  }
+ },
+ "earl-17": {
+  "id": "earl-17",
+  "arc": "earl",
+  "title": "Full Coverage",
+  "brief": "I need to know what's buried in my yard without walking there. First wind yourself a Signal Antenna at the forge \u2014 copper wire, iron scrap, glass. Then the Radar Dish: circuit boards, copper wire, that antenna. Recipe book keeps the dish hidden till the antenna's real, so do that first. That's synthetic aperture radar, kid. In a scrapyard. Build it.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "antenna",
+    "label": "Craft a signal antenna (the radar recipe unlocks at this point)"
+   },
+   {
+    "type": "CRAFT",
+    "item": "radar_dish",
+    "label": "Craft a radar dish"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-16"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "signal_amp",
+     "qty": 1
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Remote sensing \u2014 radar and situational awareness",
+   "kidPhrase": "A radar dish listens for echoes. Send out a signal, wait for it to bounce back, and the time it takes tells you what's out there. That's how ships see through fog.",
+   "memory": "The radar lit up and the map transformed. Suddenly the whole yard had a skeleton \u2014 ore veins, metal concentrations, everything hidden. Earl called it 'industrial X-ray vision.' That stuck. \u2014 with Earl"
+  }
+ },
+ "earl-18": {
+  "id": "earl-18",
+  "arc": "earl",
+  "title": "See the Code",
+  "brief": "You've been running programs in a game. It's time you looked at what's actually going on underneath. Hit [T], load any program, then click the \u26a1 BUILD IT button. Read what comes out. That's real Arduino code. Real C++. It runs on a real chip.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "RECEIPT",
+    "count": 1,
+    "label": "View the firmware build receipt"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-17"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "circuit_board",
+     "qty": 3
+    },
+    {
+     "item": "battery_pack",
+     "qty": 2
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Cross-compilation \u2014 tiles to real code",
+   "kidPhrase": "Your tiles become C++ becomes machine code. No translation, no magic layer. The game just whispers what you drew to the compiler and the compiler makes it real.",
+   "memory": "Stared at the C++ and it suddenly made sense. Every loop, every condition, every line was something I told the tile editor to do. That code was mine. It was real. \u2014 with Earl"
+  }
+ },
+ "earl-19": {
+  "id": "earl-19",
+  "arc": "earl",
+  "title": "Lean Machine",
+  "brief": "Any bot can move. A good bot moves efficiently. Run your tile program and aim for a grade of B or better on the efficiency meter \u2014 that's BUDGET under 50%. Lean code means longer battery life on a real robot. That matters.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "RECEIPT",
+    "count": 2,
+    "label": "View 2 build receipts with efficiency grade B or better"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-18"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    },
+    {
+     "item": "copper_wire",
+     "qty": 5
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Code efficiency and power budgets",
+   "kidPhrase": "A lean program uses less CPU, runs faster, eats less battery. On a real robot with four AA batteries, that's the difference between two hours and twenty. Efficiency isn't luxury \u2014 it's survival.",
+   "memory": "Optimized the code and watched the BUDGET number drop. It felt like math was actually listening. Earl called that 'real engineering' and meant it. No sarcasm. That was worth more than anything. \u2014 with Earl"
+  }
+ },
+ "earl-20": {
+  "id": "earl-20",
+  "arc": "earl",
+  "title": "Finish the Chain",
+  "brief": "Last one. Flash your program to a real ESP32. Chrome browser, USB cable, WebSerial API. Click FLASH in the Tile Editor. Your tile program becomes machine code on actual hardware. That's the whole stack \u2014 game idea to silicon. Close the loop.",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "FLASH_BOARD",
+    "count": 1,
+    "label": "Flash firmware to real hardware"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-19"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "vision_brain",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 8
+    }
+   ],
+   "xp": 25,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Bootloaders and hardware flashing",
+   "kidPhrase": "Dead chips wake up with bootloaders. It's how you load life into metal. USB cable, firmware file, click FLASH, and suddenly a chip that was asleep speaks your language.",
+   "memory": "Clicked FLASH and the LED blinked. My program. On real hardware. The moment between 'game' and 'engineer' was that single blink. Earl watched without saying anything. He didn't need to. \u2014 with Earl"
+  }
+ },
+ "bolt-1": {
+  "id": "bolt-1",
+  "arc": "bolt",
+  "title": "Two Tenths Under",
+  "brief": "The test track isn't where the real racing lives. It's over at Circuit City \u2014 the oval. Load the Line Follower, run two clean laps, then ask Spark about PWM. That's pulse-width modulation. That's how you tell a motor to move fast without giving it permission to crash.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "LAP",
+    "count": 2,
+    "label": "Complete 2 laps on the oval"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "pwm",
+    "label": "Ask Spark about PWM"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-9"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "motor_driver",
+     "qty": 1
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "bolt": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "PWM (pulse-width modulation)",
+   "kidPhrase": "Motors don't have a gas pedal \u2014 they have a very fast light switch. Flip it fast enough and the motor feels it as speed. The ratio of on-time to off-time IS the speed.",
+   "memory": "Two laps at Circuit City. Bolt said the track finally respects us. PWM is how you whisper to a motor, and the motor listens. \u2014 with Bolt"
+  }
+ },
+ "bolt-2": {
+  "id": "bolt-2",
+  "arc": "bolt",
+  "title": "Speed Hardware",
+  "brief": "You've been thinking like a racer. Now build like one. Craft a Motor Driver or a Speed Coil \u2014 your choice, your bot, your risk. Then lap the oval under 28 seconds. That's sub-28. That's where the real drivers live.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "motor_driver",
+    "label": "Craft a motor driver (or speed coil)"
+   },
+   {
+    "type": "LAP",
+    "underSecs": 28,
+    "label": "Lap the oval under 28 seconds"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "speed_coil",
+     "qty": 1
+    },
+    {
+     "item": "ir_module",
+     "qty": 2
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "bolt": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Torque vs. speed \u2014 the racing engineer's dilemma",
+   "kidPhrase": "More voltage means more speed, but less control at the corners. Less voltage means you turn tight but you're slow on the straight. Real racers live in that tension.",
+   "memory": "The motor driver made everything louder and faster. Twenty-eight seconds felt like flying. Bolt said I hit corner two like I finally understood it was a corner, not a wall. \u2014 with Bolt"
+  }
+ },
+ "bolt-3": {
+  "id": "bolt-3",
+  "arc": "bolt",
+  "title": "The Ghost",
+  "brief": "There's something running the oval alone at midnight. Old bot. Fast bot. Dead bot. Its ghost runs the track over and over. Beat it. Get under 26 seconds and ask Spark what a ghost really is. No spoilers from me.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "LAP",
+    "underSecs": 26,
+    "label": "Lap the oval under 26 seconds"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "ghost",
+    "label": "Ask Spark about the ghost"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 5
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "bolt": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Line-following and sensor thresholds",
+   "kidPhrase": "A line sensor has a threshold \u2014 how bright before it counts as 'on the line.' Too high and you miss drifts, too low and you see ghosts in the shadows. Racing is tuning that line.",
+   "memory": "Beat the ghost by half a second. Bolt said that was the moment I stopped chasing somebody else's lap and started writing my own. The ghost was real \u2014 a memory. We race memories here. \u2014 with Bolt"
+  }
+ },
+ "bolt-4": {
+  "id": "bolt-4",
+  "arc": "bolt",
+  "title": "Consistency",
+  "brief": "Speed is noise. Consistency is signal. Run five full laps, all of them clean, none of them crashes. Let the track teach you the line. Perfection is boring. Repetition is everything.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "LAP",
+    "count": 5,
+    "label": "Complete 5 clean laps on the oval"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-3"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "battery_pack",
+     "qty": 2
+    },
+    {
+     "item": "circuit_board",
+     "qty": 2
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "bolt": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Hysteresis and stability in feedback loops",
+   "kidPhrase": "Consistent racing isn't about being perfect once. It's about being barely-good enough, over and over. That's hysteresis: the system remembers and resists change. Boring is fast.",
+   "memory": "Five laps. Lap three was the best. Laps one, two, four, five copied lap three like they had a blueprint. Bolt called it 'boring like a champion.' That's a compliment from him. \u2014 with Bolt"
+  }
+ },
+ "bolt-5": {
+  "id": "bolt-5",
+  "arc": "bolt",
+  "title": "The Hot Lap",
+  "brief": "One lap. Perfect lap. Twenty-four seconds. Every corner dialed in, every apex hit, every straight given everything. Ask Spark about PID. That's proportional-integral-derivative. That's the three little judges that live in every racing bot's head.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "LAP",
+    "underSecs": 24,
+    "label": "Lap the oval under 24 seconds"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "pid",
+    "label": "Ask Spark about PID"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-4"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "vision_brain",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 6
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "bolt": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "PID control \u2014 proportional, integral, derivative feedback",
+   "kidPhrase": "P judges where you are now, I remembers where you've been, D guesses where you're going. Together they keep a racing bot on the line without thinking. That's artificial wisdom.",
+   "memory": "Twenty-four seconds and Bolt sat silent for a long time. Then he said, 'That line was tight enough to race.' From Bolt, that's forever. \u2014 with Bolt"
+  }
+ },
+ "magma-1": {
+  "id": "magma-1",
+  "arc": "magma",
+  "title": "First Circuit",
+  "brief": "Hello, small builder. Come. I have something to show you. Craft a circuit board \u2014 copper wire, iron scrap, at the workbench. Then ask Spark about circuits. Electricity has rules, and they are beautiful rules.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "circuit_board",
+    "label": "Craft a circuit board"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "circuit",
+    "label": "Ask Spark about circuits"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-6"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "copper_wire",
+     "qty": 4
+    },
+    {
+     "item": "iron_scrap",
+     "qty": 5
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "magma": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Circuit design and component integration",
+   "kidPhrase": "A circuit is a conversation between parts. Electricity says, 'I want to flow.' A resistor says, 'Not so fast.' They negotiate. That negotiation is a circuit.",
+   "memory": "Magma watched me craft the circuit board. When it took shape, they cried a little. They said it was beautiful. A circuit board. Beautiful. That changed how I see building. \u2014 with Magma"
+  }
+ },
+ "magma-2": {
+  "id": "magma-2",
+  "arc": "magma",
+  "title": "Build a Sensor Module",
+  "brief": "Craft an IR module \u2014 glass shards, circuit boards, copper wire. Then run two programs on your bot. Something with that sensor. Sensors are the eyes of machines, and eyes need to be built with love.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "ir_module",
+    "label": "Craft an IR module"
+   },
+   {
+    "type": "RUN_PROGRAM",
+    "count": 2,
+    "label": "Run 2 tile programs with your bot"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "magma-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "ir_module",
+     "qty": 2
+    },
+    {
+     "item": "battery_pack",
+     "qty": 1
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "magma": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Sensor integration and I/O",
+   "kidPhrase": "An IR module sees light you can't see. It's infrared \u2014 heat light. A line-follower reads it and says, 'Black here, white there, I know where I am.' That's a conversation between light and logic.",
+   "memory": "Built the IR module and put it on the bot. Magma held it to the light and nodded. 'This one will see far,' they said. The bot could follow lines after that. Sight was beautiful. \u2014 with Magma"
+  }
+ },
+ "magma-3": {
+  "id": "magma-3",
+  "arc": "magma",
+  "title": "See the Real Code",
+  "brief": "You've built in tiles. Now see the truth. Click [T], load a program, hit BUILD IT, read the receipt. That's real Arduino code. Real firmware. Then ask Spark how firmware is born.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "RECEIPT",
+    "count": 1,
+    "label": "View a firmware build receipt"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "firmware",
+    "label": "Ask Spark about firmware"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "magma-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "circuit_board",
+     "qty": 3
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "magma": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Compilation and abstraction \u2014 tiles to C++",
+   "kidPhrase": "Your tiles are a language. The compiler is a translator that speaks machine. Your idea goes in, real firmware comes out. No magic \u2014 just translation through trust.",
+   "memory": "Stared at the C++ code and Magma looked too. 'This is where the magic lives,' they said. Not magic \u2014 translation. But close enough. \u2014 with Magma"
+  }
+ },
+ "magma-4": {
+  "id": "magma-4",
+  "arc": "magma",
+  "title": "Lean Code",
+  "brief": "Craft code that fits in the chip. View two build receipts and aim for efficiency grade B or better. A lean program is a program that respects the hardware. Tight is beautiful.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "RECEIPT",
+    "count": 2,
+    "label": "View 2 build receipts with grade B or better efficiency"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "magma-3"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    },
+    {
+     "item": "battery_pack",
+     "qty": 2
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "magma": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Code size budgets and optimization",
+   "kidPhrase": "An ATmega chip has maybe 2KB of program space. Your code has to fit snug, not bursting. That's embedded engineering \u2014 saying a lot with very little. Craft every byte.",
+   "memory": "Optimized the code and Magma watched the budget shrink. 'Snug, not strained,' they whispered. That's their whole philosophy. I'm learning it. \u2014 with Magma"
+  }
+ },
+ "magma-5": {
+  "id": "magma-5",
+  "arc": "magma",
+  "title": "First Flash",
+  "brief": "Last step. Real hardware. Real chip. Click FLASH and push your code to a real board. USB cable, WebSerial, live firmware on silicon. Watch the LED blink your program. That's not a game anymore, small builder.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "FLASH_BOARD",
+    "count": 1,
+    "label": "Flash firmware to real hardware"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "magma-4"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "vision_brain",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 7
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "magma": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Bootloaders and hardware flashing",
+   "kidPhrase": "Dead chips wake up with bootloaders. It's how you load life into metal. USB cable, firmware, click FLASH. Suddenly a chip that was asleep speaks your language and does your bidding.",
+   "memory": "The LED blinked my code on real hardware. Magma cried. A lot. They said, 'The light blinked your program.' I think that's the highest praise I'll ever get. \u2014 with Magma"
+  }
+ },
+ "juno-1": {
+  "id": "juno-1",
+  "arc": "juno",
+  "title": "The Survey",
+  "brief": "Hi! Hi! Hi! We're Juno and we have so many questions. But first \u2014 a survey. Visit Band 2 (Circuit City) and Band 3 (the Deep Yard). Map them. Learn them. Every place has secrets and we MUST know them all.",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "VISIT",
+    "biome": "band2",
+    "label": "Visit Circuit City"
+   },
+   {
+    "type": "VISIT",
+    "biome": "band3",
+    "label": "Visit the Deep Yard"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-7"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 3
+    },
+    {
+     "item": "circuit_board",
+     "qty": 2
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "juno": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Spatial mapping and exploration",
+   "kidPhrase": "Every band has a personality. Band 0 is what you know. Band 1 is industrial. Band 2 is electronic. Band 3 is mysteries in crystal. Knowing the map is half the science.",
+   "memory": "Juno circled us as we mapped the bands. Forty-one tiny fliers doing spirals of joy. They said we just discovered the whole yard. We didn't discover anything. We just went there. \u2014 with Juno"
+  }
+ },
+ "juno-2": {
+  "id": "juno-2",
+  "arc": "juno",
+  "title": "The Plaque Trail",
+  "brief": "Read 3 landmark plaques. Every plaque is a robot that crashed and learned you something. Failure analysis. The whole history of the yard is written in wrecks. Also it's VERY funny to see how things die.",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "PLAQUE_READ",
+    "count": 3,
+    "label": "Read 3 landmark plaques"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "battery_pack",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "juno": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Failure analysis and learning from crashes",
+   "kidPhrase": "Every plaque is a lesson somebody paid for by breaking something. Capacitors, diodes, fuses, watchdogs \u2014 these are all things a robot died teaching. Respect that.",
+   "memory": "Read the plaques and Juno translated. Sparky IX teaches capacitors, Zappa teaches flyback diodes, Fizz teaches the beauty of cheap fuses. Death and wisdom, all at once. \u2014 with Juno"
+  }
+ },
+ "juno-3": {
+  "id": "juno-3",
+  "arc": "juno",
+  "title": "Sensor Sweep",
+  "brief": "Craft an Ultrasonic Module or an Ore Scanner \u2014 your choice, your mystery. Then use it to detect one ore signal in the Deep Yard. Sensors are question-asking machines. Let yours ask.",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "ultrasonic_module",
+    "label": "Craft an ultrasonic or ore scanner module"
+   },
+   {
+    "type": "STAT",
+    "stat": "oreDetections",
+    "count": 1,
+    "label": "Bot detects one ore signal"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "ultrasonic_module",
+     "qty": 1
+    },
+    {
+     "item": "ore_scanner",
+     "qty": 1
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "juno": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Ultrasonic ranging and magnetic sensing",
+   "kidPhrase": "Ultrasonic bounces sound off things \u2014 you measure the echo delay and calculate distance. Hall-effect senses magnetism. Both are asking questions without touching. That's sensor philosophy.",
+   "memory": "The ultrasonic sensor pinged and pinged and pinged. Juno translated: depth, angle, intention. A sensor is a bot asking 'what's out there?' a hundred times a second. \u2014 with Juno"
+  }
+ },
+ "juno-4": {
+  "id": "juno-4",
+  "arc": "juno",
+  "title": "The Experiment",
+  "brief": "Frame a hypothesis. Something testable. 'Sensors read better at night' or 'tighter corners need different PWM' \u2014 anything. Then run 3 program versions, one change at a time. That's the scientific loop. Change one thing. Watch. Learn. Change one thing again.",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "EXPERIMENT",
+    "hypothesis": "sensor response varies with environmental conditions",
+    "runs": 3,
+    "label": "Design and run 3 experimental program runs"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-3"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "circuit_board",
+     "qty": 2
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 5
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "juno": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Scientific method and controlled variable testing",
+   "kidPhrase": "Science is just curiosity with a notebook. Change one thing, run it, write it down. Change one thing, run it, write it down. Repeat forever. That's how you learn what actually works.",
+   "memory": "Three runs with one variable changed. Juno tracked all three and drew charts in the air with their wings. They said we just did real science. Earl would call it engineering, but Juno was right first. \u2014 with Juno"
+  }
+ },
+ "juno-5": {
+  "id": "juno-5",
+  "arc": "juno",
+  "title": "The Deep Question",
+  "brief": "Go deeper. Visit the Deep Yard one more time. Read 5 plaques total. Ask Spark the weirdest question about sensors, robotics, or the yard itself. We've got a feeling you'll understand the answer better than anyone.",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "VISIT",
+    "biome": "band3",
+    "label": "Return to the Deep Yard"
+   },
+   {
+    "type": "PLAQUE_READ",
+    "count": 5,
+    "label": "Read 5 plaques total"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "sparky",
+    "label": "Ask Spark about the Sparky IV thread"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-4"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "vision_brain",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 8
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "juno": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Systems thinking and emergent behavior",
+   "kidPhrase": "A robot isn't alive until it asks questions. Sensors are questions. Programs are answers. When a robot asks enough questions and gets enough answers, something weird happens \u2014 it starts to act like it's thinking.",
+   "memory": "The Deep Yard looked different when I understood it. Juno said we just became explorers. Not the kind who find places \u2014 the kind who understand them. \u2014 with Juno"
+  }
+ },
+ "rivet-1": {
+  "id": "rivet-1",
+  "arc": "rivet",
+  "title": "Hands Dirty",
+  "brief": "Get your hands dirty, yeah? Mine 10 iron scrap \u2014 that's the foundation stuff. Then patch up your bot with a repair. A bot that breaks and gets fixed is a bot that learns. And you learn with it.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "MINE",
+    "item": "iron_scrap",
+    "count": 10,
+    "label": "Mine 10 iron scrap"
+   },
+   {
+    "type": "REPAIR",
+    "count": 1,
+    "label": "Repair your bot"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-5"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "repair_kit",
+     "qty": 1
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "rivet": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Preventive maintenance and care",
+   "kidPhrase": "A break is just feedback in loud font. Your bot crashes, you fix it, it works better because you learned what it needs. That's maintenance \u2014 and maintenance is where real engineers live.",
+   "memory": "Fixed the bot's dents with Rivet watching. They showed me how to log it, how to remember. Fixing things is beautiful if you pay attention to why it broke. \u2014 with Rivet"
+  }
+ },
+ "rivet-2": {
+  "id": "rivet-2",
+  "arc": "rivet",
+  "title": "The Toolbox",
+  "brief": "Craft a Repair Kit \u2014 iron scrap, copper wire, circuit boards. Then repair your bot two more times. A good engineer carries good tools and knows how to use them. The difference between guessing and diagnosing is a repair kit.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "repair_kit",
+    "label": "Craft a repair kit"
+   },
+   {
+    "type": "REPAIR",
+    "count": 2,
+    "label": "Repair your bot 2 more times"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "battery_pack",
+     "qty": 2
+    },
+    {
+     "item": "spring",
+     "qty": 5
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "rivet": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Diagnosis and systematic repair",
+   "kidPhrase": "A diagnosed repair beats a guessed one every time. You look, you measure, you understand, THEN you fix. That's how field techs think. That's how you keep things alive.",
+   "memory": "The repair kit made it official. Not just fixing things \u2014 maintaining them. Rivet said every repair is a promise. Promises count. \u2014 with Rivet"
+  }
+ },
+ "rivet-3": {
+  "id": "rivet-3",
+  "arc": "rivet",
+  "title": "The Compass",
+  "brief": "Navigation time. Drop a waypoint flag with [Y]. Let your bot reach it using the Waypoint Navigator preset. Then ask Rivet about dead reckoning. That's bearing plus distance \u2014 no GPS, no satellites. Just math and guts.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "EVENT",
+    "event": "waypoint_drop",
+    "count": 1,
+    "label": "Drop a waypoint flag"
+   },
+   {
+    "type": "STAT",
+    "stat": "waypointReached",
+    "count": 1,
+    "label": "Bot reaches the waypoint"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    },
+    {
+     "item": "copper_wire",
+     "qty": 3
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "rivet": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Dead reckoning and bearing/distance navigation",
+   "kidPhrase": "Dead reckoning: bearing says which way, distance says how far. No lookups, no maps \u2014 just two numbers and a compass. That's how ships navigated before GPS. That's how your bot does it now.",
+   "memory": "Watched the bot steer by numbers alone. Bearing 45, distance 20. It just... knew. Rivet said that's the oldest trick in navigation. Oldest tricks last the longest. \u2014 with Rivet"
+  }
+ },
+ "rivet-4": {
+  "id": "rivet-4",
+  "arc": "rivet",
+  "title": "Every Corner",
+  "brief": "Visit all four bands \u2014 the Gate, the Corridor, Circuit City, the Deep Yard. Then mine 3 crystal ore. You've been in parts, but now you know the whole yard. Every corner is a resource. Every zone teaches something different.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "VISIT",
+    "biome": "band0",
+    "label": "Visit the Gate area"
+   },
+   {
+    "type": "VISIT",
+    "biome": "band1",
+    "label": "Visit the Industrial Corridor"
+   },
+   {
+    "type": "VISIT",
+    "biome": "band2",
+    "label": "Visit Circuit City"
+   },
+   {
+    "type": "VISIT",
+    "biome": "band3",
+    "label": "Visit the Deep Yard"
+   },
+   {
+    "type": "MINE",
+    "item": "crystal_fragment",
+    "count": 3,
+    "label": "Mine 3 crystal ore"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-3"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "night_goggles",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 6
+    }
+   ],
+   "xp": 38,
+   "bond": {
+    "rivet": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Spatial reasoning and yards as memory palaces",
+   "kidPhrase": "A yard is a memory palace if you know how to read it. Band 0 is where you start, Band 1 is industrial might, Band 2 is circuits and logic, Band 3 is mystery. The map becomes a story.",
+   "memory": "Visited every corner and suddenly the yard made sense. Not as scrap piles \u2014 as zones. Each one a district. Each one teaching. Rivet said the map is memory. I'm building both. \u2014 with Rivet"
+  }
+ },
+ "rivet-5": {
+  "id": "rivet-5",
+  "arc": "rivet",
+  "title": "The Keeper's Round",
+  "brief": "Last patrol. Run 3 full laps on the oval, then repair your bot one more time. Keep it together and keep it moving. A keeper's round is how you know everything's working. Then ask Spark about systems thinking.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "LAP",
+    "count": 3,
+    "label": "Complete 3 laps on the oval"
+   },
+   {
+    "type": "REPAIR",
+    "count": 1,
+    "label": "Repair your bot"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "maintenance",
+    "label": "Ask Spark about systems and maintenance"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-4"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "vision_brain",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 7
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "rivet": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Systems thinking and integrated maintenance",
+   "kidPhrase": "A robot isn't just motors and code and sensors. It's all of it, working together. When one part breaks, the whole system feels it. Maintenance isn't fixing broken things \u2014 it's keeping systems alive.",
+   "memory": "Three laps, a repair, one question. Rivet said I just became a keeper. Not an owner, not a builder \u2014 a keeper. The bot is kept. The yard is kept. I'm learning to keep things. \u2014 with Rivet"
+  }
+ },
+ "finale-midnight-race": {
+  "id": "finale-midnight-race",
+  "arc": "finale",
+  "title": "The Midnight Race",
+  "brief": "It's midnight. Floodlights full. The whole county's on the bleachers. Mo's out there \u2014 the Ghost \u2014 running the oval like they own it. Earl walks up and hands you the start gate. 'You get the gate, kid. Twenty-two seconds. That's it. That's the whole race. Go.'",
+  "affinity": "earl",
+  "objectives": [
+   {
+    "type": "LAP",
+    "underSecs": 22,
+    "label": "Lap the oval under 22 seconds"
+   },
+   {
+    "type": "REPAIR",
+    "count": 1,
+    "label": "Repair your bot (pit stop)"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "ghost",
+    "label": "Ask Spark about the Ghost"
+   }
+  ],
+  "prerequisites": {
+   "quests": [],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "vision_brain",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 10
+    }
+   ],
+   "xp": 100,
+   "bond": {},
+   "flags": [
+    "yard_legend"
+   ]
+  },
+  "teaching": {
+   "concept": "Closed-loop mastery \u2014 the whole stack",
+   "kidPhrase": "Every sensor reading, every line of code, every repair, every lap, every question you asked \u2014 they all conspired to make this one moment. A closed loop means you built everything, end-to-end. From game to ghost to glory.",
+   "memory": "Midnight. Floodlights full. Earl's hands off the gate for the first time in twenty-six years. Mo was real and we were ready. Every skill was a lap all along. \u2014 with Earl"
+  }
+ },
+ "yard-1": {
+  "id": "yard-1",
+  "arc": "yard",
+  "title": "The Yard Knows Your Name",
+  "brief": "That's the story told, kid \u2014 the first one, anyway. You stood the watch. You kept your voice down. And somewhere between the floodlights and that last corner, the yard noticed you noticing it. Take one more lap, any pace you like, and ask Spark what it thinks about the ghost now. Then keep your ear to the ground: something paces the oval some evenings, unhurried, like it's saving laps up for something. The leaderboard's grown a second page nobody chalks on. And Quill's forty-third verse is called 'The Drum' \u2014 he says it isn't finished. Neither is this place. The yard knows your name now. Ask it what's next.",
+  "affinity": "yard",
+  "objectives": [
+   {
+    "type": "SPARK_ASK",
+    "topic": "ghost",
+    "label": "Ask Spark what it thinks about the ghost now"
+   },
+   {
+    "type": "LAP",
+    "count": 1,
+    "label": "Take one more lap \u2014 any pace"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-12",
+    "bolt-3"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 5
+    }
+   ],
+   "xp": 50,
+   "bond": {},
+   "flags": [
+    "yard_knows_you"
+   ]
+  },
+  "teaching": {
+   "concept": "Post-game as open door \u2014 a finished story is a yard with more rooms",
+   "kidPhrase": "A finished story is just a yard with more rooms. Every project you 'finish' opens doors instead of closing them \u2014 new questions, new routes, second pages. The end of a build isn't a wall. It's a doorway wearing a bow.",
+   "memory": "One more lap for nobody's benefit, one more question with no hurry in it at all. The yard knows my name now. I'm going to ask it what's next. \u2014 with Earl"
+  }
+ },
+ "ch7-1": {
+  "id": "ch7-1",
+  "arc": "chapter",
+  "title": "The Header",
+  "brief": "That diagram you exported? It's got a header \u2014 top of the file, where the boring-but-important stuff lives. Most kids scroll right past it. Not you. Pull up a build receipt, read the header top to bottom, and see who signed it. Then ask Spark about the author \u2014 QA-Sticker #7. Watch Spark's face when you say the name. Count the seconds.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "RECEIPT",
+    "count": 1,
+    "label": "Read a build receipt top to bottom \u2014 header included"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "author",
+    "label": "Ask Spark who wrote the export template"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-8"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "circuit_board",
+     "qty": 2
+    },
+    {
+     "item": "battery_pack",
+     "qty": 1
+    }
+   ],
+   "xp": 30,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Attribution and provenance \u2014 every program has an author",
+   "kidPhrase": "Every program has an author \u2014 someone who made it on purpose. The header of a file is where they sign their work, like a plaque on a wreck. Reading it tells you who to thank, who to ask, and whose bugs you inherited. Always read the header.",
+   "memory": "Found the credit in the header: QA-Sticker #7. Spark read it over my shoulder and went quiet for exactly one second too long. I counted. \u2014 with Earl"
+  }
+ },
+ "ch7-2": {
+  "id": "ch7-2",
+  "arc": "chapter",
+  "title": "Same Brain, Two Bodies",
+  "brief": "One brain, two bodies. Run your tile program three times on the game bot \u2014 then flash that same brain to a real board. Same tiles, same code, different body. The brain doesn't care what it's riding in. That's the whole trick, kid, and it isn't a trick.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "RUN_PROGRAM",
+    "count": 3,
+    "label": "Run your program 3 times on the game bot"
+   },
+   {
+    "type": "FLASH_BOARD",
+    "count": 1,
+    "label": "Flash the same program to a real board"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "ch7-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "battery_pack",
+     "qty": 2
+    }
+   ],
+   "xp": 32,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Hardware abstraction \u2014 one brain, many bodies",
+   "kidPhrase": "A good program doesn't know what body it's running in. Game bot, Wokwi simulator, a real chip on your desk \u2014 same brain, different bodies. Engineers call it hardware abstraction, and it's why your code can move house without starting over.",
+   "memory": "Three runs in the game, one flash on real silicon, one brain the whole way through. Game robot, real robot, same program. Earl wasn't kidding. He rarely is. \u2014 with Earl"
+  }
+ },
+ "ch7-3": {
+  "id": "ch7-3",
+  "arc": "chapter",
+  "title": "Friendly Research",
+  "brief": "June wants a copy of your export. Her exact words: 'for\u2026 research. Friendly research.' I don't negotiate exports, so that's your problem now. Give her something worth copying \u2014 three clean laps on the oval and one tidy build receipt. A rival who studies your work and makes you faster for it? Keep that kind. They're rare.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "LAP",
+    "count": 3,
+    "label": "Complete 3 clean laps worth copying"
+   },
+   {
+    "type": "RECEIPT",
+    "count": 1,
+    "label": "Pull one tidy build receipt for June"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "ch7-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "copper_wire",
+     "qty": 4
+    },
+    {
+     "item": "ir_module",
+     "qty": 2
+    }
+   ],
+   "xp": 34,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Sharing work \u2014 the open-source spirit",
+   "kidPhrase": "Sharing your build isn't giving away your speed \u2014 it's raising everybody's. When a rival studies your export, you both get faster: they find your good ideas, and their questions find your soft spots. That's the open-source spirit. Friendly rivalry is just peer review with chalk.",
+   "memory": "Handed June the export like a baseball card. 'Friendly research,' she said. Next morning she had a note about my corner two. I hate how right she was. \u2014 with Earl"
+  }
+ },
+ "ch8-1": {
+  "id": "ch8-1",
+  "arc": "chapter",
+  "title": "The Fourteen Letters",
+  "brief": "The wrecks out in the yard aren't wrecks, kid. They're mail. Brightworks bolted a plaque to every crash \u2014 brownout, stall current, the whole curriculum of almost \u2014 and every one of those plaques is a letter to whoever's next. You're next. Read eight of them. Take your time. Mail this old keeps.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "PLAQUE_READ",
+    "count": 8,
+    "label": "Read 8 landmark plaques (open the mail)"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 3
+    }
+   ],
+   "xp": 34,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Failure analysis \u2014 post-mortems as mail from the future",
+   "kidPhrase": "A post-mortem is mail from the future. Somebody crashed so you wouldn't have to, and they wrote down why and bolted it to the wreck. Reading their plaque means you skip their tuition. Failure, analyzed, is the cheapest education in engineering.",
+   "memory": "Eight plaques, eight letters from robots I never met. Zappa's flyback diode. Fizz's beautiful cheap fuse. Every one of them wrote to me. \u2014 with Earl"
+  }
+ },
+ "ch8-2": {
+  "id": "ch8-2",
+  "arc": "chapter",
+  "title": "Ask Spark Why Someday",
+  "brief": "There's one plaque out there that works different. Sparky IV's. It says: 'ask Spark why someday.' So \u2014 read all ten plaques (yes, all ten; the yard keeps finding more), and then go ask Spark about Sparky. Fair warning: Spark doesn't know either. Its logs have a hole where the answer should be. Ask anyway. Holes don't get smaller by being ignored.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "PLAQUE_READ",
+    "count": 10,
+    "label": "Read all 10 landmark plaques"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "sparky",
+    "label": "Ask Spark about Sparky IV"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "ch8-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    },
+    {
+     "item": "glass_shard",
+     "qty": 3
+    }
+   ],
+   "xp": 36,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Post-mortems and missing data",
+   "kidPhrase": "Sometimes the data has a hole in it \u2014 pages missing, static where the answer should be. Engineers don't pretend the hole isn't there; they mark it, write down what's around it, and keep asking. A hole is information too: it tells you exactly where to dig.",
+   "memory": "Sparky IV's plaque says 'ask Spark why someday.' I asked. Spark did its half-second static blink \u2014 'log's got a hole in it, like Earl's screen door' \u2014 and changed the subject once, honestly. First time I watched not-knowing cost something. \u2014 with Earl"
+  }
+ },
+ "ch8-3": {
+  "id": "ch8-3",
+  "arc": "chapter",
+  "title": "Wrecks Worth Fixing",
+  "brief": "You've read the mail. Now answer some. Three repairs and two clean program runs \u2014 take something that almost worked and give it a second shift. Not every wreck gets one. The ones that taught you something? Those earned the effort. Fix forward, kid. It's how the dead robots vote.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "REPAIR",
+    "count": 3,
+    "label": "Repair 3 almosts (second shift)"
+   },
+   {
+    "type": "RUN_PROGRAM",
+    "count": 2,
+    "label": "Run 2 clean verification programs"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "ch8-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "repair_kit",
+     "qty": 1
+    },
+    {
+     "item": "spring",
+     "qty": 3
+    }
+   ],
+   "xp": 38,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Post-mortem to preventive maintenance",
+   "kidPhrase": "A post-mortem that doesn't change your behavior is just a sad story. The point is prevention: tighten the connector the plaque warned about, fuse the line Fizz died to fuse. Reading failure is step one. Doing the maintenance it prescribes is the whole staircase.",
+   "memory": "Three repairs, two clean runs, zero repeated mistakes from anybody's plaque. Fizz would've liked that one. Cheap fuses, expensive lessons, no reruns. \u2014 with Earl"
+  }
+ },
+ "ch9-1": {
+  "id": "ch9-1",
+  "arc": "chapter",
+  "title": "Stand the Watch",
+  "brief": "You've got a headlamp now. Good. Head into Circuit City after dark and find yourself a view of the oval's last corner. Stand still. Watch. Don't holler \u2014 that part's not negotiable. And ask Spark about the ghost while you're out there. It's got something to say about its dock schedule. It's been chewing on it.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "VISIT",
+    "biome": "band2",
+    "label": "Reach Circuit City after dark"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "ghost",
+    "label": "Ask Spark about the ghost"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "earl-12"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "battery_pack",
+     "qty": 2
+    },
+    {
+     "item": "copper_wire",
+     "qty": 3
+    }
+   ],
+   "xp": 38,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Evidence discipline \u2014 observe before concluding",
+   "kidPhrase": "Good engineers observe before they conclude. Don't guess what the light is \u2014 record where it appears, how it moves, where it never goes. Evidence first, theories second, hollering never. The corner was there long before your opinion of it was.",
+   "memory": "Stood the watch at the candlelight corner, still as a fencepost. Spark confessed it's never awake at midnight \u2014 the dock's schedule predates it, can't be edited, it's TRIED. 'Which is starting to feel like a setting,' it said. It wasn't joking. \u2014 with Earl"
+  }
+ },
+ "ch9-2": {
+  "id": "ch9-2",
+  "arc": "chapter",
+  "title": "The Ledger Rules",
+  "brief": "June runs the sighting ledger, and June has rules: mark it, time it, angle it. Drop three waypoint flags \u2014 three lines of sight onto that corner, three angles in the book. Then ask Spark how GPS actually works, because June will ask YOU, and 'a wizard did it' is the wrong answer.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "EVENT",
+    "event": "waypoint_drop",
+    "count": 3,
+    "label": "Drop 3 waypoint flags (three angles on the corner)"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "gps",
+    "label": "Ask Spark how GPS actually works"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "ch9-1"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "waypoint_flag",
+     "qty": 2
+    }
+   ],
+   "xp": 40,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Data logging, timestamping, and correlation",
+   "kidPhrase": "One reading is an anecdote. Three readings with positions, angles, and timestamps are a dataset. Write down where, when, and which way you were looking, and patterns run out of places to hide. That's data logging \u2014 a ledger is a lab notebook with better gossip.",
+   "memory": "Three flags, three angles, one ledger. June checked my timestamps and said 'acceptable,' which from June is a parade. Then she quizzed me on GPS. I had the answer. She wrote THAT down too. \u2014 with Earl"
+  }
+ },
+ "ch9-3": {
+  "id": "ch9-3",
+  "arc": "chapter",
+  "title": "Precise and Quiet",
+  "brief": "Last watch. One lap, under thirty seconds \u2014 and that's slow on purpose, kid. This isn't a race. It's a watch: eyes on the candlelight corner the whole way around, clean enough that you never have to look at the track. Then ask Spark about the '98 crash. Fair warning \u2014 I'm going to get precise and quiet. Notice what I do and don't say. That's data too.",
+  "affinity": "chapter",
+  "objectives": [
+   {
+    "type": "LAP",
+    "underSecs": 30,
+    "label": "Run one deliberate watch-lap under 30 seconds"
+   },
+   {
+    "type": "SPARK_ASK",
+    "topic": "sparky",
+    "label": "Ask Spark about the '98 crash"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "ch9-2"
+   ],
+   "flags": [],
+   "companionTier": null
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    },
+    {
+     "item": "signal_flare",
+     "qty": 2
+    }
+   ],
+   "xp": 44,
+   "bond": {},
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Reading people like sensors \u2014 signal vs noise in testimony",
+   "kidPhrase": "People are sensors too \u2014 they just read out in tone instead of numbers. When someone goes precise and quiet, that's signal, not noise: it marks the spot where the important part lives, even when the words don't. Listen for what's missing. It's the loudest channel there is.",
+   "memory": "The slow lap took twenty-nine seconds and I never took my eyes off the corner. Then Earl on the '98 crash: short sentences, careful hands, not one word about who. The hole in his answer had a shape. I didn't have a name for it yet. \u2014 with Earl"
+  }
+ },
+ "bolt-side-1": {
+  "id": "bolt-side-1",
+  "arc": "side",
+  "title": "The Fence Test",
+  "brief": "Five laps and one ghost. That's the assignment. I'll be at the pit wall, where I always am, not leaning in. Ignore the chassis tilt if you see it. It's wind. Run the laps. Beat the ghost. I'll time both. That part's not negotiable.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "LAP",
+    "count": 5,
+    "label": "Run 5 warm-up laps on the oval"
+   },
+   {
+    "type": "EVENT",
+    "event": "ghost_beaten",
+    "count": 1,
+    "label": "Beat 1 ghost time"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-5"
+   ],
+   "flags": [],
+   "companionTier": {
+    "bolt": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "motor_driver",
+     "qty": 1
+    },
+    {
+     "item": "battery_pack",
+     "qty": 1
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "bolt": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Warm-up sets and baseline laps",
+   "kidPhrase": "Pros don't chase their best time cold. They run warm-up laps to find the day's baseline \u2014 how the track feels RIGHT NOW \u2014 and only then start hunting. Five steady laps before one fast one isn't patience. It's method.",
+   "memory": "Five laps while Bolt pretended not to watch, then one ghost retired. 'Ownership transferred,' it said. The chassis tilted half a degree. I saw it. I said nothing. \u2014 with Bolt"
+  }
+ },
+ "bolt-side-2": {
+  "id": "bolt-side-2",
+  "arc": "side",
+  "title": "Two Tenths of Truth",
+  "brief": "Sub-24. And you're getting there the boring way: three experiment runs testing whether steady beats fast. Same line, same braking point, three times. \u2026Unless you should brake later at two. You shouldn't. \u2026Data first. The fence says fast fixes everything. The fence is \u2014 look. Just run the laps. I'm timing. Out loud. Sorry in advance.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "LAP",
+    "underSecs": 24,
+    "label": "Lap the oval under 24 seconds"
+   },
+   {
+    "type": "EXPERIMENT",
+    "hypothesis": "steady beats fast",
+    "runs": 3,
+    "label": "Run 3 experiments: steady vs fast"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-side-1"
+   ],
+   "flags": [],
+   "companionTier": {
+    "bolt": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "ir_module",
+     "qty": 2
+    },
+    {
+     "item": "battery_pack",
+     "qty": 1
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "bolt": 12
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Consistency as the delivery system for speed",
+   "kidPhrase": "Fast that crashes is slow \u2014 June's line, and it's true. A consistent 24.0 beats a hero 22.9 followed by a wall. Test it yourself: run steady, run spikey, compare the averages. Consistency isn't the absence of speed. It's how speed gets delivered.",
+   "memory": "Bolt argued with itself through all three runs \u2014 'brake later' / 'don't you dare brake later' \u2014 while calling my splits. Steady won by two tenths. It said 'told you' to itself. \u2014 with Bolt"
+  }
+ },
+ "bolt-side-3": {
+  "id": "bolt-side-3",
+  "arc": "side",
+  "title": "The Lean-In",
+  "brief": "Twenty-three. That's June territory \u2014 don't tell her I said so. One fast lap, then bring the bot in for a pit stop over your own build, my hands on the wrench, this once. I've got something to say and I say it better holding a tool. Twenty years I leaned AWAY from that wall so nobody saw me flinch at the fast parts. Yours \u2014 I lean in now. That's the leak. I quit patching it.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "LAP",
+    "underSecs": 23,
+    "label": "Lap the oval under 23 seconds"
+   },
+   {
+    "type": "REPAIR",
+    "count": 1,
+    "label": "One pit stop over your own bot"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-side-2"
+   ],
+   "flags": [],
+   "companionTier": {
+    "bolt": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 6
+    },
+    {
+     "item": "motor_driver",
+     "qty": 1
+    }
+   ],
+   "xp": 45,
+   "bond": {
+    "bolt": 15
+   },
+   "flags": [
+    "bolt_opened"
+   ]
+  },
+  "teaching": {
+   "concept": "Pit stops and present crews",
+   "kidPhrase": "Pit stops are where races are actually won: the fastest lap on Earth still has to stop for tires someday, and a crew that leans IN \u2014 present, ready, caring \u2014 saves more time than ten horsepower. Showing up for somebody is a technical skill.",
+   "memory": "Twenty-three flat, then a pit stop with Bolt's hands on the wrench. 'I lean in now,' it said. 'That's the leak. I quit patching it.' Best pit-wall speech I'll ever get. \u2014 with Bolt"
+  }
+ },
+ "magma-side-1": {
+  "id": "magma-side-1",
+  "arc": "side",
+  "title": "The Box Marked Keep",
+  "brief": "Hello, small builder. Before we begin, a small thing. There is a crate in the workshop marked KEEP. I have guarded it since the shutdown. I will tell you what is inside it \u2014 soon. Not yet. First, build me a circuit board, and let me read the receipt of your build. Old habit: I like to know a thing was made well before I say important things near it.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "CRAFT",
+    "item": "circuit_board",
+    "label": "Craft a circuit board, snug not strained"
+   },
+   {
+    "type": "RECEIPT",
+    "count": 1,
+    "label": "Read the build receipt together"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "magma-5"
+   ],
+   "flags": [],
+   "companionTier": {
+    "magma": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "copper_wire",
+     "qty": 4
+    },
+    {
+     "item": "circuit_board",
+     "qty": 1
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "magma": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Build records and craftsmanship trails",
+   "kidPhrase": "Every circuit board carries a record of how it was made \u2014 what parts, what joins, what tests it passed. Reading the build receipt is how you know a thing was made well. Craftsmanship leaves a paper trail. Follow it.",
+   "memory": "Built the board slow while Magma talked around a crate marked KEEP. It did not open it. 'Soon,' it said. The board was snug. Not strained. \u2014 with Magma"
+  }
+ },
+ "magma-side-2": {
+  "id": "magma-side-2",
+  "arc": "side",
+  "title": "Heavy Hands, Light Touch",
+  "brief": "Today you flash a real board. I will be nearby. Not over your shoulder. \u2026I will be a little over your shoulder. My arms may twitch toward the cable. Ignore them; they are old and loyal and wrong. The rule stands, even on real silicon: one knob at a time \u2014 two experiment runs, one change each. Heavy hands can be trusted with light work, small builder. I am practicing believing that.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "FLASH_BOARD",
+    "count": 1,
+    "label": "Flash firmware to a real board"
+   },
+   {
+    "type": "EXPERIMENT",
+    "hypothesis": "one knob at a time, even on real boards",
+    "runs": 2,
+    "label": "Run 2 experiments, one change each"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "magma-side-1"
+   ],
+   "flags": [],
+   "companionTier": {
+    "magma": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "circuit_board",
+     "qty": 3
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "magma": 12
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Method under stakes \u2014 discipline when it's real",
+   "kidPhrase": "Real hardware raises the stakes, not the method: when the board is real and the smoke is real, one-knob-at-a-time gets MORE important, not less. It isn't a training wheel. It's how professionals treat things they can't afford to break.",
+   "memory": "Flashed the board with Magma hovering two feet back, arms twitching toward the cable the whole time. It touched nothing. 'That,' it said, 'was my heaviest lift yet.' \u2014 with Magma"
+  }
+ },
+ "magma-side-3": {
+  "id": "magma-side-3",
+  "arc": "side",
+  "title": "Set It Down",
+  "brief": "The crate marked KEEP is open now, small builder. Come. Two repairs \u2014 hammer hour, patient, logged \u2014 and one solar panel, because the precious thing I kept is a seed of light and it deserves a home that faces the sun. At the factory, everything I lifted eventually went into boxes, so I learned to set things down gently. Goodbyes, I mean. But you build things that STAY. So I am setting this one down in the sunniest place I know. It is yours. Hold it carefully, like you hold everything.",
+  "affinity": "magma",
+  "objectives": [
+   {
+    "type": "REPAIR",
+    "count": 2,
+    "label": "Two patient repairs, logged in the book"
+   },
+   {
+    "type": "CRAFT",
+    "item": "solar_panel",
+    "label": "Craft a solar panel (a home facing the sun)"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "magma-side-2"
+   ],
+   "flags": [],
+   "companionTier": {
+    "magma": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "solar_panel",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    }
+   ],
+   "xp": 45,
+   "bond": {
+    "magma": 15
+   },
+   "flags": [
+    "magma_opened"
+   ]
+  },
+  "teaching": {
+   "concept": "Letting go as re-homing \u2014 nothing ends, it gets a next home",
+   "kidPhrase": "Knowing when to let go is an engineering skill: parts retire, projects ship, prototypes become plaques. The trick is giving each precious thing its next good home \u2014 a new chassis, a new builder, a sunny shelf \u2014 instead of a box. Nothing ends. It gets re-homed.",
+   "memory": "Two repairs, one solar panel, and the thing from the crate marked KEEP \u2014 Magma set it down in our sunniest corner and did not cry. 'It was never smoke,' it said. 'Now you know the whole truth.' \u2014 with Magma"
+  }
+ },
+ "juno-side-1": {
+  "id": "juno-side-1",
+  "arc": "side",
+  "title": "Forty Voices, One Shy",
+  "brief": "Point of order! Survey trip! Deep Yard, full curiosity net \u2014 AND a stop at Spark's, official topic: sensors. Unofficial topic: also sensors. \u2026Also: one of us has a question she never gets to ask. Forty of us talk; she doesn't; that's the arithmetic. We're working on the arithmetic. Fly with us?",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "SPARK_ASK",
+    "topic": "sensor",
+    "label": "Ask Spark about sensors"
+   },
+   {
+    "type": "VISIT",
+    "biome": "band3",
+    "label": "Survey the Deep Yard with the full net out"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-5"
+   ],
+   "flags": [],
+   "companionTier": {
+    "juno": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "ultrasonic_module",
+     "qty": 1
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 3
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "juno": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Swarm sensing and hearing the quiet channel",
+   "kidPhrase": "A sensor swarm's strength is coverage \u2014 forty viewpoints at once. But every swarm has a quiet sensor whose reading gets shouted down. Good data collectors lower the volume on purpose sometimes, so the quiet signals get through. That's filtering, with manners.",
+   "memory": "Deep Yard with the whole net out, then Spark on sensors while one small flier hung at the back, question unasked. Forty-one of them. I counted twice. \u2014 with Juno"
+  }
+ },
+ "juno-side-2": {
+  "id": "juno-side-2",
+  "arc": "side",
+  "title": "The Volume Knob",
+  "brief": "ANNOUNCEMENT: we are going quiet. Whole survey. No commentary. We can do this. \u2026This is us being quiet. \u2026Okay, THAT was commentary about being quiet, which is different\u2014 point of order\u2014 no. No! Quiet means the shy one gets airtime. Hypothesis for you, three runs: 'quiet watching counts too.' Run your programs, change one thing, and only WATCH until the end. We'll be over here. Not talking. We're SO good at waiting. In formation.",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "EXPERIMENT",
+    "hypothesis": "quiet watching counts too",
+    "runs": 3,
+    "label": "Run 3 experiments: watch quietly to the end"
+   },
+   {
+    "type": "RUN_PROGRAM",
+    "count": 2,
+    "label": "Run 2 programs with the volume down"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-side-1"
+   ],
+   "flags": [],
+   "companionTier": {
+    "juno": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "ldr_module",
+     "qty": 2
+    },
+    {
+     "item": "battery_pack",
+     "qty": 1
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "juno": 12
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Turning sensors down to turn data up",
+   "kidPhrase": "Fewer exclamations, more observation. Try it: run your program and say nothing \u2014 to Spark, to yourself, to nobody \u2014 until the end. Quiet watching counts. The swarm proved it three times out of three.",
+   "memory": "Juno ran a whole survey in near-silence \u2014 forty fliers holding formation, one voice at a time. Three runs proved it: quiet watching counts. Their shyest result yet. \u2014 with Juno"
+  }
+ },
+ "juno-side-3": {
+  "id": "juno-side-3",
+  "arc": "side",
+  "title": "The Invitation",
+  "brief": "We have a thing to ask. We've been practicing. Ready? \u2026If we were quiet \u2014 really quiet, swarm-at-rest quiet \u2014 would you still walk with us? You don't have to answer with words. Answer with flags: drop two waypoints through the Deep Yard, with a solo route between them. There's one of us \u2014 her name is Ping. She has never flown a route alone. Invite her. By name. She's been ready for years. We've been ready for minutes. It varies.",
+  "affinity": "juno",
+  "objectives": [
+   {
+    "type": "EVENT",
+    "event": "waypoint_drop",
+    "count": 2,
+    "label": "Drop 2 waypoints to frame a solo route"
+   },
+   {
+    "type": "VISIT",
+    "biome": "band3",
+    "label": "Walk the Deep Yard with Ping's route"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "juno-side-2"
+   ],
+   "flags": [],
+   "companionTier": {
+    "juno": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "waypoint_flag",
+     "qty": 2
+    },
+    {
+     "item": "crystal_fragment",
+     "qty": 5
+    }
+   ],
+   "xp": 45,
+   "bond": {
+    "juno": 15
+   },
+   "flags": [
+    "juno_opened"
+   ]
+  },
+  "teaching": {
+   "concept": "Opening a channel for the quiet node",
+   "kidPhrase": "Every network has nodes that never transmit \u2014 not because they have nothing to say, but because the channel is always full. Opening a route for one quiet signal \u2014 naming it, inviting it, giving it a slot \u2014 is what turns a crowd into a crew.",
+   "memory": "Two flags and a solo route between them. Ping flew it \u2014 first route of her own, low and steady \u2014 while forty fliers cheered so quietly it looked like stillness. \u2014 with Juno"
+  }
+ },
+ "rivet-side-1": {
+  "id": "rivet-side-1",
+  "arc": "side",
+  "title": "The Fourth Thing",
+  "brief": "Ok so \u2014 job for you. Two repairs and a fresh wrench, because yours has stories now and mine are all secondhand. Me? I'm good at three things: holding, spotting, counting. That's the inventory. \u2026Need a fourth? I'll learn it by tomorrow. That's not eagerness. That's a schedule. Ignore the last part. Wrench first.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "REPAIR",
+    "count": 2,
+    "label": "Repair 2 dents, logged"
+   },
+   {
+    "type": "CRAFT",
+    "item": "wrench",
+    "label": "Craft a fresh wrench"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-5"
+   ],
+   "flags": [],
+   "companionTier": {
+    "rivet": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "gear_small",
+     "qty": 3
+    },
+    {
+     "item": "spring",
+     "qty": 2
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "rivet": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Tool wear as recorded habit",
+   "kidPhrase": "Every tool wears into its user's hand \u2014 a wrench you've used a thousand times teaches your grip things a new one can't. Tool wear is a resume: the shiny spots are your habits, recorded in steel. Read them.",
+   "memory": "Built a second wrench while Rivet listed its three things and offered a fourth by tomorrow. The old one sat on the bench between us, shining where my grip lives. \u2014 with Rivet"
+  }
+ },
+ "rivet-side-2": {
+  "id": "rivet-side-2",
+  "arc": "side",
+  "title": "One Job, Five Volunteers",
+  "brief": "One job! You give me one job \u2014 spot the north corner through three program runs and one repair \u2014 and I will do it perfectly. And also hold your tools. And count the laps. And time the\u2014 ok that's five, I heard it too. SORRY. That was full volume. I have a volume problem, the volume has a me problem \u2014 point is: watch me get this down to ONE. Point at the corner. I'm great at pointing.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "RUN_PROGRAM",
+    "count": 3,
+    "label": "Run 3 programs while Rivet holds one job"
+   },
+   {
+    "type": "REPAIR",
+    "count": 1,
+    "label": "One repair, one spotter"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-side-1"
+   ],
+   "flags": [],
+   "companionTier": {
+    "rivet": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "repair_kit",
+     "qty": 1
+    },
+    {
+     "item": "copper_wire",
+     "qty": 3
+    }
+   ],
+   "xp": 40,
+   "bond": {
+    "rivet": 12
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Scope control \u2014 one lane done completely",
+   "kidPhrase": "One job, done completely, beats five jobs done loudly at once. Teams \u2014 and repair drones \u2014 work best when each part owns one lane. Division of labor isn't a limit. It's how the whole machine gets built.",
+   "memory": "Gave Rivet one job. It brought five. 'SORRY,' at full volume \u2014 then it set four of them down on purpose, the slowest, most deliberate thing I've ever watched it do. One job. Perfect corner. \u2014 with Rivet"
+  }
+ },
+ "rivet-side-3": {
+  "id": "rivet-side-3",
+  "arc": "side",
+  "title": "Not for the Holding",
+  "brief": "Two laps and a walk through Circuit City. That's it. That's the quest. \u2026Ok, real talk while we go: I did the math. You'd build fine without me holding stuff. The math holds up. The math is also not the point. Keep me around anyway? Not for the holding. For the company. \u2026Anyway! Laps! The towers are singing today \u2014 I counted the chord, there's a new note in it. Race you to corner two. You'll win. I'm carrying the flashlight.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "LAP",
+    "count": 2,
+    "label": "Run 2 easy laps on the oval"
+   },
+   {
+    "type": "VISIT",
+    "biome": "band2",
+    "label": "Walk Circuit City and hear the towers"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-side-2"
+   ],
+   "flags": [],
+   "companionTier": {
+    "rivet": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 5
+    },
+    {
+     "item": "battery_pack",
+     "qty": 2
+    }
+   ],
+   "xp": 45,
+   "bond": {
+    "rivet": 15
+   },
+   "flags": [
+    "rivet_opened"
+   ]
+  },
+  "teaching": {
+   "concept": "The other redundancy \u2014 parts you keep for company",
+   "kidPhrase": "Redundancy is keeping a second of something in case the first one fails. But there's another kind: parts you keep not because the system needs them, but because the system is better with them in it. Engineers call that company. Fine \u2014 everybody calls that company.",
+   "memory": "Two slow laps and the tower chord, with Rivet at my shoulder carrying a flashlight it didn't need to carry. Not for the holding. For the company. That's the whole math. \u2014 with Rivet"
+  }
+ },
+ "rivet-debug-clinic": {
+  "id": "rivet-debug-clinic",
+  "arc": "side",
+  "title": "The Bot That Turns Left Forever",
+  "brief": "Okay, so. Earl's shed has a trade-in bot that spins left in the open space. No walls, no obstacles, just spinning. I dragged you here because I'm good at spotting broken things, but I can't fix BRAINS. You can. Read what the bot is doing \u2014 actually watch it, don't guess \u2014 then change ONE thing to make it stop. Earl will nod. Barely. Come on.",
+  "affinity": "rivet",
+  "objectives": [
+   {
+    "type": "RUN_PROGRAM",
+    "count": 2,
+    "label": "Run the bot in open space twice, watch it spin"
+   },
+   {
+    "type": "EVENT",
+    "event": "program_edited",
+    "count": 1,
+    "label": "Edit the code and run it again"
+   },
+   {
+    "type": "EXPERIMENT",
+    "hypothesis": "the comparison is inverted",
+    "runs": 1,
+    "label": "Test: flip the < or > and watch it work"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "rivet-5"
+   ],
+   "flags": [],
+   "companionTier": {
+    "rivet": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "repair_kit",
+     "qty": 1
+    },
+    {
+     "item": "copper_wire",
+     "qty": 2
+    }
+   ],
+   "xp": 35,
+   "bond": {
+    "rivet": 10
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Debugging \u2014 symptoms to causes: read behavior, form a hypothesis, change ONE thing",
+   "kidPhrase": "A bot acting wrong is telling you a story \u2014 look at what it's DOING first. Spinning left forever in open space? That's not random. That's a decision being made wrong. Read the symptom, form a guess, change one tile, run it again. Hypothesis-first debugging beats guessing every time.",
+   "memory": "Rivet dragged me to Earl's shed where a bot was having an existential crisis, spinning forever. We watched it twice, figured out the sonar comparison was backwards, flipped it, ran it once, and the bot found a wall like it was always supposed to. Debugging is reading, really reading. \u2014 with Rivet"
+  }
+ },
+ "bolt-write-shorter": {
+  "id": "bolt-write-shorter",
+  "arc": "side",
+  "title": "Same Lap, Fewer Tiles",
+  "brief": "Your line-follower works \u2014 it runs clean laps, no drama. Now prove you understand it. Same lap time, same smooth run, but less code. Fewer tiles. You're not making it faster. You're making it smaller. Three runs, three changes, hypothesis: loops and subroutines compress behavior without breaking it. Call it optimization. I call it elegance. Show me the elegance.",
+  "affinity": "bolt",
+  "objectives": [
+   {
+    "type": "RUN_PROGRAM",
+    "count": 3,
+    "label": "Run 3 optimized versions of the line-follower"
+   },
+   {
+    "type": "EXPERIMENT",
+    "hypothesis": "same lap time with fewer tiles using loops or subroutines",
+    "runs": 3,
+    "label": "Run 3 experiments: test each optimization, time them"
+   },
+   {
+    "type": "STAT",
+    "stat": "tileOptimized",
+    "count": 1,
+    "label": "Track that you optimized the tile count"
+   }
+  ],
+  "prerequisites": {
+   "quests": [
+    "bolt-5"
+   ],
+   "flags": [],
+   "companionTier": {
+    "bolt": "friend"
+   }
+  },
+  "rewards": {
+   "loot": [
+    {
+     "item": "crystal_fragment",
+     "qty": 4
+    },
+    {
+     "item": "battery_pack",
+     "qty": 1
+    }
+   ],
+   "xp": 30,
+   "bond": {
+    "bolt": 8
+   },
+   "flags": []
+  },
+  "teaching": {
+   "concept": "Optimization \u2014 same behavior, less code: loops and subroutines as compression",
+   "kidPhrase": "Optimization isn't making things faster\u2014it's doing the same job with fewer moving parts. Loops that replace repeated tiles, subroutines that get called ten times instead of written ten times\u2014that's compression. The bot runs the same lap in the same time, but the code is cleaner, smarter, and ready for the next thing.",
+   "memory": "Bolt watched me compress the line-follower from forty tiles to sixteen using loops and one subroutine. 'Economy,' it said, which was as close to praise as Bolt gets. Lap times matched. Code shrank. Win. \u2014 with Bolt"
+  }
+ }
+}
