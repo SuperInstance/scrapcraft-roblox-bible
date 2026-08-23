@@ -1,0 +1,117 @@
+{
+  "_source": "src/DayNight.js:4,6-17,42-44 · src/WeatherSystem.js:5-9,24,61,81-84,103,111",
+  "dayNight": {
+    "cycleSeconds": 360,
+    "startTime": 0.35,
+    "isNight": "t<0.25 || t>0.78",
+    "keyframes": [
+      {
+        "t": 0,
+        "phase": "midnight",
+        "sky": "0x0a0a1e",
+        "aI": 0.15,
+        "sI": 0
+      },
+      {
+        "t": 0.2,
+        "phase": "pre-dawn",
+        "sky": "0x1a1a3e",
+        "aI": 0.2,
+        "sI": 0.1
+      },
+      {
+        "t": 0.28,
+        "phase": "sunrise",
+        "sky": "0xff6633",
+        "aI": 0.5,
+        "sI": 0.6
+      },
+      {
+        "t": 0.35,
+        "phase": "morning",
+        "sky": "0x8aabbb",
+        "aI": 0.6,
+        "sI": 1.2
+      },
+      {
+        "t": 0.5,
+        "phase": "noon",
+        "sky": "0x6699cc",
+        "aI": 0.7,
+        "sI": 1.4
+      },
+      {
+        "t": 0.65,
+        "phase": "afternoon",
+        "sky": "0x8aabbb",
+        "aI": 0.6,
+        "sI": 1.1
+      },
+      {
+        "t": 0.75,
+        "phase": "sunset",
+        "sky": "0xff4422",
+        "aI": 0.5,
+        "sI": 0.5
+      },
+      {
+        "t": 0.82,
+        "phase": "dusk",
+        "sky": "0x221133",
+        "aI": 0.2,
+        "sI": 0.05
+      },
+      {
+        "t": 1,
+        "phase": "midnight",
+        "sky": "0x0a0a1e",
+        "aI": 0.15,
+        "sI": 0
+      }
+    ],
+    "stars": {
+      "count": 300,
+      "radius": 90,
+      "size": 0.4
+    },
+    "sunArc": "angle = t*2π − π/2; pos = (cos·50, sin·50+10, 20)"
+  },
+  "weather": {
+    "durationsSec": {
+      "clear": [
+        120,
+        240
+      ],
+      "rain": [
+        40,
+        90
+      ],
+      "storm": [
+        25,
+        60
+      ]
+    },
+    "transitionFromClear": "55% rain / 45% storm",
+    "targetIntensity": {
+      "clear": 0,
+      "rain": 0.65,
+      "storm": 1
+    },
+    "rainParticles": 1800,
+    "cloudSpan": 52,
+    "recycleBand": 28,
+    "spawnY": "22+rand*4",
+    "fallSpeed": "16 + intensity*12",
+    "rainOpacity": "intensity * 0.55",
+    "thunderGapSec": [
+      5,
+      14
+    ],
+    "lightningAmbientBoost": 2.5,
+    "flashDecay": "dt*6",
+    "lerpRate": {
+      "rampUp": 0.25,
+      "rampDown": 0.6
+    }
+  }
+}

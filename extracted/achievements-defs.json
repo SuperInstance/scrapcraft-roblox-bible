@@ -1,0 +1,448 @@
+{
+  "ACHIEVEMENT_LIST": [
+    {
+      "id": "first_blood",
+      "icon": "🔩",
+      "name": "Hands In The Grease",
+      "desc": "Mine your first piece of scrap. The yard has officially claimed you."
+    },
+    {
+      "id": "rust_whisperer",
+      "icon": "🪛",
+      "name": "Rust Whisperer",
+      "desc": "Collect 50 iron scrap. You and rust are on a first-name basis now."
+    },
+    {
+      "id": "wrench_wrangler",
+      "icon": "🔧",
+      "name": "Wrench Wrangler",
+      "desc": "Craft your first wrench. The single most important tool. Earl approves."
+    },
+    {
+      "id": "sparky",
+      "icon": "⚡",
+      "name": "Sparky",
+      "desc": "You built a generator. The yard has power. Don't blow it."
+    },
+    {
+      "id": "circuit_breaker",
+      "icon": "🟢",
+      "name": "Circuit Breaker",
+      "desc": "Collect 10 circuit boards. You have a problem. A fun problem."
+    },
+    {
+      "id": "scrap_hoarder",
+      "icon": "📦",
+      "name": "Scrap Hoarder",
+      "desc": "Fill your inventory to at least 80%. Some people call it hoarding. You call it planning."
+    },
+    {
+      "id": "night_owl",
+      "icon": "🌙",
+      "name": "Night Shift",
+      "desc": "Mine 5 blocks after dark. The yard feels different at night. Spookier."
+    },
+    {
+      "id": "five_recipes",
+      "icon": "📋",
+      "name": "Junior Engineer",
+      "desc": "Craft 5 different things. You are no longer completely useless."
+    },
+    {
+      "id": "robot_army",
+      "icon": "🤖",
+      "name": "Not Alone Anymore",
+      "desc": "Build your first ScrapBot. Your robot buddy has opinions. So does Earl."
+    },
+    {
+      "id": "need_for_speed",
+      "icon": "🏎️",
+      "name": "Zero To Oh-No",
+      "desc": "Craft the Go-Kart. Earl didn't set a speed limit. On purpose."
+    },
+    {
+      "id": "fire_starter",
+      "icon": "🔥",
+      "name": "Fire Starter",
+      "desc": "Craft a Blowtorch. With great power comes great responsibility. And singed eyebrows."
+    },
+    {
+      "id": "radio_star",
+      "icon": "📡",
+      "name": "Can You Hear Me Now",
+      "desc": "Build the Radio Beacon. Earl can hear you. He's pretending he can't."
+    },
+    {
+      "id": "spring_chicken",
+      "icon": "👟",
+      "name": "Spring Chicken",
+      "desc": "Craft Spring Boots. BOING. The only review they need."
+    },
+    {
+      "id": "ten_recipes",
+      "icon": "🏆",
+      "name": "Senior Engineer",
+      "desc": "Craft 10 different things. Earl is reconsidering his retirement timeline."
+    },
+    {
+      "id": "cannons_out",
+      "icon": "💨",
+      "name": "OSHA Nightmare",
+      "desc": "Build the Pipe Cannon. OSHA would like a word. Several words, actually."
+    },
+    {
+      "id": "arm_day",
+      "icon": "🦾",
+      "name": "Arm Day",
+      "desc": "Craft 4 Robot Arms. For what purpose? Only you know. Probably robots."
+    },
+    {
+      "id": "king_of_the_yard",
+      "icon": "👑",
+      "name": "King of the Yard",
+      "desc": "Complete all 5 of Earl's quests. The yard bows to you. Earl does not. But still."
+    },
+    {
+      "id": "night_miner",
+      "icon": "⛏️",
+      "name": "100 Blocks Down",
+      "desc": "Mine 100 blocks total. The yard is starting to look different. That might be your fault."
+    },
+    {
+      "id": "speed_crafter",
+      "icon": "⚡",
+      "name": "Speed Round",
+      "desc": "Craft 3 items within 60 seconds. Efficiency! Earl clocked you. Secretly impressed."
+    },
+    {
+      "id": "to_infinity",
+      "icon": "✈️",
+      "name": "Earl Was Wrong",
+      "desc": "Build the Flying Machine. \"I said it couldn't be done.\" — Earl, being wrong for once."
+    },
+    {
+      "id": "first_brain",
+      "icon": "🧠",
+      "name": "Brains of the Operation",
+      "desc": "Craft a Tin Brain. The scrapyard just got its first microcontroller."
+    },
+    {
+      "id": "wireless",
+      "icon": "⚡",
+      "name": "Going Wireless",
+      "desc": "Craft a Spark Brain. WiFi, Bluetooth, and 240 MHz of ambition in your pocket."
+    },
+    {
+      "id": "eagle_eye",
+      "icon": "👁️",
+      "name": "The Eye Is Open",
+      "desc": "Craft a Vision Brain. The Jetson Nano sees all. Earl is suspicious of cameras."
+    },
+    {
+      "id": "all_three_brains",
+      "icon": "🏅",
+      "name": "Full Neural Stack",
+      "desc": "Craft all three brains. Tin, Spark, Vision. You are the lab. Earl is reconsidering retirement."
+    },
+    {
+      "id": "night_sight",
+      "icon": "🥽",
+      "name": "Owl Mode",
+      "desc": "Craft Night Goggles. Military surplus or novelty — either way, darkness is cancelled."
+    },
+    {
+      "id": "hook_shot",
+      "icon": "🪝",
+      "name": "Got You Covered",
+      "desc": "Craft the Grapple Hook. Doubles your reach. Also looks extremely cool."
+    },
+    {
+      "id": "tile_runner",
+      "icon": "🤖",
+      "name": "It's Alive!",
+      "desc": "Run your first tile program. The scrapyard has learned to think."
+    },
+    {
+      "id": "master_builder",
+      "icon": "🏆",
+      "name": "Master Builder",
+      "desc": "Craft 15 different things. Earl has filed paperwork. You're competition."
+    },
+    {
+      "id": "placer",
+      "icon": "🧱",
+      "name": "Mine and Refine",
+      "desc": "Place your first block back in the world. Creation begins where destruction ends."
+    },
+    {
+      "id": "wokwi_exporter",
+      "icon": "🔌",
+      "name": "Game → Reality",
+      "desc": "Export your first Wokwi diagram. Your game robot just became a real-world circuit."
+    },
+    {
+      "id": "first_flash",
+      "icon": "⚡",
+      "name": "Real Iron",
+      "desc": "Flash a tile program to a real physical device. The scrapyard just jumped into your hands."
+    },
+    {
+      "id": "ten_flashes",
+      "icon": "🔧",
+      "name": "Workshop Veteran",
+      "desc": "Flash 10 programs to real hardware. Earl called you an engineer. First time."
+    },
+    {
+      "id": "first_trade",
+      "icon": "📦",
+      "name": "Supply Chain",
+      "desc": "Complete your first Scrap Exchange trade. Earl's contact is pleased."
+    },
+    {
+      "id": "trader",
+      "icon": "💼",
+      "name": "Scrap Broker",
+      "desc": "Complete 10 Scrap Exchange trades. You know how to work a deal."
+    },
+    {
+      "id": "bot_modder",
+      "icon": "🛠",
+      "name": "Hardware Hacker",
+      "desc": "Install your first bot upgrade. The factory defaults were just suggestions."
+    },
+    {
+      "id": "bot_maxed",
+      "icon": "🤖",
+      "name": "Optimized Unit",
+      "desc": "Install the Neural Optimizer. Your bot is now running beyond factory spec. Earl is suspicious."
+    },
+    {
+      "id": "bot_named",
+      "icon": "🏷",
+      "name": "You Named It",
+      "desc": "Give your bot a custom name. It probably had opinions about the default."
+    },
+    {
+      "id": "bot_bond_25",
+      "icon": "🤝",
+      "name": "Working Relationship",
+      "desc": "Your bot reached 25% bond. It's starting to recognize your footsteps."
+    },
+    {
+      "id": "bot_bond_75",
+      "icon": "💚",
+      "name": "Loyal Unit",
+      "desc": "Your bot reached 75% bond. You are listed as its emergency contact."
+    },
+    {
+      "id": "bot_bond_100",
+      "icon": "🌟",
+      "name": "Best Friends",
+      "desc": "Maximum bond achieved. The bot has rewritten its core directive to just: follow you around."
+    },
+    {
+      "id": "track_builder",
+      "icon": "🏁",
+      "name": "Circuit Designer",
+      "desc": "Place 16 TRACK strips in the world. Your scrapyard now has a race circuit."
+    },
+    {
+      "id": "bot_racer",
+      "icon": "🏆",
+      "name": "Lap Record",
+      "desc": "Bot completes a full lap of the TRACK circuit. Earl timed it with a stopwatch. From his chair."
+    },
+    {
+      "id": "illuminator",
+      "icon": "💡",
+      "name": "Let There Be Light",
+      "desc": "Place your first Floodlight. The scrapyard has never been this bright. Earl squints."
+    },
+    {
+      "id": "shared_brain",
+      "icon": "🔗",
+      "name": "Shareable Science",
+      "desc": "Share a tile program via URL. Your robot brain is now on the internet. Be proud."
+    },
+    {
+      "id": "spark_made",
+      "icon": "✨",
+      "name": "AI Collaborator",
+      "desc": "Let Spark build a program for you. That's not cheating — it's engineering."
+    },
+    {
+      "id": "sensor_explorer",
+      "icon": "📡",
+      "name": "Sensor Sweep",
+      "desc": "Use 4 different sensor types in tile programs. You are basically a scientist now."
+    },
+    {
+      "id": "magnetic_personality",
+      "icon": "🧲",
+      "name": "Magnetic Personality",
+      "desc": "Craft a Scrap Magnet. Scrap comes to you now. You have earned this."
+    },
+    {
+      "id": "oval_racer",
+      "icon": "🏎️",
+      "name": "Oval Office",
+      "desc": "Bot completes a lap on the Circuit City oval track. Earl watched. He won't admit it."
+    },
+    {
+      "id": "crystal_hunter",
+      "icon": "🔮",
+      "name": "Crystal Hunter",
+      "desc": "Mine 5 Crystal Ore blocks deep in The Deep Yard. They glow, they drop shards, and Earl thinks they're suspicious."
+    },
+    {
+      "id": "headlamp_on",
+      "icon": "🔦",
+      "name": "Head in the Game",
+      "desc": "Toggle your headlamp on for the first time. Now you can see what you're doing. Game changer."
+    },
+    {
+      "id": "scrap_gunner",
+      "icon": "💥",
+      "name": "Industrial Action",
+      "desc": "Fire the Scrap Cannon 10 times. OSHA filed three reports. You filed none."
+    },
+    {
+      "id": "waypoint_ace",
+      "icon": "🚩",
+      "name": "Navigator",
+      "desc": "Your bot reaches a waypoint flag for the first time. That's real GPS navigation. In a scrapyard game. Earl is quietly amazed."
+    },
+    {
+      "id": "bot_scanner",
+      "icon": "🔍",
+      "name": "Deep Yard Detective",
+      "desc": "Your bot detected crystal ore using its magnetic sensor. The Deep Yard holds its secrets — but not from your bot."
+    },
+    {
+      "id": "grenadier",
+      "icon": "💣",
+      "name": "Collateral Damage",
+      "desc": "Destroy 3+ blocks with a single Scrap Grenade. Earl was in the shed. He heard it. He chose not to look."
+    },
+    {
+      "id": "supply_runner",
+      "icon": "📦",
+      "name": "Package Secured",
+      "desc": "Loot 3 supply drops before Earl notices they exist. (Earl noticed. He's pretending he didn't.)"
+    },
+    {
+      "id": "lucky_strike",
+      "icon": "🍀",
+      "name": "Lucky Strike",
+      "desc": "Find a hidden rare item buried in scrap. The yard hides things. Sometimes good things."
+    },
+    {
+      "id": "narrow_escape",
+      "icon": "🩹",
+      "name": "Narrow Escape",
+      "desc": "Take a hit that drops you below 15 HP and survive. Earl says the scrapyard builds character. This is what he means."
+    },
+    {
+      "id": "salvage_pro",
+      "icon": "🏆",
+      "name": "Salvage Pro",
+      "desc": "Complete 3 Salvage Run challenges. You think in goals, work in steps, and finish what you start. Engineering mindset."
+    },
+    {
+      "id": "signal_hunter",
+      "icon": "📡",
+      "name": "Signal Acquired",
+      "desc": "Find 3 buried signal caches with the signal radio. RF direction-finding in a scrapyard. Same principle as search-and-rescue beacons."
+    },
+    {
+      "id": "magnetic_hands",
+      "icon": "🧤",
+      "name": "Magnetic Personality II",
+      "desc": "Craft Magnet Gloves. Now you pull items from 2 blocks away. Earl wants a pair. He won't ask."
+    },
+    {
+      "id": "sun_tamer",
+      "icon": "☀️",
+      "name": "Solar-Powered",
+      "desc": "Place 3 Solar Panels in the world. Free energy from the sky. The yard has never been greener. Or cleaner."
+    },
+    {
+      "id": "steam_engineer",
+      "icon": "♨️",
+      "name": "Steam-Punk'd",
+      "desc": "Craft the Steam Boiler. Pressurized heat exchangers and PIDs are now in your scrapyard. Automation level: advanced."
+    },
+    {
+      "id": "drill_sergeant",
+      "icon": "⛏️",
+      "name": "Drill Sergeant",
+      "desc": "Craft a Pneumatic Drill. 3× speed on metal. The Deep Yard just got a lot less deep."
+    },
+    {
+      "id": "full_coverage",
+      "icon": "📡",
+      "name": "Full Coverage",
+      "desc": "Craft the Radar Dish. Every ore vein in your minimap range is now visible. No more guessing."
+    },
+    {
+      "id": "earl_again",
+      "icon": "📻",
+      "name": "Earl On Speed Dial",
+      "desc": "Craft the Comm Relay. You can now reach Earl from anywhere. He's trying to decide if that's a threat."
+    },
+    {
+      "id": "new_age",
+      "icon": "🏭",
+      "name": "Industrial Revolution",
+      "desc": "Craft all 6 new devices: Magnet Gloves, Solar Panel, Steam Boiler, Pneumatic Drill, Radar Dish, and Comm Relay. The yard will never be the same. Neither will Earl."
+    },
+    {
+      "id": "the_transmission",
+      "icon": "🛰️",
+      "name": "The Grand Transmission",
+      "desc": "Rebuild and activate the radio tower. You took a dead scrapyard and made it speak. Earl finally told you who he is."
+    },
+    {
+      "id": "beacon_placed",
+      "icon": "📶",
+      "name": "Signal Out",
+      "desc": "Place your first Signal Beacon. Your bot now has a landmark to home in on. Real autonomous robots use the exact same trick."
+    },
+    {
+      "id": "field_scholar",
+      "icon": "📖",
+      "name": "Field Scholar",
+      "desc": "Discover 20 different items. Your Field Guide is filling up. Earl has noticed you reading it."
+    },
+    {
+      "id": "full_codex",
+      "icon": "📚",
+      "name": "Encyclopedia Scrapcraft",
+      "desc": "Discover every item in the Field Guide. The yard has no more secrets. Earl has one. He won't say."
+    },
+    {
+      "id": "variable_star",
+      "icon": "📊",
+      "name": "Variable Star",
+      "desc": "Run a tile program that uses variables. Your bot now has memory. Earl finds this unsettling."
+    },
+    {
+      "id": "bookkeeper",
+      "icon": "📒",
+      "name": "Bookkeeper",
+      "desc": "Run a program tracking 3 or more different variables at once. You basically invented state management."
+    },
+    {
+      "id": "var_conditioner",
+      "icon": "🔢",
+      "name": "Data-Driven",
+      "desc": "Use a variable in an IF condition. That's not guessing — that's logic. Earl is taking notes."
+    },
+    {
+      "id": "tally_champion",
+      "icon": "🏅",
+      "name": "Tally Champion",
+      "desc": "A variable in your running program reaches 10 or higher. Keep counting — robots live on numbers."
+    }
+  ]
+}

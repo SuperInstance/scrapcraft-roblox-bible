@@ -1,0 +1,18 @@
+{
+  "_source": "src/NightShift.js:23-27 (module-private; not exported)",
+  "NS_MIN_AWAY_MS": 1200000,
+  "NS_RATE_MIN": 3,
+  "NS_CAP_MS": 28800000,
+  "NS_BONUS_EVERY": 75,
+  "NS_BONUS_POOL": [
+    "circuit_board",
+    "spring",
+    "gear_small",
+    "copper_wire"
+  ],
+  "BONUS_CAP": 6,
+  "ironFormula": "floor(minutes/3)",
+  "seededRng": "mulberry32(hashStr(seedKey))",
+  "LS_KEY": "scrapcraft_nightshift_v1",
+  "requires": "botHasBrain (a robot_helper with a loaded brain)"
+}

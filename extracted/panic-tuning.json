@@ -1,0 +1,38 @@
+{
+  "_source": "src/PanicButton.js",
+  "PANIC_THRESHOLD": 3,
+  "PANIC_COOLDOWN_MS": 300000,
+  "ROCKET_OVERDRIVE": {
+    "boostMs": 4000,
+    "speedMult": 3,
+    "tickSpeedMult": 3,
+    "smashMax": 5,
+    "smashRadius": 4,
+    "yMin": 1,
+    "yMax": 3,
+    "smashable": [
+      "SCRAP_PILE",
+      "RUST_METAL",
+      "OIL_DRUM",
+      "JUNK_CAR",
+      "CONCRETE"
+    ]
+  },
+  "lootCache": {
+    "guaranteed": {
+      "id": "iron_scrap",
+      "qty": "3 + floor(rand()*3)"
+    },
+    "copperWire60pct": {
+      "id": "copper_wire",
+      "qty": "1 + floor(rand()*2)",
+      "chance": 0.6
+    },
+    "smallGear35pct": {
+      "id": "small_gear",
+      "qty": 1,
+      "chance": 0.35
+    }
+  },
+  "resetRule": "any completed task (lap/waypoint/challenge) zeroes crashCount"
+}

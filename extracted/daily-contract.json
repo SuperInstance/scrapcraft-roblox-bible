@@ -1,0 +1,156 @@
+{
+  "CONTRACT_POOL": [
+    {
+      "id": "iron_rush",
+      "type": "collect",
+      "target": "iron_scrap",
+      "need": 20,
+      "label": "Salvage 20 Iron Scrap",
+      "icon": "🔩",
+      "reward": {
+        "xp": 120,
+        "item": "battery_pack",
+        "qty": 2
+      }
+    },
+    {
+      "id": "wire_harvest",
+      "type": "collect",
+      "target": "copper_wire",
+      "need": 12,
+      "label": "Harvest 12 Copper Wire",
+      "icon": "🪢",
+      "reward": {
+        "xp": 120,
+        "item": "circuit_board",
+        "qty": 2
+      }
+    },
+    {
+      "id": "pile_driver",
+      "type": "mine_block",
+      "need": 15,
+      "label": "Mine 15 Scrap Piles",
+      "icon": "📦",
+      "reward": {
+        "xp": 130,
+        "item": "gear_small",
+        "qty": 3
+      },
+      "target": 9
+    },
+    {
+      "id": "rust_remover",
+      "type": "mine_block",
+      "need": 12,
+      "label": "Clear 12 Rust Heaps",
+      "icon": "🪤",
+      "reward": {
+        "xp": 130,
+        "item": "iron_scrap",
+        "qty": 5
+      },
+      "target": 6
+    },
+    {
+      "id": "makers_hands",
+      "type": "craft",
+      "need": 4,
+      "label": "Craft 4 Items at any station",
+      "icon": "🔧",
+      "reward": {
+        "xp": 140,
+        "item": "copper_wire",
+        "qty": 4
+      }
+    },
+    {
+      "id": "road_crew",
+      "type": "mine_block",
+      "need": 20,
+      "label": "Break 20 Concrete Blocks",
+      "icon": "🧱",
+      "reward": {
+        "xp": 150,
+        "item": "fuel_can",
+        "qty": 2
+      },
+      "target": 1
+    },
+    {
+      "id": "barrel_day",
+      "type": "mine_block",
+      "need": 8,
+      "label": "Crack 8 Barrels",
+      "icon": "🛢️",
+      "reward": {
+        "xp": 120,
+        "item": "rubber_chunk",
+        "qty": 4
+      },
+      "target": 7
+    },
+    {
+      "id": "endurance",
+      "type": "bot_run",
+      "need": 120,
+      "label": "Run a bot program for 2 minutes total",
+      "icon": "🤖",
+      "reward": {
+        "xp": 160,
+        "item": "battery_pack",
+        "qty": 2
+      }
+    },
+    {
+      "id": "racer",
+      "type": "bot_lap",
+      "need": 3,
+      "label": "Complete 3 laps on any circuit",
+      "icon": "🏁",
+      "reward": {
+        "xp": 180,
+        "item": "crystal_fragment",
+        "qty": 1
+      }
+    },
+    {
+      "id": "grease_the_wheels",
+      "type": "collect",
+      "target": "gear_small",
+      "need": 8,
+      "label": "Collect 8 Small Gears",
+      "icon": "⚙️",
+      "reward": {
+        "xp": 130,
+        "item": "circuit_board",
+        "qty": 2
+      }
+    },
+    {
+      "id": "spark_day",
+      "type": "spark",
+      "need": 2,
+      "label": "Have Spark build you 2 programs",
+      "icon": "✨",
+      "reward": {
+        "xp": 150,
+        "item": "ir_module",
+        "qty": 2
+      }
+    },
+    {
+      "id": "deep_dig",
+      "type": "collect",
+      "target": "crystal_fragment",
+      "need": 4,
+      "label": "Bring up 4 Crystal Fragments",
+      "icon": "💎",
+      "reward": {
+        "xp": 170,
+        "item": "night_goggles",
+        "qty": 1
+      }
+    }
+  ]
+}

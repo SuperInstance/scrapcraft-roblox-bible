@@ -1,0 +1,232 @@
+{
+  "_source": "src/ScrapExchange.js:17-39",
+  "DEAL_POOL": [
+    {
+      "give": {
+        "item": "iron_scrap",
+        "qty": 12
+      },
+      "get": {
+        "item": "circuit_board",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "copper_wire",
+        "qty": 8
+      },
+      "get": {
+        "item": "battery_pack",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "rubber_chunk",
+        "qty": 6
+      },
+      "get": {
+        "item": "pir_module",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "gear_small",
+        "qty": 4
+      },
+      "get": {
+        "item": "motor_driver",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "fuel_can",
+        "qty": 3
+      },
+      "get": {
+        "item": "charging_pad",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "glass_shard",
+        "qty": 10
+      },
+      "get": {
+        "item": "ldr_module",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "spring",
+        "qty": 5
+      },
+      "get": {
+        "item": "buzzer_module",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "battery_dead",
+        "qty": 4
+      },
+      "get": {
+        "item": "battery_pack",
+        "qty": 2
+      }
+    },
+    {
+      "give": {
+        "item": "wood_plank",
+        "qty": 8
+      },
+      "get": {
+        "item": "ir_module",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "iron_scrap",
+        "qty": 20
+      },
+      "get": {
+        "item": "signal_amp",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "copper_wire",
+        "qty": 15
+      },
+      "get": {
+        "item": "crystal_fragment",
+        "qty": 2
+      }
+    },
+    {
+      "give": {
+        "item": "glass_shard",
+        "qty": 6
+      },
+      "get": {
+        "item": "ultrasonic_module",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "rubber_chunk",
+        "qty": 8
+      },
+      "get": {
+        "item": "servo_module",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "gear_small",
+        "qty": 6
+      },
+      "get": {
+        "item": "ir_module",
+        "qty": 2
+      }
+    },
+    {
+      "give": {
+        "item": "fuel_can",
+        "qty": 5
+      },
+      "get": {
+        "item": "motor_driver",
+        "qty": 2
+      }
+    },
+    {
+      "give": {
+        "item": "spring",
+        "qty": 8
+      },
+      "get": {
+        "item": "crystal_fragment",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "wood_plank",
+        "qty": 12
+      },
+      "get": {
+        "item": "pir_module",
+        "qty": 2
+      }
+    },
+    {
+      "give": {
+        "item": "battery_dead",
+        "qty": 6
+      },
+      "get": {
+        "item": "charging_pad",
+        "qty": 2
+      }
+    },
+    {
+      "give": {
+        "item": "crystal_fragment",
+        "qty": 3
+      },
+      "get": {
+        "item": "vision_brain",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "iron_scrap",
+        "qty": 30
+      },
+      "get": {
+        "item": "spark_brain",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "copper_wire",
+        "qty": 20
+      },
+      "get": {
+        "item": "camera_module",
+        "qty": 1
+      }
+    },
+    {
+      "give": {
+        "item": "glass_shard",
+        "qty": 15
+      },
+      "get": {
+        "item": "signal_amp",
+        "qty": 2
+      }
+    }
+  ],
+  "EXCHANGE_POS": {
+    "x": 14,
+    "z": 14
+  },
+  "EXCHANGE_RADIUS": 6,
+  "dealsPerDay": 3,
+  "dayKey": "floor(Date.now()/86_400_000) — same deals for every player that day"
+}

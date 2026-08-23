@@ -1,0 +1,86 @@
+[
+  {
+    "id": "thirsty_tower",
+    "name": "The Thirsty Tower",
+    "band": 0,
+    "hint": "Orientation: the drum-stack on legs is visible from spawn — \"yard heart is that way.\"",
+    "lore": "Oldest thing in the yard. Drank three floods and a lawsuit. Look for it when you're turned around, kid."
+  },
+  {
+    "id": "cratesaurus",
+    "name": "Cratesaurus",
+    "band": 0,
+    "hint": "Play: crates are loot. A mountain of crates reads as \"free stuff over here.\"",
+    "lore": "Somebody stacked crates into a head back in '09. Yard kept it. Yard keeps everything."
+  },
+  {
+    "id": "tire_mountain",
+    "name": "Tire Mountain",
+    "band": 0,
+    "hint": "Hazard-lite: junk cars hurt to mine early (hardness 1.1) — the pile says \"come back stronger.\"",
+    "lore": "Every yard's got one. Ours leans north. Don't ask why. It just does."
+  },
+  {
+    "id": "old_smokestack",
+    "name": "Old Smokescreen",
+    "band": 1,
+    "hint": "Thermals/hazard: points at the refinery belt and acid pools — \"industry is that way.\"",
+    "lore": "Hasn't smoked since the permit expired. Still the tallest thing this side of the fence. Still smells like Tuesday."
+  },
+  {
+    "id": "big_grabber",
+    "name": "Big Grabber",
+    "band": 1,
+    "hint": "Hazard foreshadow: the crane magnet (NORTHSTAR's doom). Teaches \"magnets ignore your compass.\"",
+    "lore": "The Grabber. It ate a compass bot once — plaque's over in the Deep Yard. Everything metal bows to it, including your bot."
+  },
+  {
+    "id": "eternal_flame",
+    "name": "The Eternal Flame",
+    "band": 1,
+    "hint": "Forge/stations hint: a lit drum says \"people work metal here.\" Navigation beacon at night.",
+    "lore": "Lit it in '04 to burn off fumes. Forgot to put it out. Now it's load-bearing — yard'd feel wrong without it."
+  },
+  {
+    "id": "trace_gate",
+    "name": "The Trace Gate",
+    "band": 2,
+    "hint": "Gateway legibility: an arch over the road says \"you are ENTERING a district.\" Nodes = a circuit trace.",
+    "lore": "Not decoration, kid. That's a trace, big as we could build it. Power goes in one pylon, comes out the other, and the yard hums."
+  },
+  {
+    "id": "listening_wall",
+    "name": "The Ear Wall",
+    "band": 2,
+    "hint": "Signals hint: panels face outward — \"the yard listens.\" Points at signal caches/radio tower.",
+    "lore": "Pointed at the county, not the yard. It listens. Ask your radio why you knew that."
+  },
+  {
+    "id": "the_quads",
+    "name": "The Quads",
+    "band": 2,
+    "hint": "Race culture: floodlights mean races. Foreshadows the oval and the Midnight Race.",
+    "lore": "Four lights, one job: make noon out of midnight. They haven't all agreed to work since 2019."
+  },
+  {
+    "id": "ghost_track",
+    "name": "The Ghost Track",
+    "band": 3,
+    "hint": "FINALE TEASE (never gated): the Midnight Race lives here — silhouette only. Empty letter boards say the county is coming.",
+    "lore": "Scaffold's for race night. Boards stay empty till the county sends the letters. They always send the letters."
+  },
+  {
+    "id": "doorhouse_light",
+    "name": "The Doorhouse Light",
+    "band": 3,
+    "hint": "Navigation: a light in the deepest dark. \"Head for the door-stack.\"",
+    "lore": "Lighthouse with no water. Kid asked why once. Told 'em: boats sink, yards don't."
+  },
+  {
+    "id": "the_fist",
+    "name": "The Fist",
+    "band": 3,
+    "hint": "Endgame mood: something big is buried here. Robot past = finale stakes.",
+    "lore": "Whatever that was, it was BIG, and it lost. Dig at your own risk. Respect it anyway."
+  }
+]

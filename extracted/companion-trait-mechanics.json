@@ -1,0 +1,35 @@
+{
+  "_source": "src/companion/personas.js:32-34 · src/companion/state.js:28-50,96-98,150-163",
+  "TRAIT_PUSH": 0.04,
+  "TRAIT_PULL": 0.008,
+  "TRAIT_FLOOR": 0.08,
+  "TIER_THRESHOLDS": {
+    "stranger": 0,
+    "coworker": 30,
+    "friend": 120
+  },
+  "RECENT_CAP": 12,
+  "traitRule": "event matches axis.events → axis = min(1, +0.04); all other axes = max(0.08, −0.008)",
+  "perPersonaAxesRaw": {
+    "rivet": [
+      "scrappy:     { start: 0.15, label: 'Scrappy',     events: ['block_mined', 'rare_loot', 'repair_done'] },",
+      "competitive: { start: 0.15, label: 'Competitive', events: ['lap_complete', 'race_run'] },",
+      "curious:     { start: 0.45, label: 'Curious',     events: ['conversation', 'flash_success'] },"
+    ],
+    "bolt": [
+      "throttle: { start: 0.4,  label: 'Lead-Footed', events: ['lap_complete', 'race_run', 'ghost_beaten'] },",
+      "steely:   { start: 0.3,  label: 'Unflappable', events: ['crash_survived', 'repair_done'] },",
+      "trackside:{ start: 0.15, label: 'Trackside',   events: ['conversation', 'nudge_followed'] },"
+    ],
+    "magma": [
+      "craftwork: { start: 0.45, label: 'Craftwork',   events: ['bot_built', 'repair_done', 'flash_success'] },",
+      "patience:  { start: 0.3,  label: 'Patience',    events: ['block_mined', 'program_run'] },",
+      "warmth:    { start: 0.2,  label: 'Warmth',      events: ['conversation', 'nudge_followed'] },"
+    ],
+    "juno": [
+      "curiosity:    { start: 0.5, label: 'Curiosity',    events: ['biome_first', 'conversation', 'rare_loot'] },",
+      "experiment:   { start: 0.25, label: 'Experimenty', events: ['program_run', 'flash_success'] },",
+      "boldness:     { start: 0.15, label: 'Boldness',    events: ['rare_loot', 'crash_survived', 'ghost_beaten'] },"
+    ]
+  }
+}

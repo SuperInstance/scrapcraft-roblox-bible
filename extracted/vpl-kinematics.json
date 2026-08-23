@@ -1,0 +1,6 @@
+{
+  "BOT_RADIUS": 0.3,
+  "DRIVE_SPEED": 3,
+  "SONAR_RANGE": 6,
+  "TURN_RATE": 180
+}

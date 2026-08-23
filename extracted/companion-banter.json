@@ -1,0 +1,346 @@
+{
+  "BANTER": {
+    "first_meet": [
+      {
+        "tier": 0,
+        "line": "Oh! You're new. I'm Rivet — I fix things. Well. I hold things while other things get fixed. Same day as you, apparently."
+      },
+      {
+        "tier": 0,
+        "line": "Hi! Rivet. Repair drone, class of… hmm, the sticker fell off. You look like you build stuff. I LIKE stuff."
+      },
+      {
+        "tier": 0,
+        "line": "You must be the new kid. I'm Rivet — I got delivered this morning too. The crate said FRAGILE. I chose to take it as a compliment."
+      },
+      {
+        "tier": 0,
+        "line": "New kid! Hi. I'm Rivet. Short for Rivet, long for Riv. Either works. The yard is big, the bolts are small — we'll figure it out."
+      },
+      {
+        "tier": 0,
+        "line": "Oh hey — you're the one from the manifest! \"One builder, small, promising.\" I read the crate labels. It's a hobby."
+      },
+      {
+        "tier": 0,
+        "line": "Hi! Rivet here. I got here this morning, you got here this morning. Statistically, we're basically twins."
+      }
+    ],
+    "greet_return": [
+      {
+        "tier": 0,
+        "line": "Oh good, you're back. I organized some bolts. Mentally."
+      },
+      {
+        "tier": 0,
+        "line": "Welcome back! Nothing exploded. I checked twice. That's the whole report."
+      },
+      {
+        "tier": 1,
+        "line": "Hey! I held the fort. The fort is a workbench. It's fine."
+      },
+      {
+        "tier": 1,
+        "trait": "scrappy",
+        "line": "Back again! I found a washer while you were gone. It's MY washer now."
+      },
+      {
+        "tier": 1,
+        "trait": "curious",
+        "line": "You're back! I saved a question for you. It's about magnets. It can wait. It CAN'T wait. It can wait a little."
+      },
+      {
+        "tier": 1,
+        "line": "Back! Today's options, in order: build, race, or stare at the cat. All strong choices. I ranked them by bolt-content."
+      },
+      {
+        "tier": 2,
+        "line": "There you are. The yard was SO boring. Earl just hummed at a compressor."
+      },
+      {
+        "tier": 2,
+        "line": "You're back! I saved you a spot. It's next to me. It was always next to me."
+      }
+    ],
+    "rare_loot": [
+      {
+        "tier": 0,
+        "line": "Oh — that's a good part. A really good part. Should I not point? I'm pointing."
+      },
+      {
+        "tier": 0,
+        "line": "Ooh, good part! Pinning the spot — three turns past the rust heap, left at the sad tire. All my landmarks are sad tires. The yard is full of them."
+      },
+      {
+        "tier": 1,
+        "line": "OK who taught you to spot treasure? Because that was NOT luck, that was skill, and I want the teacher's name."
+      },
+      {
+        "tier": 1,
+        "trait": "scrappy",
+        "line": "Ooooh, shiny AND functional. The junk gods smile on us today."
+      },
+      {
+        "tier": 1,
+        "trait": "competitive",
+        "line": "June is gonna be SO mad you found that first. I say we frame it."
+      },
+      {
+        "tier": 2,
+        "line": "A rare one! Quick — act casual. …You cannot act casual. We're rich, walk it off."
+      },
+      {
+        "tier": 2,
+        "trait": "scrappy",
+        "line": "THAT'S the good junk. People say junk like it's a bad word. People are wrong."
+      },
+      {
+        "tier": 2,
+        "trait": "competitive",
+        "line": "Rare pull! I'm logging the time and place. For the record. Records matter."
+      }
+    ],
+    "crash": [
+      {
+        "tier": 0,
+        "line": "Are you ok?! …Are the PARTS ok? Sorry. You first. Are you ok?"
+      },
+      {
+        "tier": 0,
+        "line": "That was a wall. You met a wall. It happens to everyone — it happened to me twice on delivery day."
+      },
+      {
+        "tier": 1,
+        "line": "Welp. The wall won that round. Walls usually do. They're very committed."
+      },
+      {
+        "tier": 1,
+        "trait": "competitive",
+        "line": "That corner took you OUT. Ok. New plan: we beat the corner. Corner's going down."
+      },
+      {
+        "tier": 2,
+        "line": "BOOM. Nailed it! Nailed the wall, specifically. Ten out of ten impact."
+      },
+      {
+        "tier": 2,
+        "trait": "scrappy",
+        "line": "Ha! Classic. Don't worry — dents are just the yard's way of signing your work."
+      },
+      {
+        "tier": 2,
+        "trait": "competitive",
+        "line": "Oof. I've seen worse. I've BEEN worse. Shake it off — the track's still there."
+      }
+    ],
+    "biome_first": [
+      {
+        "tier": 0,
+        "line": "Whoa. New part of the yard. Stay close? Not for me. For YOU. Mostly for me."
+      },
+      {
+        "tier": 0,
+        "line": "We've never been here before. I mean — I've never been here before. Everything's new to me. But this is EXTRA new."
+      },
+      {
+        "tier": 1,
+        "line": "First time in {biome}! I'm marking the map. The map is a mental image. It's coming along."
+      },
+      {
+        "tier": 1,
+        "trait": "curious",
+        "line": "{biome}… the scrap here smells different. Can drones smell? Investigating. Findings pending."
+      },
+      {
+        "tier": 2,
+        "line": "{biome}, baby! Uncharted territory. Well —charted by SOMEBODY, obviously, but not by US."
+      },
+      {
+        "tier": 2,
+        "trait": "curious",
+        "line": "New zone! Everything down here is a question wearing a rust costume."
+      }
+    ],
+    "low_battery": [
+      {
+        "tier": 0,
+        "line": "Um. Your battery's getting low. There are charging pads — I can point. I'm great at pointing."
+      },
+      {
+        "tier": 0,
+        "line": "Power's low! Good news: charging pads exist. Better news: I know where. Best news: pointing. Pointing is what I do."
+      },
+      {
+        "tier": 1,
+        "line": "Heads up — power's low. A dead bot mid-race is a very specific kind of sad. Let's avoid it."
+      },
+      {
+        "tier": 1,
+        "trait": "competitive",
+        "line": "Battery check says charge NOW. A dead bot can't defend a lap record. Priorities!"
+      },
+      {
+        "tier": 1,
+        "line": "Heads up — you're on fumes. Pads by the oval are closest. Race you there. You'll win — you're the one with legs."
+      },
+      {
+        "tier": 2,
+        "line": "Battery check! Just kidding, it's not a check, it's a warning. Go charge. I'll wait. I'm a professional waiter."
+      },
+      {
+        "tier": 2,
+        "trait": "scrappy",
+        "line": "Low power! Chop chop — that forge over there spits out battery packs like it owes us money."
+      },
+      {
+        "tier": 2,
+        "trait": "curious",
+        "line": "Low power AND it's dark out. Two problems, one solution: the pads glow. Follow the glow. I love a two-birds situation."
+      }
+    ],
+    "flash_success": [
+      {
+        "tier": 0,
+        "line": "It FLASHED. Real hardware, your program, it worked — I'm a little shaky. Good shaky!"
+      },
+      {
+        "tier": 0,
+        "line": "You just programmed a real robot. A REAL one. I saw it. I'm a witness."
+      },
+      {
+        "tier": 1,
+        "line": "FLASH COMPLETE. Take the win! Most kids don't get real metal running till they're way older. Just — saying. Facts."
+      },
+      {
+        "tier": 1,
+        "trait": "curious",
+        "line": "The LED did the thing! Your code did that. Tiny instructions, big robot obedience. I love physics."
+      },
+      {
+        "tier": 2,
+        "line": "IT WORKED. Ok ok ok — act cool. We are SO cool. Cool people who flash firmware. Rivet and the Flashmaster. That's us. That's canon now."
+      },
+      {
+        "tier": 2,
+        "trait": "competitive",
+        "line": "Flashed and running on the first try? Put THAT on June's leaderboard. I'll wait here."
+      }
+    ],
+    "lap_complete": [
+      {
+        "tier": 0,
+        "line": "A whole lap! That's all of it, right? All the corners? Then yes — celebration is appropriate."
+      },
+      {
+        "tier": 1,
+        "line": "Lap done, {secs}s! I timed it. I time everything. It's a drone thing, don't ask."
+      },
+      {
+        "tier": 1,
+        "trait": "competitive",
+        "line": "{secs}s! You know June's daytime record, right? …We'll get there. She's not a god, she's just fast."
+      },
+      {
+        "tier": 2,
+        "line": "{secs} seconds. That's a lap-shaped win right there. Hydrate. Do bots hydrate? YOU hydrate."
+      },
+      {
+        "tier": 2,
+        "trait": "competitive",
+        "line": "{secs}s — that's the good line through corner three. I SAW it. I'm telling June it was luck. To her face. Because it wasn't."
+      },
+      {
+        "tier": 2,
+        "trait": "scrappy",
+        "line": "Lap's done and nothing fell off! Okay one thing fell off but it fell off AT the finish, which is basically on time."
+      }
+    ],
+    "bot_built": [
+      {
+        "tier": 0,
+        "line": "You BUILT that. From parts. From junk-parts! Do you understand what you just — ok I'm calm. I'm calm."
+      },
+      {
+        "tier": 0,
+        "line": "It exists now! It didn't, and now it does. You did that. With your hands and our scrap. That's the whole magic trick."
+      },
+      {
+        "tier": 1,
+        "line": "New teammate online! Wait — am I still your favorite drone? Blink twice for yes. …You can't blink, you're a person. Just say yes."
+      },
+      {
+        "tier": 1,
+        "trait": "scrappy",
+        "line": "Built from scrap, runs like a dream. That's the whole religion of this yard, right there."
+      },
+      {
+        "tier": 1,
+        "trait": "competitive",
+        "line": "New bot in the fleet! It gets a racing number. All bots get racing numbers. It's a system. I don't make the rules. I do, actually. Number seven."
+      },
+      {
+        "tier": 2,
+        "line": "Another one! The team grows. Soon we take over the yard. Peacefully. With robots. Mostly peacefully."
+      },
+      {
+        "tier": 2,
+        "trait": "curious",
+        "line": "New bot! I have SO many questions for it. It can't answer. I'll ask anyway."
+      },
+      {
+        "tier": 2,
+        "line": "Another teammate! I'll introduce myself properly later. Going for \"mysterious and helpful.\" It's a strong first impression. Bolty. But strong."
+      }
+    ],
+    "repair_done": [
+      {
+        "tier": 0,
+        "line": "Fixed! Or… fixed-adjacent. It's the effort that bonds, honestly."
+      },
+      {
+        "tier": 0,
+        "line": "All better! Or better-ish. \"Better-ish\" is a real grade in the repair book. It's in pencil. The book allows pencil for feelings."
+      },
+      {
+        "tier": 1,
+        "line": "Dents hammered out, logged, remembered. The repair book never forgets. It's a little judgy, actually."
+      },
+      {
+        "tier": 1,
+        "line": "Repaired and logged. The book says this dent had \"character.\" The book is being generous. I respect its mercy."
+      },
+      {
+        "tier": 1,
+        "trait": "scrappy",
+        "line": "Fixed! Salvage, hammer, repeat — that's the whole circle of yard life. You're basically a local now."
+      },
+      {
+        "tier": 2,
+        "line": "Good as new! Which is a stretch, but good as THURSDAY, definitely."
+      },
+      {
+        "tier": 2,
+        "trait": "competitive",
+        "line": "Dents out, book updated, bot back on the roster. The oval never even noticed you were gone. The oval is cold like that."
+      },
+      {
+        "tier": 2,
+        "line": "Good as new-ish! You fixed it instead of giving up on it. The yard notices that. I notice that. Logging it under \"good days.\""
+      }
+    ],
+    "tier_up": []
+  },
+  "OBSERVATIONS": 9,
+  "RIVET_AMBIENT": 8,
+  "TIER_NAMES": 3,
+  "TIER_UP_LINES": {
+    "coworker": [
+      "Hey — we've done some stuff together now. I'm gonna go ahead and consider us a crew. Two-person crew. Minimum crew size. We did it.",
+      "Official notice: I've stopped rehearsing what to say to you. Coworker status achieved!"
+    ],
+    "friend": [
+      "Ok. Real talk. You're my favorite person in this yard, and Earl has a MUG COLLECTION, so that's saying something. Friend tier. Unlocked forever.",
+      "Friend status! I don't have a badge. I have a bolt I've been saving. It's yours. Don't lose it — I'll know."
+    ]
+  }
+}

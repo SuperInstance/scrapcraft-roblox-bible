@@ -1,0 +1,292 @@
+{
+  "B": {
+    "AIR": 0,
+    "DIRT": 1,
+    "GRAVEL": 2,
+    "CONCRETE": 3,
+    "RUST_METAL": 4,
+    "CLEAN_METAL": 5,
+    "WOOD_PLANK": 6,
+    "SCRAP_PILE": 7,
+    "WORKBENCH": 8,
+    "FORGE": 9,
+    "SMELTER": 10,
+    "OIL_DRUM": 11,
+    "CRATE": 12,
+    "WALL_METAL": 13,
+    "ROOF_METAL": 14,
+    "JUNK_CAR": 15,
+    "POWER_BOX": 16,
+    "TRACK": 17,
+    "FLOODLIGHT": 18,
+    "CRYSTAL_ORE": 19,
+    "SCRAP_CANNON": 20,
+    "ACID_PUDDLE": 21,
+    "BURIED_CACHE": 22,
+    "HOT_SLAG": 23,
+    "SOLAR_PANEL": 24,
+    "BEACON": 25
+  },
+  "BLOCK_DEF": {
+    "1": {
+      "name": "Compacted Dirt",
+      "color": 8019002,
+      "rough": 0.95,
+      "solid": true,
+      "hardness": 0.3
+    },
+    "2": {
+      "name": "Gravel",
+      "color": 7237230,
+      "rough": 0.9,
+      "solid": true,
+      "hardness": 0.3
+    },
+    "3": {
+      "name": "Cracked Concrete",
+      "color": 8947840,
+      "rough": 0.85,
+      "solid": true,
+      "hardness": 0.7
+    },
+    "4": {
+      "name": "Rusted Metal",
+      "color": 9124352,
+      "rough": 0.8,
+      "solid": true,
+      "hardness": 0.45,
+      "drop": "iron_scrap",
+      "dropChance": 1
+    },
+    "5": {
+      "name": "Steel Panel",
+      "color": 10466752,
+      "rough": 0.4,
+      "solid": true,
+      "hardness": 0.85,
+      "drop": "iron_scrap",
+      "dropChance": 0.7
+    },
+    "6": {
+      "name": "Rotted Wood",
+      "color": 7031847,
+      "rough": 0.9,
+      "solid": true,
+      "hardness": 0.35,
+      "drop": "wood_plank",
+      "dropChance": 1
+    },
+    "7": {
+      "name": "Scrap Pile",
+      "color": 5921354,
+      "rough": 0.95,
+      "solid": true,
+      "hardness": 0.4,
+      "drop": "iron_scrap",
+      "dropChance": 0.8,
+      "altDrop": "gear_small",
+      "altDropChance": 0.35
+    },
+    "8": {
+      "name": "Workbench",
+      "color": 11895594,
+      "rough": 0.7,
+      "solid": true,
+      "interactive": true,
+      "station": "workbench",
+      "emissive": 2497024,
+      "emissiveIntensity": 0.3
+    },
+    "9": {
+      "name": "Forge",
+      "color": 4473924,
+      "rough": 0.6,
+      "solid": true,
+      "interactive": true,
+      "station": "forge",
+      "emissive": 16729088,
+      "emissiveIntensity": 0.6
+    },
+    "10": {
+      "name": "Smelter",
+      "color": 5592371,
+      "rough": 0.6,
+      "solid": true,
+      "interactive": true,
+      "station": "smelter",
+      "emissive": 16746496,
+      "emissiveIntensity": 0.5
+    },
+    "11": {
+      "name": "Oil Drum",
+      "color": 1710730,
+      "rough": 0.5,
+      "solid": true,
+      "hardness": 0.55,
+      "drop": "fuel_can",
+      "dropChance": 0.9
+    },
+    "12": {
+      "name": "Mystery Crate",
+      "color": 9134112,
+      "rough": 0.85,
+      "solid": true,
+      "hardness": 0.38,
+      "drop": "circuit_board",
+      "dropChance": 0.5,
+      "altDrop": "copper_wire",
+      "altDropChance": 0.8
+    },
+    "13": {
+      "name": "Metal Wall",
+      "color": 7368816,
+      "rough": 0.5,
+      "solid": true,
+      "hardness": 0.95
+    },
+    "14": {
+      "name": "Corrugated Roof",
+      "color": 6320224,
+      "rough": 0.55,
+      "solid": true,
+      "hardness": 0.95
+    },
+    "15": {
+      "name": "Junk Car",
+      "color": 3815978,
+      "rough": 0.95,
+      "solid": true,
+      "hardness": 1.1,
+      "drop": "rubber_chunk",
+      "dropChance": 1,
+      "altDrop": "gear_small",
+      "altDropChance": 0.6
+    },
+    "16": {
+      "name": "Power Box",
+      "color": 14535680,
+      "rough": 0.4,
+      "solid": true,
+      "hardness": 0.6,
+      "drop": "copper_wire",
+      "dropChance": 1,
+      "altDrop": "circuit_board",
+      "altDropChance": 0.4
+    },
+    "17": {
+      "name": "Track Strip",
+      "color": 2236945,
+      "rough": 0.9,
+      "solid": true,
+      "hardness": 0.25,
+      "emissive": 14535680,
+      "emissiveIntensity": 0.08,
+      "drop": "track_strip",
+      "dropChance": 1
+    },
+    "18": {
+      "name": "Floodlight",
+      "color": 15658683,
+      "rough": 0.3,
+      "solid": true,
+      "hardness": 0.5,
+      "emissive": 16777215,
+      "emissiveIntensity": 0.9,
+      "drop": "floodlight",
+      "dropChance": 1
+    },
+    "19": {
+      "name": "Crystal Ore",
+      "color": 2755166,
+      "rough": 0.3,
+      "solid": true,
+      "hardness": 0.6,
+      "emissive": 10040319,
+      "emissiveIntensity": 0.55,
+      "drop": "glass_shard",
+      "dropChance": 1,
+      "dropQty": 3,
+      "altDrop": "battery_dead",
+      "altDropChance": 0.5
+    },
+    "20": {
+      "name": "Scrap Cannon",
+      "color": 4864554,
+      "rough": 0.8,
+      "solid": true,
+      "hardness": 1.2,
+      "interactive": true,
+      "station": "scrap_cannon",
+      "emissive": 3346688,
+      "emissiveIntensity": 0.2,
+      "drop": "scrap_cannon",
+      "dropChance": 1
+    },
+    "21": {
+      "name": "Acid Puddle",
+      "color": 3829258,
+      "rough": 0.1,
+      "solid": false,
+      "hardness": 0.1,
+      "emissive": 4521728,
+      "emissiveIntensity": 0.6,
+      "hazard": "acid",
+      "hazardDps": 4,
+      "drop": "rubber_chunk",
+      "dropChance": 0.3
+    },
+    "22": {
+      "name": "Buried Cache",
+      "color": 1721429,
+      "rough": 0.7,
+      "solid": true,
+      "hardness": 0.7,
+      "emissive": 21879,
+      "emissiveIntensity": 0.5
+    },
+    "23": {
+      "name": "Hot Slag",
+      "color": 13382400,
+      "rough": 0.9,
+      "solid": false,
+      "hardness": 0.1,
+      "emissive": 16737792,
+      "emissiveIntensity": 0.8,
+      "hazard": "fire",
+      "hazardDps": 5,
+      "drop": "iron_scrap",
+      "dropChance": 0.6
+    },
+    "24": {
+      "name": "Solar Panel",
+      "color": 2245802,
+      "rough": 0.3,
+      "solid": true,
+      "hardness": 0.8,
+      "emissive": 4491519,
+      "emissiveIntensity": 0.4,
+      "drop": "solar_panel",
+      "dropChance": 1
+    },
+    "25": {
+      "name": "Signal Beacon",
+      "color": 17476,
+      "rough": 0.35,
+      "solid": true,
+      "hardness": 0.5,
+      "emissive": 65484,
+      "emissiveIntensity": 0.9,
+      "drop": "signal_beacon",
+      "dropChance": 1
+    }
+  },
+  "ITEM_TO_BLOCK": {
+    "wood_plank": 6,
+    "iron_scrap": 4,
+    "track_strip": 17,
+    "floodlight": 18,
+    "scrap_cannon": 20,
+    "solar_panel": 24,
+    "signal_beacon": 25
+  }
+}

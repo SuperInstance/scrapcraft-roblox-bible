@@ -1,0 +1,462 @@
+{
+  "iron_scrap": {
+    "name": "Iron Scrap",
+    "icon": "🔩",
+    "desc": "Someone's dream, now your material.",
+    "category": "material",
+    "stackSize": 64
+  },
+  "copper_wire": {
+    "name": "Copper Wire",
+    "icon": "🪢",
+    "desc": "Spaghetti junction. Handle with care (it bites).",
+    "category": "material",
+    "stackSize": 64
+  },
+  "rubber_chunk": {
+    "name": "Rubber Chunk",
+    "icon": "⬛",
+    "desc": "Smells like 1987. Don't ask.",
+    "category": "material",
+    "stackSize": 32
+  },
+  "gear_small": {
+    "name": "Small Gear",
+    "icon": "⚙️",
+    "desc": "Once turned something important. Now turns the tables.",
+    "category": "material",
+    "stackSize": 32
+  },
+  "circuit_board": {
+    "name": "Circuit Board",
+    "icon": "🟢",
+    "desc": "Pre-loved electronics. The magic smoke is still inside.",
+    "category": "material",
+    "stackSize": 16
+  },
+  "fuel_can": {
+    "name": "Fuel Can",
+    "icon": "🛢️",
+    "desc": "Don't sniff it. (Earl already tried.)",
+    "category": "material",
+    "stackSize": 16
+  },
+  "wood_plank": {
+    "name": "Wood Plank",
+    "icon": "🪵",
+    "desc": "Held up a roof once. Now holds up your ambitions.",
+    "category": "material",
+    "stackSize": 32
+  },
+  "glass_shard": {
+    "name": "Glass Shard",
+    "icon": "💎",
+    "desc": "Half a windshield. Half a window. Half a good time.",
+    "category": "material",
+    "stackSize": 32
+  },
+  "spring": {
+    "name": "Spring",
+    "icon": "🌀",
+    "desc": "Coiled potential. Like Earl after his third coffee.",
+    "category": "material",
+    "stackSize": 32
+  },
+  "battery_dead": {
+    "name": "Dead Battery",
+    "icon": "🔋",
+    "desc": "It's not dead, it's resting.",
+    "category": "material",
+    "stackSize": 16
+  },
+  "track_strip": {
+    "name": "Track Strip",
+    "icon": "▬",
+    "desc": "Dark rubber strip with a painted center line. Place it for your ScrapBot to follow.",
+    "category": "material",
+    "stackSize": 64,
+    "placeable": true
+  },
+  "floodlight": {
+    "name": "Floodlight",
+    "icon": "💡",
+    "desc": "Ugly as sin, bright as the sun. Place it on a wall and light up the whole yard.",
+    "category": "tool",
+    "stackSize": 8,
+    "placeable": true
+  },
+  "signal_beacon": {
+    "name": "Signal Beacon",
+    "icon": "📶",
+    "desc": "Emits a teal RF pulse. Place it in the world and your bot can home in on it using the beacon_signal sensor. Like a BLE beacon — same physics, no Bluetooth bill.",
+    "category": "device",
+    "stackSize": 8,
+    "placeable": true
+  },
+  "wrench": {
+    "name": "Wrench",
+    "icon": "🔧",
+    "desc": "The answer to most questions out here.",
+    "category": "tool",
+    "stackSize": 1,
+    "tool": true,
+    "unlocks": "mechanical"
+  },
+  "hammer": {
+    "name": "Hammer",
+    "icon": "🔨",
+    "desc": "If in doubt, whack it. Earl's philosophy in one sentence.",
+    "category": "tool",
+    "stackSize": 1,
+    "tool": true,
+    "unlocks": "structure"
+  },
+  "blowtorch": {
+    "name": "Blowtorch",
+    "icon": "🔥",
+    "desc": "Welding? Sure. Lighting campfires? Absolutely. Making enemies? Definitely.",
+    "category": "tool",
+    "stackSize": 1,
+    "tool": true,
+    "unlocks": "welding"
+  },
+  "pliers": {
+    "name": "Pliers",
+    "icon": "✂️",
+    "desc": "Good for wire. Better for awkward conversations.",
+    "category": "tool",
+    "stackSize": 1,
+    "tool": true,
+    "unlocks": "electrical"
+  },
+  "pipe_cannon": {
+    "name": "Pipe Cannon",
+    "icon": "💨",
+    "desc": "OSHA would like a word. Several words, actually.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "generator": {
+    "name": "Generator",
+    "icon": "⚡",
+    "desc": "She hums like a dream and smells like a nightmare.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "robot_arm": {
+    "name": "Robot Arm",
+    "icon": "🦾",
+    "desc": "Articulated. Ambitious. Occasionally rebellious.",
+    "category": "device",
+    "stackSize": 4
+  },
+  "go_kart": {
+    "name": "Go-Kart",
+    "icon": "🏎️",
+    "desc": "Zero to 'Oh No' in 2.3 seconds.",
+    "category": "vehicle",
+    "stackSize": 1
+  },
+  "robot_helper": {
+    "name": "Scrap Bot",
+    "icon": "🤖",
+    "desc": "Helpful. Loyal. Only catches fire sometimes.",
+    "category": "companion",
+    "stackSize": 1
+  },
+  "robot_helper_starter": {
+    "name": "Starter ScrapBot (Gate Edition)",
+    "icon": "🤖",
+    "desc": "A yard-gate build. It'll work — just not as clean as the Smelter's.",
+    "category": "companion",
+    "stackSize": 1
+  },
+  "radio_beacon": {
+    "name": "Radio Beacon",
+    "icon": "📡",
+    "desc": "Calls Earl from anywhere in the yard. He'll be grumpy about it.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "spring_boots": {
+    "name": "Spring Boots",
+    "icon": "👟",
+    "desc": "BOING. The only review they need.",
+    "category": "wearable",
+    "stackSize": 1
+  },
+  "battery_pack": {
+    "name": "Battery Pack",
+    "icon": "🔋",
+    "desc": "Jumper cables sold separately. Or just shock yourself.",
+    "category": "device",
+    "stackSize": 4
+  },
+  "flying_machine": {
+    "name": "Flying Machine",
+    "icon": "✈️",
+    "desc": "Earl said it couldn't be done. Earl is wrong sometimes.",
+    "category": "vehicle",
+    "stackSize": 1
+  },
+  "night_goggles": {
+    "name": "Night Goggles",
+    "icon": "🥽",
+    "desc": "Military surplus. Or possibly novelty. Either way, you can see in the dark now.",
+    "category": "wearable",
+    "stackSize": 1
+  },
+  "grapple_hook": {
+    "name": "Grapple Hook",
+    "icon": "🪝",
+    "desc": "Doubles your reach. Also looks very cool. Mostly the second thing.",
+    "category": "tool",
+    "stackSize": 1,
+    "tool": true
+  },
+  "steel_cable": {
+    "name": "Steel Cable",
+    "icon": "🧵",
+    "desc": "Strong enough to tow a car. Not that we have a car. Yet.",
+    "category": "material",
+    "stackSize": 8
+  },
+  "signal_flare": {
+    "name": "Signal Flare",
+    "icon": "🚨",
+    "desc": "Burns bright red. Earl says they're for emergencies. Earl uses them for barbeques.",
+    "category": "utility",
+    "stackSize": 8
+  },
+  "repair_kit": {
+    "name": "Repair Kit",
+    "icon": "🩹",
+    "desc": "Duct tape, solder, and hope. The holy trinity of scrapyard maintenance.",
+    "category": "consumable",
+    "stackSize": 4
+  },
+  "charging_pad": {
+    "name": "Charging Pad",
+    "icon": "🔌",
+    "desc": "Wireless induction charging for your robot buddy. He appreciates it, probably.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "tin_brain": {
+    "name": "Tin Brain",
+    "icon": "🧠",
+    "desc": "A humble ATmega with dreams above its station. Runs your tiles. Don't underestimate it.",
+    "category": "maker",
+    "stackSize": 1
+  },
+  "spark_brain": {
+    "name": "Spark Brain",
+    "icon": "⚡",
+    "desc": "An ESP32 — WiFi, Bluetooth, 240MHz of ambition. Unlocks motion sensing and the grab arm.",
+    "category": "maker",
+    "stackSize": 1
+  },
+  "vision_brain": {
+    "name": "Vision Brain",
+    "icon": "👁️",
+    "desc": "A Jetson Nano that can actually see. Paired with a camera. Earl is suspicious of it.",
+    "category": "maker",
+    "stackSize": 1
+  },
+  "ultrasonic_module": {
+    "name": "Ultrasonic Sensor",
+    "icon": "📡",
+    "desc": "HC-SR04. Pings walls and tells you how close you are to disaster.",
+    "category": "maker",
+    "stackSize": 4
+  },
+  "ldr_module": {
+    "name": "Light Sensor",
+    "icon": "☀️",
+    "desc": "An LDR. Figures out if the lights are on. Metaphorically applicable.",
+    "category": "maker",
+    "stackSize": 4
+  },
+  "pir_module": {
+    "name": "Motion Sensor",
+    "icon": "👀",
+    "desc": "PIR sensor. Detects humans. Mildly creepy but useful.",
+    "category": "maker",
+    "stackSize": 4
+  },
+  "buzzer_module": {
+    "name": "Piezo Buzzer",
+    "icon": "🔔",
+    "desc": "Makes noise. Annoying noise. Which is sometimes exactly what you need.",
+    "category": "maker",
+    "stackSize": 4
+  },
+  "servo_module": {
+    "name": "Servo Motor (SG90)",
+    "icon": "🦾",
+    "desc": "For the grab arm. 180° of reach, one tab of plastic, infinite satisfaction.",
+    "category": "maker",
+    "stackSize": 2
+  },
+  "motor_driver": {
+    "name": "Motor Driver (L298N)",
+    "icon": "⚙️",
+    "desc": "Bridges the gap between \"delicate electronics\" and \"screaming motors\".",
+    "category": "maker",
+    "stackSize": 2
+  },
+  "camera_module": {
+    "name": "Camera Module",
+    "icon": "📷",
+    "desc": "CSI ribbon cable + lens. Makes the Vision Brain actually see. Treat it gently.",
+    "category": "maker",
+    "stackSize": 1
+  },
+  "ir_module": {
+    "name": "IR Line Sensor",
+    "icon": "🏁",
+    "desc": "TCRT5000 infrared reflective sensor. Detects dark lines on pale floors. The line follower bot needs this.",
+    "category": "maker",
+    "stackSize": 4
+  },
+  "headlamp": {
+    "name": "Headlamp",
+    "icon": "🔦",
+    "desc": "LED duct-taped to a headband. Surprisingly effective. Earl wears one at home, apparently.",
+    "category": "wearable",
+    "stackSize": 1
+  },
+  "crystal_fragment": {
+    "name": "Crystal Fragment",
+    "icon": "🔮",
+    "desc": "A sliver of something old and underground. Faintly glows if you squint.",
+    "category": "material",
+    "stackSize": 16
+  },
+  "waypoint_flag": {
+    "name": "Waypoint Flag",
+    "icon": "🚩",
+    "desc": "Plant this flag to give your bot a GPS target. Uses the same concept as real autonomous vehicles: drop a coordinate, the bot steers toward it using bearing + distance sensors. Press G to plant; bot needs Waypoint Navigator brain.",
+    "category": "utility",
+    "stackSize": 4
+  },
+  "scrap_cannon": {
+    "name": "Scrap Cannon",
+    "icon": "💥",
+    "desc": "Fires a burst of compressed iron shards. OSHA violation. Deeply satisfying.",
+    "category": "device",
+    "stackSize": 4,
+    "placeable": true
+  },
+  "scrap_grenade": {
+    "name": "Scrap Grenade",
+    "icon": "💣",
+    "desc": "Throw it (G key). It arcs through the air and blasts a 2-block radius on impact. Don't throw it at your feet.",
+    "category": "utility",
+    "stackSize": 8
+  },
+  "speed_coil": {
+    "name": "Speed Coil",
+    "icon": "🌀",
+    "desc": "A wound copper coil that boosts your bot's motor driver voltage headroom. Hold it in inventory for passive +40% bot speed.",
+    "category": "maker",
+    "stackSize": 1,
+    "tool": true
+  },
+  "signal_amp": {
+    "name": "Signal Amplifier",
+    "icon": "📶",
+    "desc": "A low-noise op-amp board that extends your bot's magnetic ore scanner range from 10 to 16 blocks. Passive effect when in inventory.",
+    "category": "maker",
+    "stackSize": 1,
+    "tool": true
+  },
+  "flare_pack": {
+    "name": "Flare Pack",
+    "icon": "🚨",
+    "desc": "A pack of emergency flares wired to a timer circuit. Doubles supply drop frequency when carried. Earl wonders where the drops come from. Do not tell Earl.",
+    "category": "utility",
+    "stackSize": 1
+  },
+  "rubber_boots": {
+    "name": "Rubber Boots",
+    "icon": "🥾",
+    "desc": "Acid-resistant boots made from reclaimed rubber. Rubber is a non-conductive polymer — sulfuric acid can't donate H⁺ ions to it, so it won't corrode. Wear these to walk through acid puddles unharmed. Passive: hold in inventory.",
+    "category": "utility",
+    "stackSize": 1,
+    "tool": true
+  },
+  "scrap_magnet": {
+    "name": "Scrap Magnet",
+    "icon": "🧲",
+    "desc": "Pulls scrap drops toward you when held. Earl put one on his fishing rod once. He won't say why.",
+    "category": "tool",
+    "stackSize": 1,
+    "tool": true
+  },
+  "antenna": {
+    "name": "Signal Antenna",
+    "icon": "📻",
+    "desc": "Extends Spark's offline range. And Earl's radio. And your Wi-Fi. Probably.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "ore_scanner": {
+    "name": "Ore Scanner",
+    "icon": "🔭",
+    "desc": "A handheld magnetometer that detects crystal ore within 24 blocks. Hold it in your active slot — an on-screen compass arrow points you toward the nearest vein. Real geophysicists use the same principle (magnetic anomaly detection) to find ore deposits from aircraft.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "signal_radio": {
+    "name": "Signal Radio",
+    "icon": "📡",
+    "desc": "Picks up the 433 MHz EM pulse emitted by buried scrap caches. Hold in active slot — signal bars and a compass arrow guide you to the cache. Dig down when signal is full strength.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "magnet_gloves": {
+    "name": "Magnet Gloves",
+    "icon": "🧤",
+    "desc": "Electromagnet-lined gloves. Pulls dropped items from 2 blocks away. Earl wore them once and accidentally vacuumed up his coffee mug.",
+    "category": "wearable",
+    "stackSize": 1
+  },
+  "solar_panel": {
+    "name": "Solar Panel",
+    "icon": "☀️",
+    "desc": "A polycrystalline photovoltaic panel salvaged from a broken streetlight. Place it anywhere for free daytime power. The future is now.",
+    "category": "device",
+    "stackSize": 4,
+    "placeable": true
+  },
+  "steam_boiler": {
+    "name": "Steam Boiler",
+    "icon": "♨️",
+    "desc": "Pressurized tank + heating coil = steam on demand. Hook it to your automations and watch things move. Side effects: hissing, drama.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "pneumatic_drill": {
+    "name": "Pneumatic Drill",
+    "icon": "⛏️",
+    "desc": "Compressed air fury in a hand-held package. 3× mine speed on metal and stone. Your arm will forgive you eventually.",
+    "category": "tool",
+    "stackSize": 1,
+    "tool": true
+  },
+  "radar_dish": {
+    "name": "Radar Dish",
+    "icon": "📡",
+    "desc": "Rotating dish antenna that pings the yard and maps all nearby ore onto your minimap. Because guessing is for amateurs.",
+    "category": "device",
+    "stackSize": 1
+  },
+  "comm_relay": {
+    "name": "Comm Relay",
+    "icon": "📻",
+    "desc": "A two-way radio relay that patches you directly to Earl's pocket. He'll grumble. But he'll answer.",
+    "category": "device",
+    "stackSize": 1
+  }
+}

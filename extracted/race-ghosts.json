@@ -1,0 +1,41 @@
+{
+  "NPC_GHOSTS": [
+    {
+      "name": "Earl Jr.",
+      "ms": 18400,
+      "bot": "Wrench",
+      "note": "The foreman's nephew. Suspiciously fast."
+    },
+    {
+      "name": "Ratchet",
+      "ms": 23200,
+      "bot": "Cog",
+      "note": "Old timer. Classic line-follower, no tricks."
+    },
+    {
+      "name": "Scrapdog",
+      "ms": 28900,
+      "bot": "Rivet",
+      "note": "Scrap-dealer turned racer. Smooth on corners."
+    },
+    {
+      "name": "Gearhead",
+      "ms": 35100,
+      "bot": "Flux",
+      "note": "Novice. Very enthusiastic. Bot keeps spinning out."
+    },
+    {
+      "name": "Rookie Rex",
+      "ms": 44800,
+      "bot": "Nibble",
+      "note": "First day in the yard. Bless his heart."
+    }
+  ],
+  "BEAT_QUIPS": [
+    "You beat Earl Jr. I will be telling him this at every family gathering until someone moves away.",
+    "Ratchet had that time for three seasons. His bot is going to need therapy.",
+    "Scrapdog says he wasn't trying. He was trying. I saw him practicing yesterday at 6 AM.",
+    "You beat Gearhead. Gearhead is twelve. You should feel good about that. And also slightly bad.",
+    "You beat Rookie Rex. ...You should probably aim higher. But it counts."
+  ]
+}

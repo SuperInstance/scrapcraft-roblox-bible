@@ -1,0 +1,43 @@
+{
+  "ACHIEVEMENT_PERKS": {
+    "night_miner": {
+      "perk": "long_arms",
+      "label": "Long Arms",
+      "icon": "🦾"
+    },
+    "field_scholar": {
+      "perk": "warm_glow",
+      "label": "Warm Glow",
+      "icon": "🏮"
+    },
+    "full_codex": {
+      "perk": "sticker_row",
+      "label": "Sticker Row",
+      "icon": "🏷️"
+    }
+  },
+  "INTENTIONALLY_NO_PERK": [
+    "bot_racer",
+    "oval_racer",
+    "rust_whisperer",
+    "night_owl",
+    "night_miner_x"
+  ],
+  "PERK_EFFECTS": {
+    "long_arms": {
+      "mineReachTiles": 1,
+      "lanternBrightness": 0,
+      "stickerRows": 0
+    },
+    "warm_glow": {
+      "mineReachTiles": 0,
+      "lanternBrightness": 0.7,
+      "stickerRows": 0
+    },
+    "sticker_row": {
+      "mineReachTiles": 0,
+      "lanternBrightness": 0,
+      "stickerRows": 1
+    }
+  }
+}

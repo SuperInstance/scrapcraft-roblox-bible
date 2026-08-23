@@ -1,0 +1,43 @@
+{
+  "_source": "src/Game.js:3295-3360, src/RaceBoard.js:11-17, src/quests/data",
+  "trackCircuit": {
+    "gate": "x 29.5..46.5, z 13.0..15.5 (y=0)",
+    "minLapMs": 2000,
+    "xpPerLap": 20,
+    "ghostRecording": "10 Hz frames [x, z, yaw, ms]",
+    "confettiAt": {
+      "x": 38,
+      "y": 1.5,
+      "z": 14
+    }
+  },
+  "ovalCircuitCity": "x≈49, z≈84 (Game.js:385)",
+  "npcGhosts": [
+    {
+      "name": "Earl Jr.",
+      "ms": 18400
+    },
+    {
+      "name": "Ratchet",
+      "ms": 23200
+    },
+    {
+      "name": "Scrapdog",
+      "ms": 28900
+    },
+    {
+      "name": "Gearhead",
+      "ms": 35100
+    },
+    {
+      "name": "Rookie Rex",
+      "ms": 44800
+    }
+  ],
+  "multiplayerDO": {
+    "POSITION_BROADCAST_MS": 50,
+    "COUNTDOWN_SECONDS": 3,
+    "DEFAULT_LAPS": 3,
+    "RACE_TIMEOUT_SECONDS": 300
+  }
+}

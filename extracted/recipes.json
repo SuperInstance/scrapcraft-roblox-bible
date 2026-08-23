@@ -1,0 +1,805 @@
+[
+  {
+    "id": "r_wrench",
+    "output": "wrench",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 3,
+      "wood_plank": 1
+    },
+    "station": "any",
+    "tier": 1
+  },
+  {
+    "id": "r_hammer",
+    "output": "hammer",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 2,
+      "wood_plank": 2
+    },
+    "station": "any",
+    "tier": 1
+  },
+  {
+    "id": "r_pliers",
+    "output": "pliers",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 2,
+      "copper_wire": 1
+    },
+    "station": "any",
+    "tier": 1
+  },
+  {
+    "id": "r_blowtorch",
+    "output": "blowtorch",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 3,
+      "copper_wire": 2,
+      "fuel_can": 1
+    },
+    "station": "workbench",
+    "tier": 1
+  },
+  {
+    "id": "r_pipe_cannon",
+    "output": "pipe_cannon",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 5,
+      "rubber_chunk": 1,
+      "spring": 2
+    },
+    "station": "workbench",
+    "tool": "wrench",
+    "tier": 2,
+    "foremanQuip": "That's not a toy, kid. Well... it is, but a dangerous one."
+  },
+  {
+    "id": "r_battery_pack",
+    "output": "battery_pack",
+    "qty": 2,
+    "ingredients": {
+      "battery_dead": 2,
+      "copper_wire": 3,
+      "rubber_chunk": 1
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2
+  },
+  {
+    "id": "r_spring_boots",
+    "output": "spring_boots",
+    "qty": 1,
+    "ingredients": {
+      "spring": 4,
+      "rubber_chunk": 2,
+      "iron_scrap": 2
+    },
+    "station": "workbench",
+    "tool": "hammer",
+    "tier": 2,
+    "foremanQuip": "I wore something like those once. Bounced straight into a dumpster. Worth it."
+  },
+  {
+    "id": "r_robot_arm",
+    "output": "robot_arm",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 4,
+      "gear_small": 3,
+      "copper_wire": 2
+    },
+    "station": "forge",
+    "tool": "blowtorch",
+    "tier": 2,
+    "foremanQuip": "Articulated and everything. You've outdone yourself. Don't tell anyone I said that."
+  },
+  {
+    "id": "r_generator",
+    "output": "generator",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 6,
+      "gear_small": 4,
+      "fuel_can": 2,
+      "copper_wire": 3
+    },
+    "station": "forge",
+    "tool": "wrench",
+    "tier": 2,
+    "foremanQuip": "She's ugly, she's loud, she'll run forever. Just like my ex."
+  },
+  {
+    "id": "r_radio_beacon",
+    "output": "radio_beacon",
+    "qty": 1,
+    "ingredients": {
+      "circuit_board": 2,
+      "copper_wire": 4,
+      "glass_shard": 1,
+      "iron_scrap": 2
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2,
+    "foremanQuip": "You can call me now. I'm choosing to be flattered, not annoyed. Today."
+  },
+  {
+    "id": "r_go_kart",
+    "output": "go_kart",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 8,
+      "rubber_chunk": 4,
+      "gear_small": 6,
+      "wood_plank": 4
+    },
+    "station": "forge",
+    "tool": "wrench",
+    "tier": 3,
+    "unlockAfter": "generator",
+    "foremanQuip": "I'm not putting a speed limit on that. You'll figure out why limits exist on your own."
+  },
+  {
+    "id": "r_robot_helper",
+    "output": "robot_helper",
+    "qty": 1,
+    "ingredients": {
+      "robot_arm": 2,
+      "circuit_board": 4,
+      "gear_small": 6,
+      "battery_pack": 2,
+      "copper_wire": 5
+    },
+    "station": "smelter",
+    "tool": "blowtorch",
+    "tier": 3,
+    "unlockAfter": "robot_arm",
+    "foremanQuip": "It's alive! Or close enough. Don't get attached. (You're going to get attached.)"
+  },
+  {
+    "id": "r_robot_helper_starter",
+    "output": "robot_helper_starter",
+    "qty": 1,
+    "ingredients": {
+      "robot_arm": 2,
+      "circuit_board": 4,
+      "gear_small": 6,
+      "battery_pack": 2,
+      "copper_wire": 5
+    },
+    "station": "workbench",
+    "tool": "wrench",
+    "tier": 3,
+    "unlockAfter": "robot_arm",
+    "foremanQuip": "It'll work, but not as clean as the Smelter's. Good enough for a first build, kid."
+  },
+  {
+    "id": "r_flying_machine",
+    "output": "flying_machine",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 12,
+      "generator": 1,
+      "robot_arm": 2,
+      "circuit_board": 6,
+      "rubber_chunk": 4,
+      "fuel_can": 4,
+      "glass_shard": 3
+    },
+    "station": "smelter",
+    "tool": "blowtorch",
+    "tier": 3,
+    "unlockAfter": "go_kart",
+    "foremanQuip": "I take back every dumb thing I ever said about you. This is genuinely impressive. Now DON'T FLY IT INTO THE SHED."
+  },
+  {
+    "id": "r_repair_kit",
+    "output": "repair_kit",
+    "qty": 1,
+    "ingredients": {
+      "rubber_chunk": 2,
+      "copper_wire": 1,
+      "spring": 1
+    },
+    "station": "any",
+    "tier": 1,
+    "foremanQuip": "The correct answer to 'what do I do when something breaks'."
+  },
+  {
+    "id": "r_signal_flare",
+    "output": "signal_flare",
+    "qty": 3,
+    "ingredients": {
+      "fuel_can": 1,
+      "copper_wire": 2
+    },
+    "station": "any",
+    "tier": 1
+  },
+  {
+    "id": "r_steel_cable",
+    "output": "steel_cable",
+    "qty": 4,
+    "ingredients": {
+      "iron_scrap": 3,
+      "spring": 2,
+      "rubber_chunk": 1
+    },
+    "station": "forge",
+    "tool": "hammer",
+    "tier": 1
+  },
+  {
+    "id": "r_night_goggles",
+    "output": "night_goggles",
+    "qty": 1,
+    "ingredients": {
+      "glass_shard": 2,
+      "copper_wire": 3,
+      "circuit_board": 1,
+      "rubber_chunk": 1
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2,
+    "foremanQuip": "Now you can see what you're bumping into at 2am. Progress."
+  },
+  {
+    "id": "r_grapple_hook",
+    "output": "grapple_hook",
+    "qty": 1,
+    "ingredients": {
+      "steel_cable": 2,
+      "iron_scrap": 3,
+      "spring": 1
+    },
+    "station": "workbench",
+    "tool": "wrench",
+    "tier": 2,
+    "unlockAfter": "r_steel_cable",
+    "foremanQuip": "Don't swing on it indoors. You WILL knock over the smelter."
+  },
+  {
+    "id": "r_charging_pad",
+    "output": "charging_pad",
+    "qty": 1,
+    "ingredients": {
+      "circuit_board": 2,
+      "battery_pack": 2,
+      "copper_wire": 3,
+      "iron_scrap": 2
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2,
+    "unlockAfter": "r_battery_pack",
+    "foremanQuip": "Wirelessly charges your bot. Magic? No. Physics. ...Basically magic."
+  },
+  {
+    "id": "r_shock_absorber",
+    "output": "spring_boots",
+    "qty": 1,
+    "ingredients": {
+      "spring": 6,
+      "rubber_chunk": 3,
+      "iron_scrap": 2
+    },
+    "station": "forge",
+    "tool": "hammer",
+    "tier": 2,
+    "unlockAfter": "r_steel_cable",
+    "foremanQuip": "Heavier than the original. Bouncier though. Everything's a trade-off."
+  },
+  {
+    "id": "r_gear_train",
+    "output": "generator",
+    "qty": 1,
+    "ingredients": {
+      "gear_small": 6,
+      "iron_scrap": 4,
+      "copper_wire": 2,
+      "spring": 2
+    },
+    "station": "forge",
+    "tool": "wrench",
+    "tier": 2,
+    "unlockAfter": "r_generator",
+    "foremanQuip": "A more elegant build. More gears, fewer profanities during assembly."
+  },
+  {
+    "id": "r_mega_battery",
+    "output": "battery_pack",
+    "qty": 4,
+    "ingredients": {
+      "battery_dead": 6,
+      "copper_wire": 4,
+      "rubber_chunk": 2,
+      "fuel_can": 1
+    },
+    "station": "smelter",
+    "tool": "blowtorch",
+    "tier": 3,
+    "unlockAfter": "r_battery_pack",
+    "foremanQuip": "Four times the power. Zero times the respect from health and safety."
+  },
+  {
+    "id": "r_copper_spool",
+    "output": "copper_wire",
+    "qty": 8,
+    "ingredients": {
+      "gear_small": 2,
+      "iron_scrap": 3,
+      "rubber_chunk": 1
+    },
+    "station": "forge",
+    "tool": "blowtorch",
+    "tier": 2,
+    "foremanQuip": "Pulling wire from scrap. Classic. Earl approves."
+  },
+  {
+    "id": "r_glass_smelt",
+    "output": "glass_shard",
+    "qty": 4,
+    "ingredients": {
+      "rubber_chunk": 1,
+      "iron_scrap": 2
+    },
+    "station": "smelter",
+    "tier": 1,
+    "foremanQuip": "Don't ask what we're melting. Just appreciate the glass."
+  },
+  {
+    "id": "r_sensor_array",
+    "output": "radio_beacon",
+    "qty": 1,
+    "ingredients": {
+      "ultrasonic_module": 1,
+      "ldr_module": 1,
+      "buzzer_module": 1,
+      "circuit_board": 2
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2,
+    "unlockAfter": "r_tin_brain",
+    "foremanQuip": "Sees everything. Hears everything. Beeps at everything. Just like Earl."
+  },
+  {
+    "id": "r_tin_brain",
+    "output": "tin_brain",
+    "qty": 1,
+    "ingredients": {
+      "circuit_board": 2,
+      "copper_wire": 4,
+      "iron_scrap": 3
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 1,
+    "foremanQuip": "A tiny brain for a tiny robot. Don't take that personally. It's actually impressive."
+  },
+  {
+    "id": "r_ultrasonic_module",
+    "output": "ultrasonic_module",
+    "qty": 1,
+    "ingredients": {
+      "circuit_board": 1,
+      "copper_wire": 2
+    },
+    "station": "workbench",
+    "tier": 1
+  },
+  {
+    "id": "r_ldr_module",
+    "output": "ldr_module",
+    "qty": 2,
+    "ingredients": {
+      "circuit_board": 1,
+      "copper_wire": 1
+    },
+    "station": "workbench",
+    "tier": 1
+  },
+  {
+    "id": "r_buzzer_module",
+    "output": "buzzer_module",
+    "qty": 2,
+    "ingredients": {
+      "gear_small": 1,
+      "copper_wire": 1
+    },
+    "station": "workbench",
+    "tier": 1
+  },
+  {
+    "id": "r_motor_driver",
+    "output": "motor_driver",
+    "qty": 1,
+    "ingredients": {
+      "circuit_board": 1,
+      "iron_scrap": 2
+    },
+    "station": "workbench",
+    "tier": 1
+  },
+  {
+    "id": "r_spark_brain",
+    "output": "spark_brain",
+    "qty": 1,
+    "ingredients": {
+      "tin_brain": 1,
+      "circuit_board": 3,
+      "copper_wire": 6,
+      "fuel_can": 1
+    },
+    "station": "smelter",
+    "tool": "blowtorch",
+    "tier": 2,
+    "unlockAfter": "r_tin_brain",
+    "foremanQuip": "WiFi. Bluetooth. More sensors. I'm choosing to be impressed rather than threatened."
+  },
+  {
+    "id": "r_pir_module",
+    "output": "pir_module",
+    "qty": 1,
+    "ingredients": {
+      "circuit_board": 1,
+      "rubber_chunk": 1
+    },
+    "station": "workbench",
+    "tier": 2,
+    "unlockAfter": "r_spark_brain"
+  },
+  {
+    "id": "r_servo_module",
+    "output": "servo_module",
+    "qty": 1,
+    "ingredients": {
+      "gear_small": 2,
+      "copper_wire": 2
+    },
+    "station": "workbench",
+    "tier": 2,
+    "unlockAfter": "r_spark_brain"
+  },
+  {
+    "id": "r_vision_brain",
+    "output": "vision_brain",
+    "qty": 1,
+    "ingredients": {
+      "spark_brain": 1,
+      "circuit_board": 5,
+      "glass_shard": 3,
+      "fuel_can": 2
+    },
+    "station": "smelter",
+    "tool": "blowtorch",
+    "tier": 3,
+    "unlockAfter": "r_spark_brain",
+    "foremanQuip": "It can SEE? Like, with actual computer vision? ...I need a moment."
+  },
+  {
+    "id": "r_camera_module",
+    "output": "camera_module",
+    "qty": 1,
+    "ingredients": {
+      "glass_shard": 2,
+      "circuit_board": 2
+    },
+    "station": "workbench",
+    "tier": 3,
+    "unlockAfter": "r_vision_brain"
+  },
+  {
+    "id": "r_track_strip",
+    "output": "track_strip",
+    "qty": 8,
+    "ingredients": {
+      "rubber_chunk": 2,
+      "iron_scrap": 1
+    },
+    "station": "workbench",
+    "tier": 1,
+    "foremanQuip": "A track for your robot. Build a course. Bet on it. I'm not saying anything else."
+  },
+  {
+    "id": "r_floodlight",
+    "output": "floodlight",
+    "qty": 1,
+    "ingredients": {
+      "glass_shard": 2,
+      "copper_wire": 2,
+      "iron_scrap": 3
+    },
+    "station": "workbench",
+    "tier": 1,
+    "foremanQuip": "A floodlight. Place it anywhere. The dark doesn't stand a chance. Neither does your power bill."
+  },
+  {
+    "id": "r_ir_module",
+    "output": "ir_module",
+    "qty": 4,
+    "ingredients": {
+      "circuit_board": 1,
+      "copper_wire": 2
+    },
+    "station": "workbench",
+    "tier": 2,
+    "foremanQuip": "IR sensors. Your bot can see the track now. Invisible light. Science is wild."
+  },
+  {
+    "id": "r_scrap_magnet",
+    "output": "scrap_magnet",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 4,
+      "copper_wire": 3,
+      "battery_pack": 1
+    },
+    "station": "forge",
+    "tier": 3,
+    "foremanQuip": "An electromagnet. Hold it, and scrap comes to you. Earl's been wanting one of these."
+  },
+  {
+    "id": "r_antenna",
+    "output": "antenna",
+    "qty": 1,
+    "ingredients": {
+      "copper_wire": 4,
+      "iron_scrap": 2,
+      "glass_shard": 1
+    },
+    "station": "workbench",
+    "tier": 2,
+    "foremanQuip": "Signal antenna. Better range, better reception, better everything. Except looks."
+  },
+  {
+    "id": "r_headlamp",
+    "output": "headlamp",
+    "qty": 1,
+    "ingredients": {
+      "glass_shard": 1,
+      "copper_wire": 2,
+      "battery_pack": 1,
+      "iron_scrap": 2
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2,
+    "foremanQuip": "A headlamp. My grandfather wore one into the mines. You're wearing one into a scrapyard. Times change."
+  },
+  {
+    "id": "r_rubber_boots",
+    "output": "rubber_boots",
+    "qty": 1,
+    "ingredients": {
+      "rubber_chunk": 4,
+      "iron_scrap": 2
+    },
+    "station": "workbench",
+    "tier": 1,
+    "foremanQuip": "Rubber boots. Non-conductive, acid-resistant. Same material as lab gloves and industrial safety boots. Chemistry protects you when armor won't."
+  },
+  {
+    "id": "r_scrap_cannon",
+    "output": "scrap_cannon",
+    "qty": 2,
+    "ingredients": {
+      "iron_scrap": 6,
+      "spring": 3,
+      "gear_small": 2,
+      "rubber_chunk": 1
+    },
+    "station": "forge",
+    "tool": "wrench",
+    "tier": 2,
+    "foremanQuip": "Right-click it to fire. Keep it pointed AWAY from the stations. Earl cannot stress this enough."
+  },
+  {
+    "id": "r_speed_coil",
+    "output": "speed_coil",
+    "qty": 1,
+    "ingredients": {
+      "spring": 3,
+      "copper_wire": 2,
+      "gear_small": 1
+    },
+    "station": "workbench",
+    "tier": 2,
+    "foremanQuip": "That coil in your pocket? Your bot just got faster. Physics doesn't care about your feelings — just your copper winding."
+  },
+  {
+    "id": "r_signal_amp",
+    "output": "signal_amp",
+    "qty": 1,
+    "ingredients": {
+      "ir_module": 2,
+      "copper_wire": 2,
+      "circuit_board": 1
+    },
+    "station": "workbench",
+    "tier": 2,
+    "foremanQuip": "Signal amplifier. Your bot's ore scanner now reaches 16 blocks. Real op-amp circuit. LM358. Look it up."
+  },
+  {
+    "id": "r_flare_pack",
+    "output": "flare_pack",
+    "qty": 1,
+    "ingredients": {
+      "signal_flare": 3,
+      "rubber_chunk": 1,
+      "battery_dead": 1
+    },
+    "station": "workbench",
+    "tier": 2,
+    "foremanQuip": "Don't ask where the supply drops come from. Carry the flare pack. Double the frequency. That's all you need to know."
+  },
+  {
+    "id": "r_waypoint_flag",
+    "output": "waypoint_flag",
+    "qty": 2,
+    "ingredients": {
+      "iron_scrap": 2,
+      "copper_wire": 1,
+      "rubber_chunk": 1
+    },
+    "station": "workbench",
+    "tier": 1,
+    "foremanQuip": "GPS in a stick. Press G to plant it, your bot drives straight to it. Real robots do the same — waypoint + compass + distance sensor. You just built the field version."
+  },
+  {
+    "id": "r_scrap_grenade",
+    "output": "scrap_grenade",
+    "qty": 3,
+    "ingredients": {
+      "iron_scrap": 3,
+      "fuel_can": 1,
+      "rubber_chunk": 1
+    },
+    "station": "workbench",
+    "tier": 2,
+    "foremanQuip": "Hold G with it selected and it flies. Blasts a 2-block radius. Do NOT throw it at my shed. Or the oil drums. Or me."
+  },
+  {
+    "id": "r_ore_scanner",
+    "output": "ore_scanner",
+    "qty": 1,
+    "ingredients": {
+      "ir_module": 2,
+      "circuit_board": 1,
+      "copper_wire": 2
+    },
+    "station": "workbench",
+    "tier": 2,
+    "unlockAfter": "r_ir_module",
+    "foremanQuip": "Magnetometer. Detects ferromagnetic anomalies. Real geophysicists fly them over mountains to find ore from the air. You'll carry yours. Less glamorous. Same physics."
+  },
+  {
+    "id": "r_signal_radio",
+    "output": "signal_radio",
+    "qty": 1,
+    "ingredients": {
+      "pir_module": 1,
+      "copper_wire": 3,
+      "antenna": 1
+    },
+    "station": "workbench",
+    "tier": 2,
+    "unlockAfter": "r_pir_module",
+    "foremanQuip": "433 MHz pulse detector. Buried caches emit a low-power RF beacon — emergency locator tech, same as an EPIRB on a life raft. Triangulate from the signal strength. Should've buried those caches deeper."
+  },
+  {
+    "id": "r_magnet_gloves",
+    "output": "magnet_gloves",
+    "qty": 1,
+    "ingredients": {
+      "scrap_magnet": 1,
+      "rubber_chunk": 2,
+      "copper_wire": 3,
+      "spring": 2
+    },
+    "station": "forge",
+    "tier": 3,
+    "tool": "blowtorch",
+    "unlockAfter": "r_scrap_magnet",
+    "foremanQuip": "Magnet gloves. You built FIELDS of electromagnetic attraction into a pair of work gloves. That's not craftsman — that's ENGI-wait, don't point them at my toolbox."
+  },
+  {
+    "id": "r_solar_panel",
+    "output": "solar_panel",
+    "qty": 1,
+    "ingredients": {
+      "glass_shard": 4,
+      "copper_wire": 3,
+      "circuit_board": 2,
+      "iron_scrap": 2
+    },
+    "station": "workbench",
+    "tier": 2,
+    "tool": "pliers",
+    "foremanQuip": "Solar panel. Clean energy. I hate how much I respect this. Place it somewhere sunny."
+  },
+  {
+    "id": "r_steam_boiler",
+    "output": "steam_boiler",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 8,
+      "gear_small": 4,
+      "fuel_can": 3,
+      "copper_wire": 3
+    },
+    "station": "forge",
+    "tier": 3,
+    "tool": "blowtorch",
+    "unlockAfter": "r_generator",
+    "foremanQuip": "Steam boiler. Pressurized heat exchangers and PIDs in a scrapyard. You're automating things now. I genuinely cannot keep up."
+  },
+  {
+    "id": "r_pneumatic_drill",
+    "output": "pneumatic_drill",
+    "qty": 1,
+    "ingredients": {
+      "iron_scrap": 6,
+      "gear_small": 4,
+      "rubber_chunk": 2,
+      "spring": 3
+    },
+    "station": "forge",
+    "tier": 3,
+    "tool": "wrench",
+    "unlockAfter": "r_steam_boiler",
+    "foremanQuip": "Pneumatic drill. Compressed air at 90 PSI through a rotary hammer mechanism. Three times the speed on metal. You'll carve through the Deep Yard like butter. Don't carve through anything structural."
+  },
+  {
+    "id": "r_radar_dish",
+    "output": "radar_dish",
+    "qty": 1,
+    "ingredients": {
+      "circuit_board": 3,
+      "copper_wire": 5,
+      "antenna": 1,
+      "iron_scrap": 3
+    },
+    "station": "workbench",
+    "tier": 3,
+    "tool": "pliers",
+    "unlockAfter": "r_antenna",
+    "foremanQuip": "Radar dish. Synthetic aperture in miniature — same tech aircraft use for ground mapping. Your minimap just leveled up. I'd ask how you figured this out, but I'm afraid of the answer."
+  },
+  {
+    "id": "r_comm_relay",
+    "output": "comm_relay",
+    "qty": 1,
+    "ingredients": {
+      "signal_radio": 1,
+      "circuit_board": 2,
+      "copper_wire": 3
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2,
+    "unlockAfter": "r_signal_radio",
+    "foremanQuip": "A comm relay. You patched through to my frequency. I'm choosing to be impressed, not annoyed. For now."
+  },
+  {
+    "id": "r_signal_beacon",
+    "output": "signal_beacon",
+    "qty": 2,
+    "ingredients": {
+      "copper_wire": 3,
+      "crystal_fragment": 1,
+      "circuit_board": 1
+    },
+    "station": "workbench",
+    "tool": "pliers",
+    "tier": 2,
+    "foremanQuip": "Signal beacons. Teal, glowy, pulsing. Place them around the yard and your bot can home in on them like a drone on a landing pad. Place it, load the beacon_signal sensor tile, and watch the bot find its way."
+  }
+]

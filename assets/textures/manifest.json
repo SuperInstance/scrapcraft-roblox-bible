@@ -1,0 +1,92 @@
+[
+  {
+    "file": "01_DIRT.png",
+    "blockId": 1,
+    "name": "Compacted Dirt"
+  },
+  {
+    "file": "02_GRAVEL.png",
+    "blockId": 2,
+    "name": "Gravel"
+  },
+  {
+    "file": "03_CONCRETE.png",
+    "blockId": 3,
+    "name": "Cracked Concrete"
+  },
+  {
+    "file": "04_RUST_METAL.png",
+    "blockId": 4,
+    "name": "Rusted Metal"
+  },
+  {
+    "file": "05_CLEAN_METAL.png",
+    "blockId": 5,
+    "name": "Steel Panel"
+  },
+  {
+    "file": "06_WOOD_PLANK.png",
+    "blockId": 6,
+    "name": "Rotted Wood"
+  },
+  {
+    "file": "07_SCRAP_PILE.png",
+    "blockId": 7,
+    "name": "Scrap Pile"
+  },
+  {
+    "file": "08_WORKBENCH.png",
+    "blockId": 8,
+    "name": "Workbench"
+  },
+  {
+    "file": "09_FORGE.png",
+    "blockId": 9,
+    "name": "Forge"
+  },
+  {
+    "file": "10_SMELTER.png",
+    "blockId": 10,
+    "name": "Smelter"
+  },
+  {
+    "file": "11_OIL_DRUM.png",
+    "blockId": 11,
+    "name": "Oil Drum"
+  },
+  {
+    "file": "12_CRATE.png",
+    "blockId": 12,
+    "name": "Mystery Crate"
+  },
+  {
+    "file": "13_WALL_METAL.png",
+    "blockId": 13,
+    "name": "Metal Wall"
+  },
+  {
+    "file": "14_ROOF_METAL.png",
+    "blockId": 14,
+    "name": "Corrugated Roof"
+  },
+  {
+    "file": "15_JUNK_CAR.png",
+    "blockId": 15,
+    "name": "Junk Car"
+  },
+  {
+    "file": "16_POWER_BOX.png",
+    "blockId": 16,
+    "name": "Power Box"
+  },
+  {
+    "file": "19_CRYSTAL_ORE.png",
+    "blockId": 19,
+    "name": "Crystal Ore"
+  },
+  {
+    "file": "20_SCRAP_CANNON.png",
+    "blockId": 20,
+    "name": "Scrap Cannon"
+  }
+]

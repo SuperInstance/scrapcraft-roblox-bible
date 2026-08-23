@@ -1,0 +1,61 @@
+{
+  "XP_SKILLS": [
+    {
+      "id": "tinkerer",
+      "level": 1,
+      "icon": "🔧",
+      "name": "Tinkerer",
+      "earlQuip": "You hit Level 1. The Maker Lab is open for business. Press [T]. Don't break anything that wasn't already broken."
+    },
+    {
+      "id": "scrapper",
+      "level": 2,
+      "icon": "🗜️",
+      "name": "Scrapper",
+      "earlQuip": "Level 2. Mining's getting faster — practice makes profit. I've seen seagulls strip a car faster than you, but you're catching up."
+    },
+    {
+      "id": "programmer",
+      "level": 3,
+      "icon": "💡",
+      "name": "Programmer",
+      "earlQuip": "Level 3. Spark — the AI build buddy — can now write tile programs for you. Open the Tile Editor, hit the Spark button, and tell it what you want the bot to do."
+    },
+    {
+      "id": "bot_whisperer",
+      "level": 4,
+      "icon": "🤖",
+      "name": "Bot Whisperer",
+      "earlQuip": "Level 4. Your ScrapBot listens better than my last apprentice. Keep talking to it — it doesn't bite. The bot, I mean. Apprentice might."
+    },
+    {
+      "id": "engineer",
+      "level": 5,
+      "icon": "⚙️",
+      "name": "Engineer",
+      "earlQuip": "Level 5. You're an engineer now, officially. Craft a second robot_helper and press Shift+B to run it on its own brain. Don't let them fight."
+    },
+    {
+      "id": "data_head",
+      "level": 6,
+      "icon": "📊",
+      "name": "Data Head",
+      "earlQuip": "Level 6. You've got memory now — the variable blocks in the Tile Editor let your bot count things, track score, remember laps. Numbers that live between loops. Real programming."
+    },
+    {
+      "id": "maker",
+      "level": 8,
+      "icon": "🔌",
+      "name": "Maker",
+      "earlQuip": "Level 8. I've run this scrapyard for 30 years and I never got a level. The Wokwi and wiring export buttons are now live in the Tile Editor. Your game robot can become a real one."
+    },
+    {
+      "id": "inventor",
+      "level": 12,
+      "icon": "👁️",
+      "name": "Inventor",
+      "earlQuip": "Level 12. Earl doesn't have words. Vision Brain sensors are fully unlocked. You'll need the Jetson Nano. The blueprint's in the deep yard somewhere."
+    }
+  ],
+  "levelFormula": "level = floor(sqrt(xp / 10))"
+}

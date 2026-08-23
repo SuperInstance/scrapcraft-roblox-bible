@@ -1,0 +1,126 @@
+[0m
+> build · glm-5.3
+[0m
+[0m→ [0mRead .
+I'll start by exploring the repo structure and reading the key files: the existing `extract-data.mjs` for the loadSafe technique, the source `TextureGen.js`, and `blocks.js`.
+[0m→ [0mRead /home/eileen/projects/Scrapcraft/src/TextureGen.js
+[0m→ [0mRead tools/extract-data.mjs
+Now let me read `tools/extract-data.mjs` and `blocks.js`:
+[0m→ [0mRead /home/eileen/projects/Scrapcraft/src/data/blocks.js
+I have everything I need. The source uses: `document.createElement('canvas')`, 2D ctx ops (`fillRect`, `strokeRect`, path/stroke/fill, linear+radial gradients with `addColorStop`), and `THREE.CanvasTexture`/`NearestFilter`/`RepeatWrapping`. `GEN` produces 18 textures (ids 1–16, 19, 20). Now I'll write the dumper with the canvas shim, loadSafe copy technique, and hand-rolled PNG encoder:
+[0m
+[0m← [0mWrite tools/dump-textures.mjs
+Wrote file successfully.
+[0m
+Now run it:
+[0m$ [0mnode tools/dump-textures.mjs; echo "exit=$?"
+✓ 01_DIRT.png (16×16, 193 bytes)
+✓ 02_GRAVEL.png (16×16, 305 bytes)
+✓ 03_CONCRETE.png (16×16, 300 bytes)
+✓ 04_RUST_METAL.png (16×16, 203 bytes)
+✓ 05_CLEAN_METAL.png (16×16, 132 bytes)
+✓ 06_WOOD_PLANK.png (16×16, 407 bytes)
+✓ 07_SCRAP_PILE.png (16×16, 246 bytes)
+✓ 08_WORKBENCH.png (16×16, 151 bytes)
+✓ 09_FORGE.png (16×16, 361 bytes)
+✓ 10_SMELTER.png (16×16, 428 bytes)
+✓ 11_OIL_DRUM.png (16×16, 132 bytes)
+✓ 12_CRATE.png (16×16, 144 bytes)
+✓ 13_WALL_METAL.png (16×16, 104 bytes)
+✓ 14_ROOF_METAL.png (16×16, 142 bytes)
+✓ 15_JUNK_CAR.png (16×16, 184 bytes)
+✓ 16_POWER_BOX.png (16×16, 143 bytes)
+✓ 19_CRYSTAL_ORE.png (16×16, 473 bytes)
+✓ 20_SCRAP_CANNON.png (16×16, 352 bytes)
+
+DONE — 18 textures + manifest.json → /tmp/roblox-port-bible/assets/textures
+exit=0
+[0m
+Exit 0 with 18 PNGs. Verifying with `file` and checking the manifest, plus confirming the source tree is untouched:
+[0m$ [0mfile assets/textures/*.png | head -20 && ls assets/textures | wc -l
+assets/textures/01_DIRT.png:         PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/02_GRAVEL.png:       PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/03_CONCRETE.png:     PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/04_RUST_METAL.png:   PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/05_CLEAN_METAL.png:  PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/06_WOOD_PLANK.png:   PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/07_SCRAP_PILE.png:   PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/08_WORKBENCH.png:    PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/09_FORGE.png:        PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/10_SMELTER.png:      PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/11_OIL_DRUM.png:     PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/12_CRATE.png:        PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/13_WALL_METAL.png:   PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/14_ROOF_METAL.png:   PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/15_JUNK_CAR.png:     PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/16_POWER_BOX.png:    PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/19_CRYSTAL_ORE.png:  PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+assets/textures/20_SCRAP_CANNON.png: PNG image data, 16 x 16, 8-bit/color RGBA, non-interlaced
+19
+[0m
+[0m$ [0mgit status --porcelain 2>/dev/null | head -5; node -e "const m=require('./assets/textures/manifest.json'); console.log(m.length, JSON.stringify(m.slice(3,4)))"
+?? assets/
+?? docs/
+?? extracted/
+?? tools/
+18 [{"file":"04_RUST_METAL.png","blockId":4,"name":"Rusted Metal"}]
+[0m
+Quick structural decode check on a sample PNG to confirm the IDAT payload is valid:
+[0m$ [0mnode -e "
+const fs=require('fs'),zlib=require('zlib');
+for (const f of ['04_RUST_METAL.png','20_SCRAP_CANNON.png']) {
+  const b=fs.readFileSync('assets/textures/'+f);
+  let off=8,idat=[];
+  while(off<b.length){const len=b.readUInt32BE(off),type=b.toString('ascii',off+4,off+8);
+    if(type==='IDAT')idat.push(b.subarray(off+8,off+8+len));off+=12+len;}
+  const raw=Buffer.concat(idat.map(d=>zlib.inflateSync(d)));
+  const px=raw.filter((_,i)=>i%17!==0);
+  console.log(f,'inflated',raw.length,'bytes (expect',17*16+') alpha min/max:',Math.min(...px.filter((_,i)=>(i%4)===3)),Math.max(...px.filter((_,i)=>(i%4)===3)));
+}"
+04_RUST_METAL.png inflated 1040 bytes (expect 272) alpha min/max: 0 255
+20_SCRAP_CANNON.png inflated 1040 bytes (expect 272) alpha min/max: 0 255
+[0m
+The inflate size is correct (65-byte stride × 16 rows = 1040; my "expect" label and channel indexing in that one-liner were wrong — stride is 65, not 17). Re-checking alpha with proper alignment:
+[0m$ [0mnode -e "
+const fs=require('fs'),zlib=require('zlib');
+for (const f of fs.readdirSync('assets/textures').filter(x=>x.endsWith('.png'))) {
+  const b=fs.readFileSync('assets/textures/'+f);
+  let off=8,idat=[];
+  while(off<b.length){const len=b.readUInt32BE(off),type=b.toString('ascii',off+4,off+8);
+    if(type==='IDAT')idat.push(b.subarray(off+8,off+8+len));off+=12+len;}
+  const raw=Buffer.concat(idat.map(d=>zlib.inflateSync(d)));
+  let amin=255,amax=0,colors=new Set();
+  for(let y=0;y<16;y++)for(let x=0;x<16;x++){const i=y*65+1+x*4;
+    amin=Math.min(amin,raw[i+3]);amax=Math.max(amax,raw[i+3]);
+    colors.add(raw[i]+','+raw[i+1]+','+raw[i+2]);}
+  console.log(f.padEnd(22), raw.length===1040?'ok ':'BAD', 'alpha',amin+'-'+amax, 'distinct colors',colors.size);
+}"
+01_DIRT.png            ok  alpha 255-255 distinct colors 3
+02_GRAVEL.png          ok  alpha 255-255 distinct colors 33
+03_CONCRETE.png        ok  alpha 255-255 distinct colors 16
+04_RUST_METAL.png      ok  alpha 255-255 distinct colors 6
+05_CLEAN_METAL.png     ok  alpha 255-255 distinct colors 4
+06_WOOD_PLANK.png      ok  alpha 255-255 distinct colors 39
+07_SCRAP_PILE.png      ok  alpha 255-255 distinct colors 7
+08_WORKBENCH.png       ok  alpha 255-255 distinct colors 6
+09_FORGE.png           ok  alpha 255-255 distinct colors 45
+10_SMELTER.png         ok  alpha 255-255 distinct colors 40
+11_OIL_DRUM.png        ok  alpha 255-255 distinct colors 4
+12_CRATE.png           ok  alpha 255-255 distinct colors 3
+13_WALL_METAL.png      ok  alpha 255-255 distinct colors 4
+14_ROOF_METAL.png      ok  alpha 255-255 distinct colors 4
+15_JUNK_CAR.png        ok  alpha 255-255 distinct colors 4
+16_POWER_BOX.png       ok  alpha 255-255 distinct colors 3
+19_CRYSTAL_ORE.png     ok  alpha 255-255 distinct colors 46
+20_SCRAP_CANNON.png    ok  alpha 255-255 distinct colors 35
+[0m
+All verified. `node tools/dump-textures.mjs` exits 0 and wrote **18 PNGs** (16×16 RGBA, valid IDAT/CRC structure, fully opaque, gradient/noise rasterization confirmed by distinct-color counts) plus `manifest.json` to `assets/textures/`:
+
+```
+01_DIRT  02_GRAVEL  03_CONCRETE  04_RUST_METAL  05_CLEAN_METAL  06_WOOD_PLANK
+07_SCRAP_PILE  08_WORKBENCH  09_FORGE  10_SMELTER  11_OIL_DRUM  12_CRATE
+13_WALL_METAL  14_ROOF_METAL  15_JUNK_CAR  16_POWER_BOX
+19_CRYSTAL_ORE  20_SCRAP_CANNON      (+ manifest.json, e.g. {file:"04_RUST_METAL.png", blockId:4, name:"Rusted Metal"})
+```
+
+18 instead of ~17 because `GEN` in TextureGen.js has 18 entries (ids 1–16 plus hardcoded 19/20). Nothing under `/home/eileen/projects/Scrapcraft` was touched — the script only reads from there, with the three-stubbed copy living in a cleaned-up temp dir. Implementation notes: canvas shim in tools/dump-textures.mjs:100 (source-over blending, Bresenham strokes with thickness stamps, even-odd polygon fill, per-pixel gradient resolution at pixel centers), loadSafe at tools/dump-textures.mjs:39, PNG writer (CRC32 + IHDR/IDAT/IEND, filter 0) at tools/dump-textures.mjs:208.

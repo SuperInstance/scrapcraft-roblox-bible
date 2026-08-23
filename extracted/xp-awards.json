@@ -1,0 +1,129 @@
+{
+  "_source": "src/Game.js (line-cited) · XPSystem.js:103,116,140,142",
+  "formula": {
+    "xpForLevel": "n²·10",
+    "level": "floor(sqrt(xp/10))"
+  },
+  "awards": [
+    {
+      "what": "mine block (any)",
+      "xp": 1,
+      "cite": "Game.js:1278"
+    },
+    {
+      "what": "mine item drop pickup",
+      "xp": 2,
+      "cite": "Game.js:1189"
+    },
+    {
+      "what": "crystal ore bonus",
+      "xp": 5,
+      "cite": "Game.js:1276"
+    },
+    {
+      "what": "lucky find",
+      "xp": 5,
+      "cite": "Game.js:1225"
+    },
+    {
+      "what": "place block",
+      "xp": 2,
+      "cite": "Game.js:1330"
+    },
+    {
+      "what": "program run (example or bot2)",
+      "xp": 15,
+      "cite": "Game.js:1042,1579"
+    },
+    {
+      "what": "lap complete",
+      "xp": 20,
+      "cite": "Game.js:3345"
+    },
+    {
+      "what": "exchange trade",
+      "xp": 20,
+      "cite": "Game.js:1349"
+    },
+    {
+      "what": "airdrop loot",
+      "xp": 20,
+      "cite": "Game.js:1261"
+    },
+    {
+      "what": "buried cache found",
+      "xp": 40,
+      "cite": "Game.js:1777"
+    },
+    {
+      "what": "radio tower activated",
+      "xp": 200,
+      "cite": "Game.js:1835"
+    },
+    {
+      "what": "bot upgrade purchased",
+      "xp": 50,
+      "cite": "Game.js:1379"
+    },
+    {
+      "what": "gallery program saved",
+      "xp": 50,
+      "cite": "BrainGallery.js:387"
+    },
+    {
+      "what": "cannon fire",
+      "xp": 1,
+      "cite": "Game.js:1612"
+    },
+    {
+      "what": "grenade per block destroyed",
+      "xp": 2,
+      "cite": "Game.js:1648"
+    },
+    {
+      "what": "waypoint flag placed (consumes item)",
+      "xp": 3,
+      "cite": "Game.js:1938"
+    },
+    {
+      "what": "craft (first time item)",
+      "xp": 10,
+      "cite": "Game.js:2057"
+    },
+    {
+      "what": "craft (repeat)",
+      "xp": 3,
+      "cite": "Game.js:2057"
+    },
+    {
+      "what": "new sensor type in program",
+      "xp": 8,
+      "cite": "XPSystem.js:103"
+    },
+    {
+      "what": "new variable name in program",
+      "xp": 10,
+      "cite": "XPSystem.js:116"
+    },
+    {
+      "what": "night shift return",
+      "xp": "min(60, 10 + floor(min/30)·5)",
+      "cite": "Game.js:498"
+    },
+    {
+      "what": "daily contract",
+      "xp": "reward.xp + streak bonus",
+      "cite": "DailyContract.js:389"
+    },
+    {
+      "what": "challenge complete",
+      "xp": "per-challenge r.xp",
+      "cite": "Challenge.js:209"
+    },
+    {
+      "what": "quest step",
+      "xp": "per-step rewards.xp (see quest-*.json)",
+      "cite": "quests/data/*.json"
+    }
+  ]
+}

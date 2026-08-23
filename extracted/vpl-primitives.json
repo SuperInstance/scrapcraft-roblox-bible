@@ -1,0 +1,754 @@
+{
+  "ACTUATORS": {
+    "drive": {
+      "id": "drive",
+      "category": "act",
+      "label": "drive",
+      "blurb": "run the wheels forward or backward at a chosen speed",
+      "params": {
+        "dir": {
+          "type": "enum",
+          "values": [
+            "forward",
+            "backward"
+          ],
+          "default": "forward"
+        },
+        "speed": {
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "step": 0.05,
+          "default": 0.5,
+          "unit": "fraction"
+        }
+      },
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "DC motor driver (L298N)",
+        "pins": [
+          "IN1=25",
+          "IN2=26",
+          "ENA=27 (PWM)"
+        ],
+        "setup": {
+          "arduino": "pinMode(IN1,OUTPUT); pinMode(IN2,OUTPUT); pinMode(ENA,OUTPUT);",
+          "micropython": "m = MotorDriver(in1=25, in2=26, ena=27)"
+        }
+      },
+      "firmware": {}
+    },
+    "turn": {
+      "id": "turn",
+      "category": "act",
+      "label": "turn",
+      "blurb": "spin in place left or right at a chosen speed",
+      "params": {
+        "dir": {
+          "type": "enum",
+          "values": [
+            "left",
+            "right"
+          ],
+          "default": "right"
+        },
+        "speed": {
+          "type": "number",
+          "min": 0,
+          "max": 1,
+          "step": 0.05,
+          "default": 0.5,
+          "unit": "fraction"
+        }
+      },
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "differential drive (two motors)",
+        "pins": [
+          "left+right motor driver"
+        ],
+        "setup": {
+          "arduino": "",
+          "micropython": ""
+        }
+      },
+      "firmware": {}
+    },
+    "stop": {
+      "id": "stop",
+      "category": "act",
+      "label": "stop",
+      "blurb": "cut all motors — wheels and turning",
+      "params": {},
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "motor driver",
+        "pins": [],
+        "setup": {
+          "arduino": "",
+          "micropython": ""
+        }
+      },
+      "firmware": {}
+    },
+    "beep": {
+      "id": "beep",
+      "category": "act",
+      "label": "beep",
+      "blurb": "play a tone on the buzzer",
+      "params": {
+        "pitch": {
+          "type": "enum",
+          "values": [
+            "low",
+            "mid",
+            "high"
+          ],
+          "default": "mid"
+        }
+      },
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "piezo buzzer",
+        "pin": "D13",
+        "setup": {
+          "arduino": "pinMode(BUZZ_PIN, OUTPUT);",
+          "micropython": "buzz = PWM(Pin(13))"
+        }
+      },
+      "firmware": {}
+    },
+    "led": {
+      "id": "led",
+      "category": "act",
+      "label": "set light",
+      "blurb": "turn my indicator light on (a colour) or off",
+      "params": {
+        "state": {
+          "type": "enum",
+          "values": [
+            "off",
+            "red",
+            "green",
+            "blue",
+            "white"
+          ],
+          "default": "green"
+        }
+      },
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "RGB LED",
+        "pins": [
+          "R=14",
+          "G=12",
+          "B=33"
+        ],
+        "setup": {
+          "arduino": "pinMode(LED_R,OUTPUT);pinMode(LED_G,OUTPUT);pinMode(LED_B,OUTPUT);",
+          "micropython": ""
+        }
+      },
+      "firmware": {}
+    },
+    "grab": {
+      "id": "grab",
+      "category": "act",
+      "label": "arm",
+      "blurb": "open or close the grabber arm (a servo)",
+      "params": {
+        "state": {
+          "type": "enum",
+          "values": [
+            "open",
+            "close"
+          ],
+          "default": "close"
+        }
+      },
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "SG90 servo",
+        "pin": "D15 (PWM)",
+        "setup": {
+          "arduino": "armServo.attach(SERVO_PIN);",
+          "micropython": "arm = Servo(Pin(15))"
+        }
+      },
+      "firmware": {}
+    },
+    "speak": {
+      "id": "speak",
+      "category": "act",
+      "label": "speak",
+      "blurb": "robot says a short word or phrase (TTS module on ESP32; chat bubble in-game)",
+      "requiresBrain": "spark",
+      "params": {
+        "phrase": {
+          "type": "enum",
+          "values": [
+            "hello",
+            "done",
+            "warning",
+            "help",
+            "go"
+          ],
+          "default": "hello"
+        }
+      },
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "DFPlayer Mini MP3 module (UART)",
+        "pin": "TX=17, RX=16",
+        "setup": {
+          "arduino": "tts.begin(Serial2);",
+          "micropython": "tts = DFPlayer(uart)"
+        }
+      },
+      "firmware": {}
+    },
+    "servo_angle": {
+      "id": "servo_angle",
+      "category": "act",
+      "label": "servo to angle",
+      "blurb": "set the arm servo to an exact angle (0 = fully closed, 180 = fully open)",
+      "requiresBrain": "spark",
+      "params": {
+        "angle": {
+          "type": "number",
+          "min": 0,
+          "max": 180,
+          "step": 5,
+          "default": 90,
+          "unit": "degrees"
+        }
+      },
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "SG90 servo",
+        "pin": "D15 (PWM)",
+        "setup": {
+          "arduino": "armServo.attach(SERVO_PIN);",
+          "micropython": "arm = Servo(Pin(15))"
+        }
+      },
+      "firmware": {}
+    },
+    "add_score": {
+      "id": "add_score",
+      "category": "act",
+      "label": "add score",
+      "blurb": "add points to the bot's running score total — shows in the Maker Lab monitor",
+      "params": {
+        "amount": {
+          "type": "number",
+          "min": 1,
+          "max": 100,
+          "step": 1,
+          "default": 1
+        }
+      },
+      "firmware": {}
+    },
+    "neopixel": {
+      "id": "neopixel",
+      "category": "act",
+      "label": "NeoPixel",
+      "blurb": "set the WS2812 RGB LED strip to a colour — great for signalling",
+      "requiresBrain": "spark",
+      "params": {
+        "color": {
+          "type": "enum",
+          "values": [
+            "off",
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "cyan",
+            "blue",
+            "purple",
+            "white"
+          ],
+          "default": "green"
+        }
+      },
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "WS2812B NeoPixel strip",
+        "pin": "D4",
+        "setup": {
+          "arduino": "pixels.begin();",
+          "micropython": "np = NeoPixel(Pin(4), 8)"
+        }
+      },
+      "firmware": {}
+    }
+  },
+  "BRAINS": {
+    "tin": {
+      "id": "tin",
+      "label": "Tin Brain",
+      "chip": "Arduino Uno (ATmega328P)",
+      "platform": "uno"
+    },
+    "spark": {
+      "id": "spark",
+      "label": "Spark Brain",
+      "chip": "ESP32",
+      "platform": "esp32"
+    },
+    "vision": {
+      "id": "vision",
+      "label": "Vision Brain",
+      "chip": "Jetson Nano",
+      "platform": "jetson"
+    }
+  },
+  "SENSORS": {
+    "brightness": {
+      "id": "brightness",
+      "category": "sense",
+      "kind": "analog",
+      "label": "brightness",
+      "blurb": "how much light is hitting me (0 = pitch black, 1 = blinding)",
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "LDR (photoresistor)",
+        "pin": "A0",
+        "setup": {
+          "arduino": "pinMode(LDR_PIN, INPUT);",
+          "micropython": "ldr = ADC(Pin(36))"
+        }
+      },
+      "firmware": {}
+    },
+    "distance_ahead": {
+      "id": "distance_ahead",
+      "category": "sense",
+      "kind": "analog",
+      "label": "distance ahead",
+      "blurb": "how far the nearest wall is in front of me (1 = far, 0 = touching)",
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "HC-SR04 ultrasonic",
+        "pin": "TRIG_PIN=5, ECHO_PIN=18",
+        "setup": {
+          "arduino": "pinMode(TRIG_PIN, OUTPUT); pinMode(ECHO_PIN, INPUT);",
+          "micropython": "sonar = HCSR04(trigger_pin=5, echo_pin=18)"
+        }
+      },
+      "firmware": {}
+    },
+    "bumped": {
+      "id": "bumped",
+      "category": "sense",
+      "kind": "digital",
+      "label": "bumped a wall",
+      "blurb": "true the moment my front bumper hits something",
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "tactile bumper switch",
+        "pin": "D4",
+        "setup": {
+          "arduino": "pinMode(BUMP_PIN, INPUT_PULLUP);",
+          "micropython": "bump = Pin(4, Pin.IN, Pin.PULL_UP)"
+        }
+      },
+      "firmware": {}
+    },
+    "is_dark": {
+      "id": "is_dark",
+      "category": "sense",
+      "kind": "digital",
+      "label": "it's dark out",
+      "blurb": "true when the world is in night / low light",
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "LDR threshold",
+        "pin": "A0",
+        "setup": {
+          "arduino": "",
+          "micropython": ""
+        }
+      },
+      "firmware": {}
+    },
+    "player_near": {
+      "id": "player_near",
+      "category": "sense",
+      "kind": "digital",
+      "label": "player is near",
+      "blurb": "true when a person is within a few blocks of me",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "PIR motion sensor",
+        "pin": "D19",
+        "setup": {
+          "arduino": "pinMode(PIR_PIN, INPUT);",
+          "micropython": "pir = Pin(19, Pin.IN)"
+        }
+      },
+      "firmware": {}
+    },
+    "sees_color": {
+      "id": "sees_color",
+      "category": "sense",
+      "kind": "digital",
+      "label": "sees a coloured block",
+      "blurb": "camera detects a distinctly-coloured (non-grey) block in view (Vision Brain only)",
+      "requiresBrain": "vision",
+      "hw": {
+        "platform": [
+          "jetson"
+        ],
+        "peripheral": "CSI camera + colour classifier",
+        "pin": "CSI-0",
+        "setup": {
+          "arduino": "/* Vision requires Jetson */",
+          "micropython": "# detector = ColourDetector(\"scrap.onnx\")"
+        }
+      },
+      "firmware": {}
+    },
+    "target_bearing": {
+      "id": "target_bearing",
+      "category": "sense",
+      "kind": "analog",
+      "label": "target bearing",
+      "blurb": "how far left/right the target is in view (−1 = far left, +1 = far right)",
+      "requiresBrain": "vision",
+      "hw": {
+        "platform": [
+          "jetson"
+        ],
+        "peripheral": "CSI camera",
+        "pin": "CSI-0",
+        "setup": {
+          "arduino": "/* Vision */",
+          "micropython": ""
+        }
+      },
+      "firmware": {}
+    },
+    "target_distance": {
+      "id": "target_distance",
+      "category": "sense",
+      "kind": "analog",
+      "label": "target distance",
+      "blurb": "how far away the nearest target is (0 = right here, 1 = far away)",
+      "requiresBrain": "vision",
+      "hw": {
+        "platform": [
+          "jetson"
+        ],
+        "peripheral": "CSI camera (depth estimate)",
+        "pin": "CSI-0",
+        "setup": {
+          "arduino": "/* Vision */",
+          "micropython": ""
+        }
+      },
+      "firmware": {}
+    },
+    "line_under": {
+      "id": "line_under",
+      "category": "sense",
+      "kind": "digital",
+      "label": "line under me",
+      "blurb": "IR sensor detects a dark track (wood plank / oil drum) directly below the bot",
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "IR reflectance sensor (TCRT5000)",
+        "pin": "A1",
+        "setup": {
+          "arduino": "pinMode(IR_PIN, INPUT);",
+          "micropython": "ir = ADC(Pin(34))"
+        }
+      },
+      "firmware": {}
+    },
+    "compass": {
+      "id": "compass",
+      "category": "sense",
+      "kind": "analog",
+      "label": "compass heading",
+      "blurb": "current bearing as a fraction of a full circle (0 = North, 0.5 = South)",
+      "requiresBrain": "spark",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "MPU6050 (I2C magnetometer)",
+        "pin": "SDA=21, SCL=22",
+        "setup": {
+          "arduino": "mpu.initialize();",
+          "micropython": "imu = MPU6050(i2c)"
+        }
+      },
+      "firmware": {}
+    },
+    "temperature": {
+      "id": "temperature",
+      "category": "sense",
+      "kind": "analog",
+      "label": "temperature",
+      "blurb": "ambient warmth near this spot (0 = cold, 1 = forge-hot)",
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "DHT11 temperature sensor",
+        "pin": "D2",
+        "setup": {
+          "arduino": "dht.begin();",
+          "micropython": "sensor = DHT11(Pin(2))"
+        }
+      },
+      "firmware": {}
+    },
+    "weather": {
+      "id": "weather",
+      "category": "sense",
+      "kind": "analog",
+      "label": "weather intensity",
+      "blurb": "current weather severity: 0 = clear sky, ~0.65 = rain, 1.0 = thunderstorm",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "DHT22 humidity sensor (storm = high humidity + low pressure)",
+        "pin": "D22",
+        "setup": {
+          "arduino": "dht22.begin();",
+          "micropython": "weather_sensor = DHT22(Pin(22))"
+        }
+      },
+      "firmware": {}
+    },
+    "color_sensor": {
+      "id": "color_sensor",
+      "category": "sense",
+      "kind": "digital",
+      "label": "coloured floor below",
+      "blurb": "APDS9960 detects a non-grey coloured surface directly under the bot (ESP32+)",
+      "requiresBrain": "spark",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "APDS9960 colour + proximity (I2C)",
+        "pin": "SDA=21, SCL=22",
+        "setup": {
+          "arduino": "apds.begin();",
+          "micropython": "apds = APDS9960(i2c)"
+        }
+      },
+      "firmware": {}
+    },
+    "waypoint_dist": {
+      "id": "waypoint_dist",
+      "category": "sense",
+      "kind": "analog",
+      "label": "waypoint distance",
+      "blurb": "how far away the active waypoint flag is (0 = here, 1 = far away). Set with Y key.",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "GPS/UWB positioning module",
+        "pin": "UART1",
+        "setup": {
+          "arduino": "gps.begin(9600);",
+          "micropython": "gps = GPS(uart)"
+        }
+      },
+      "firmware": {}
+    },
+    "waypoint_bearing": {
+      "id": "waypoint_bearing",
+      "category": "sense",
+      "kind": "analog",
+      "label": "waypoint bearing",
+      "blurb": "steering offset to waypoint (−1 = hard left, 0 = straight ahead, +1 = hard right)",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "GPS + compass (HMC5883L)",
+        "pin": "SDA=21, SCL=22",
+        "setup": {
+          "arduino": "compass.begin();",
+          "micropython": "mag = HMC5883L(i2c)"
+        }
+      },
+      "firmware": {}
+    },
+    "ore_nearby": {
+      "id": "ore_nearby",
+      "category": "sense",
+      "kind": "analog",
+      "label": "ore signal",
+      "blurb": "magnetic field strength from nearby crystal ore (0 = none in range, 1 = ore right here). Works within 10 blocks. Use in The Deep Yard!",
+      "requiresBrain": "spark",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "AS5600 hall-effect / magnetic field sensor (I2C)",
+        "pin": "SDA=21, SCL=22",
+        "setup": {
+          "arduino": "mag.begin();",
+          "micropython": "mag = AS5600(i2c)"
+        }
+      },
+      "firmware": {}
+    },
+    "floor_type": {
+      "id": "floor_type",
+      "category": "sense",
+      "kind": "analog",
+      "label": "floor material",
+      "blurb": "surface under the bot — 0 = dirt/void, 0.33 = concrete, 0.66 = metal/scrap, 1.0 = track or crystal. Like an IR reflectance sensor reading texture.",
+      "hw": {
+        "platform": [
+          "uno",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "TCRT5000 IR reflectance array (2 sensors, A1 + A2)",
+        "pin": "A1, A2",
+        "setup": {
+          "arduino": "",
+          "micropython": ""
+        }
+      },
+      "firmware": {}
+    },
+    "battery": {
+      "id": "battery",
+      "category": "sense",
+      "kind": "analog",
+      "label": "battery level",
+      "blurb": "remaining battery charge (1.0 = full, 0.0 = dead). Read by the BMS chip.",
+      "hw": {
+        "platform": [
+          "arduino",
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "INA219 current/voltage sensor",
+        "pin": "SDA/SCL (I²C)",
+        "setup": {
+          "arduino": "ina219.begin();",
+          "micropython": "ina = INA219(i2c)"
+        }
+      },
+      "firmware": {}
+    },
+    "beacon_signal": {
+      "id": "beacon_signal",
+      "category": "sense",
+      "kind": "analog",
+      "label": "beacon signal",
+      "blurb": "RF signal strength from the nearest placed Signal Beacon (0 = none in range, 1 = right on it). Works within 12 blocks. Requires Spark Brain.",
+      "requiresBrain": "spark",
+      "hw": {
+        "platform": [
+          "esp32",
+          "jetson"
+        ],
+        "peripheral": "BLE RSSI reader (ESP32 built-in)",
+        "pin": "internal WiFi/BT radio",
+        "setup": {
+          "arduino": "BLE.begin(); BLE.scan();",
+          "micropython": "ble = BLE(); ble.active(True)"
+        }
+      },
+      "firmware": {}
+    },
+    "sees_target": {
+      "id": "sees_target",
+      "category": "sense",
+      "kind": "digital",
+      "label": "I can see the target",
+      "blurb": "camera + AI: true when my target object is in view (Vision Brain only)",
+      "requiresBrain": "vision",
+      "hw": {
+        "platform": [
+          "jetson"
+        ],
+        "peripheral": "CSI camera + object detector",
+        "pin": "CSI-0",
+        "setup": {
+          "arduino": "/* Vision requires Jetson */",
+          "micropython": "# vision = ObjectDetector(\"scrap.onnx\")"
+        }
+      },
+      "firmware": {}
+    }
+  }
+}
